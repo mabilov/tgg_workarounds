@@ -258,22 +258,22 @@ public interface RulesPackage extends EPackage {
 	int CLASS1___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD Source Model 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD Source Model 6</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_0__SOURCEMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+	int CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_6__SOURCEMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD Target Model 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD Target Model 6</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_0__TARGETMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
+	int CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_6__TARGETMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
@@ -529,22 +529,22 @@ public interface RulesPackage extends EPackage {
 	int A2S_RULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 22</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int A2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+	int A2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_22__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 28</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int A2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
+	int A2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_28__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
@@ -800,22 +800,22 @@ public interface RulesPackage extends EPackage {
 	int SP_M2_SP_SRULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 1</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 23</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SP_M2_SP_SRULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+	int SP_M2_SP_SRULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_23__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 1</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 29</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SP_M2_SP_SRULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
+	int SP_M2_SP_SRULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_29__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
@@ -1071,22 +1071,22 @@ public interface RulesPackage extends EPackage {
 	int NEXT_RULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 2</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 30</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NEXT_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_2__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+	int NEXT_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_30__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 2</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 24</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NEXT_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_2__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
+	int NEXT_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_24__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
@@ -1162,13 +1162,131 @@ public interface RulesPackage extends EPackage {
 	int CONTINUE_RULE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
+	 * The number of operations of the '<em>Continue Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_RULE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link SourceToTargetCorr.Rules.impl.ContinueFixRuleImpl <em>Continue Fix Rule</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SourceToTargetCorr.Rules.impl.ContinueFixRuleImpl
+	 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#getContinueFixRule()
+	 * @generated
+	 */
+	int CONTINUE_FIX_RULE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Continue Fix Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_FWD__MATCH_SPLITMERGE_SPLITMERGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Perform FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_SPLITMERGE_SPLITMERGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 3;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate solve Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_SPLITMERGE_SPLITMERGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate check Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_SPECIALSTEP_SPECIALSTEP_SPLITMERGE_SPLITMERGE_E2S_E2S = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 6;
+
+	/**
+	 * The operation id for the '<em>Is Applicable check Csp FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Register Objects FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 8;
+
+	/**
+	 * The operation id for the '<em>Check Types FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+
+	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___IS_APPROPRIATE_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Perform BWD</em>' operation.
@@ -1177,7 +1295,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+	int CONTINUE_FIX_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -1186,7 +1304,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int CONTINUE_FIX_RULE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -1195,7 +1313,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 3;
+	int CONTINUE_FIX_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate solve Csp BWD</em>' operation.
@@ -1204,7 +1322,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 4;
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate check Csp BWD</em>' operation.
@@ -1213,7 +1331,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -1222,7 +1340,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPLITMERGE_SPLITMERGE_SPECIALSTEP_SPECIALSTEP_E2S_E2S = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 6;
+	int CONTINUE_FIX_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPECIALSTEP_SPECIALSTEP_SPLITMERGE_SPLITMERGE_E2S_E2S = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 16;
 
 	/**
 	 * The operation id for the '<em>Is Applicable check Csp BWD</em>' operation.
@@ -1231,7 +1349,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+	int CONTINUE_FIX_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -1240,7 +1358,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 8;
+	int CONTINUE_FIX_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 18;
 
 	/**
 	 * The operation id for the '<em>Check Types BWD</em>' operation.
@@ -1249,16 +1367,34 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int CONTINUE_FIX_RULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 3</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 31</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_3__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 10;
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_31__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+
+	/**
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 25</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_25__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
+
+	/**
+	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTINUE_FIX_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 22;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -1267,7 +1403,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+	int CONTINUE_FIX_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 23;
 
 	/**
 	 * The operation id for the '<em>Generate Model</em>' operation.
@@ -1276,7 +1412,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_E2S_E2S = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int CONTINUE_FIX_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_E2S_E2S = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 24;
 
 	/**
 	 * The operation id for the '<em>Generate Model solve Csp BWD</em>' operation.
@@ -1285,7 +1421,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPLITMERGE_SPLITMERGE_SPECIALSTEP_SPECIALSTEP_E2S_E2S_MODELGENERATORRULERESULT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 13;
+	int CONTINUE_FIX_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPECIALSTEP_SPECIALSTEP_SPLITMERGE_SPLITMERGE_E2S_E2S_MODELGENERATORRULERESULT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 25;
 
 	/**
 	 * The operation id for the '<em>Generate Model check Csp BWD</em>' operation.
@@ -1294,16 +1430,16 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 14;
+	int CONTINUE_FIX_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 26;
 
 	/**
-	 * The number of operations of the '<em>Continue Rule</em>' class.
+	 * The number of operations of the '<em>Continue Fix Rule</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTINUE_RULE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
+	int CONTINUE_FIX_RULE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 27;
 
 	/**
 	 * Returns the meta object for class '{@link SourceToTargetCorr.Rules.Class1 <em>Class1</em>}'.
@@ -1516,24 +1652,24 @@ public interface RulesPackage extends EPackage {
 	EOperation getClass1__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_0(Source.SourceModel) <em>Is Appropriate FWD Source Model 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_6(Source.SourceModel) <em>Is Appropriate FWD Source Model 6</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD Source Model 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_0(Source.SourceModel)
+	 * @return the meta object for the '<em>Is Appropriate FWD Source Model 6</em>' operation.
+	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_6(Source.SourceModel)
 	 * @generated
 	 */
-	EOperation getClass1__IsAppropriate_FWD_SourceModel_0__SourceModel();
+	EOperation getClass1__IsAppropriate_FWD_SourceModel_6__SourceModel();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_0(Target.TargetModel) <em>Is Appropriate BWD Target Model 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_6(Target.TargetModel) <em>Is Appropriate BWD Target Model 6</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD Target Model 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_0(Target.TargetModel)
+	 * @return the meta object for the '<em>Is Appropriate BWD Target Model 6</em>' operation.
+	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_6(Target.TargetModel)
 	 * @generated
 	 */
-	EOperation getClass1__IsAppropriate_BWD_TargetModel_0__TargetModel();
+	EOperation getClass1__IsAppropriate_BWD_TargetModel_6__TargetModel();
 
 	/**
 	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -1796,24 +1932,24 @@ public interface RulesPackage extends EPackage {
 	EOperation getA2SRule__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.A2SRule#isAppropriate_FWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.A2SRule#isAppropriate_FWD_EMoflonEdge_22(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 22</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.A2SRule#isAppropriate_FWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 22</em>' operation.
+	 * @see SourceToTargetCorr.Rules.A2SRule#isAppropriate_FWD_EMoflonEdge_22(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getA2SRule__IsAppropriate_FWD_EMoflonEdge_0__EMoflonEdge();
+	EOperation getA2SRule__IsAppropriate_FWD_EMoflonEdge_22__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.A2SRule#isAppropriate_BWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.A2SRule#isAppropriate_BWD_EMoflonEdge_28(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 28</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.A2SRule#isAppropriate_BWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 28</em>' operation.
+	 * @see SourceToTargetCorr.Rules.A2SRule#isAppropriate_BWD_EMoflonEdge_28(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getA2SRule__IsAppropriate_BWD_EMoflonEdge_0__EMoflonEdge();
+	EOperation getA2SRule__IsAppropriate_BWD_EMoflonEdge_28__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.A2SRule#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -2076,24 +2212,24 @@ public interface RulesPackage extends EPackage {
 	EOperation getSpM2SpSRule__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_FWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 1</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_FWD_EMoflonEdge_23(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 23</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 1</em>' operation.
-	 * @see SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_FWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 23</em>' operation.
+	 * @see SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_FWD_EMoflonEdge_23(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSpM2SpSRule__IsAppropriate_FWD_EMoflonEdge_1__EMoflonEdge();
+	EOperation getSpM2SpSRule__IsAppropriate_FWD_EMoflonEdge_23__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_BWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 1</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_BWD_EMoflonEdge_29(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 29</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 1</em>' operation.
-	 * @see SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_BWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 29</em>' operation.
+	 * @see SourceToTargetCorr.Rules.SpM2SpSRule#isAppropriate_BWD_EMoflonEdge_29(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getSpM2SpSRule__IsAppropriate_BWD_EMoflonEdge_1__EMoflonEdge();
+	EOperation getSpM2SpSRule__IsAppropriate_BWD_EMoflonEdge_29__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.SpM2SpSRule#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -2356,24 +2492,24 @@ public interface RulesPackage extends EPackage {
 	EOperation getNextRule__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.NextRule#isAppropriate_BWD_EMoflonEdge_2(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 2</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.NextRule#isAppropriate_BWD_EMoflonEdge_30(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 30</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 2</em>' operation.
-	 * @see SourceToTargetCorr.Rules.NextRule#isAppropriate_BWD_EMoflonEdge_2(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 30</em>' operation.
+	 * @see SourceToTargetCorr.Rules.NextRule#isAppropriate_BWD_EMoflonEdge_30(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getNextRule__IsAppropriate_BWD_EMoflonEdge_2__EMoflonEdge();
+	EOperation getNextRule__IsAppropriate_BWD_EMoflonEdge_30__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.NextRule#isAppropriate_FWD_EMoflonEdge_2(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 2</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.NextRule#isAppropriate_FWD_EMoflonEdge_24(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 24</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 2</em>' operation.
-	 * @see SourceToTargetCorr.Rules.NextRule#isAppropriate_FWD_EMoflonEdge_2(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 24</em>' operation.
+	 * @see SourceToTargetCorr.Rules.NextRule#isAppropriate_FWD_EMoflonEdge_24(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getNextRule__IsAppropriate_FWD_EMoflonEdge_2__EMoflonEdge();
+	EOperation getNextRule__IsAppropriate_FWD_EMoflonEdge_24__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.NextRule#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -2436,154 +2572,284 @@ public interface RulesPackage extends EPackage {
 	EClass getContinueRule();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#isAppropriate_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep) <em>Is Appropriate BWD</em>}' operation.
+	 * Returns the meta object for class '{@link SourceToTargetCorr.Rules.ContinueFixRule <em>Continue Fix Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Continue Fix Rule</em>'.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule
+	 * @generated
+	 */
+	EClass getContinueFixRule();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_FWD(TGGRuntime.Match, Source.SplitMerge, Source.SplitMerge) <em>Is Appropriate FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_FWD(TGGRuntime.Match, Source.SplitMerge, Source.SplitMerge)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__IsAppropriate_FWD__Match_SplitMerge_SplitMerge();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Perform FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__Perform_FWD__IsApplicableMatch();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__IsApplicable_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#registerObjectsToMatch_FWD(TGGRuntime.Match, Source.SplitMerge, Source.SplitMerge) <em>Register Objects To Match FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#registerObjectsToMatch_FWD(TGGRuntime.Match, Source.SplitMerge, Source.SplitMerge)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__RegisterObjectsToMatch_FWD__Match_SplitMerge_SplitMerge();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_solveCsp_FWD(TGGRuntime.Match, Source.SplitMerge, Source.SplitMerge) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_solveCsp_FWD(TGGRuntime.Match, Source.SplitMerge, Source.SplitMerge)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__IsAppropriate_solveCsp_FWD__Match_SplitMerge_SplitMerge();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__IsAppropriate_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, Target.SpecialStep, Target.SpecialStep, Source.SplitMerge, Source.SplitMerge, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, Target.SpecialStep, Target.SpecialStep, Source.SplitMerge, Source.SplitMerge, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_SpecialStep_SpecialStep_SplitMerge_SplitMerge_E2S_E2S();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__IsApplicable_checkCsp_FWD__CSP();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#checkTypes_FWD(TGGRuntime.Match)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__CheckTypes_FWD__Match();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep) <em>Is Appropriate BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#isAppropriate_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep)
 	 * @generated
 	 */
-	EOperation getContinueRule__IsAppropriate_BWD__Match_SpecialStep_SpecialStep();
+	EOperation getContinueFixRule__IsAppropriate_BWD__Match_SpecialStep_SpecialStep();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#perform_BWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getContinueRule__Perform_BWD__IsApplicableMatch();
+	EOperation getContinueFixRule__Perform_BWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#isApplicable_BWD(TGGRuntime.Match)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getContinueRule__IsApplicable_BWD__Match();
+	EOperation getContinueFixRule__IsApplicable_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep) <em>Register Objects To Match BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep) <em>Register Objects To Match BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep)
 	 * @generated
 	 */
-	EOperation getContinueRule__RegisterObjectsToMatch_BWD__Match_SpecialStep_SpecialStep();
+	EOperation getContinueFixRule__RegisterObjectsToMatch_BWD__Match_SpecialStep_SpecialStep();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep) <em>Is Appropriate solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.SpecialStep, Target.SpecialStep)
 	 * @generated
 	 */
-	EOperation getContinueRule__IsAppropriate_solveCsp_BWD__Match_SpecialStep_SpecialStep();
+	EOperation getContinueFixRule__IsAppropriate_solveCsp_BWD__Match_SpecialStep_SpecialStep();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getContinueRule__IsAppropriate_checkCsp_BWD__CSP();
+	EOperation getContinueFixRule__IsAppropriate_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.SplitMerge, Source.SplitMerge, Target.SpecialStep, Target.SpecialStep, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Target.SpecialStep, Target.SpecialStep, Source.SplitMerge, Source.SplitMerge, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S) <em>Is Applicable solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.SplitMerge, Source.SplitMerge, Target.SpecialStep, Target.SpecialStep, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Target.SpecialStep, Target.SpecialStep, Source.SplitMerge, Source.SplitMerge, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S)
 	 * @generated
 	 */
-	EOperation getContinueRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_SplitMerge_SplitMerge_SpecialStep_SpecialStep_E2S_E2S();
+	EOperation getContinueFixRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_SpecialStep_SpecialStep_SplitMerge_SplitMerge_E2S_E2S();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getContinueRule__IsApplicable_checkCsp_BWD__CSP();
+	EOperation getContinueFixRule__IsApplicable_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getContinueRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation getContinueFixRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#checkTypes_BWD(TGGRuntime.Match)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#checkTypes_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getContinueRule__CheckTypes_BWD__Match();
+	EOperation getContinueFixRule__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#isAppropriate_BWD_EMoflonEdge_3(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 3</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_BWD_EMoflonEdge_31(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 31</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 3</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#isAppropriate_BWD_EMoflonEdge_3(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 31</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_BWD_EMoflonEdge_31(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getContinueRule__IsAppropriate_BWD_EMoflonEdge_3__EMoflonEdge();
+	EOperation getContinueFixRule__IsAppropriate_BWD_EMoflonEdge_31__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_FWD_EMoflonEdge_25(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 25</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 25</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#isAppropriate_FWD_EMoflonEdge_25(TGGRuntime.EMoflonEdge)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__IsAppropriate_FWD_EMoflonEdge_25__EMoflonEdge();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @generated
+	 */
+	EOperation getContinueFixRule__CheckAttributes_FWD__TripleMatch();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#checkAttributes_BWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getContinueRule__CheckAttributes_BWD__TripleMatch();
+	EOperation getContinueFixRule__CheckAttributes_BWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S) <em>Generate Model</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S) <em>Generate Model</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Generate Model</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S)
 	 * @generated
 	 */
-	EOperation getContinueRule__GenerateModel__RuleEntryContainer_E2S_E2S();
+	EOperation getContinueFixRule__GenerateModel__RuleEntryContainer_E2S_E2S();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.SplitMerge, Source.SplitMerge, Target.SpecialStep, Target.SpecialStep, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S, TGGRuntime.ModelgeneratorRuleResult) <em>Generate Model solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Target.SpecialStep, Target.SpecialStep, Source.SplitMerge, Source.SplitMerge, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S, TGGRuntime.ModelgeneratorRuleResult) <em>Generate Model solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Generate Model solve Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.SplitMerge, Source.SplitMerge, Target.SpecialStep, Target.SpecialStep, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S, TGGRuntime.ModelgeneratorRuleResult)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Target.SpecialStep, Target.SpecialStep, Source.SplitMerge, Source.SplitMerge, SourceToTargetCorr.E2S, SourceToTargetCorr.E2S, TGGRuntime.ModelgeneratorRuleResult)
 	 * @generated
 	 */
-	EOperation getContinueRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SplitMerge_SplitMerge_SpecialStep_SpecialStep_E2S_E2S_ModelgeneratorRuleResult();
+	EOperation getContinueFixRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SpecialStep_SpecialStep_SplitMerge_SplitMerge_E2S_E2S_ModelgeneratorRuleResult();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Generate Model check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.ContinueFixRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Generate Model check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Generate Model check Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.ContinueRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules.ContinueFixRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getContinueRule__GenerateModel_checkCsp_BWD__CSP();
+	EOperation getContinueFixRule__GenerateModel_checkCsp_BWD__CSP();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2799,22 +3065,22 @@ public interface RulesPackage extends EPackage {
 				.getClass1__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate FWD Source Model 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate FWD Source Model 6</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_0__SOURCEMODEL = eINSTANCE
-				.getClass1__IsAppropriate_FWD_SourceModel_0__SourceModel();
+		EOperation CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_6__SOURCEMODEL = eINSTANCE
+				.getClass1__IsAppropriate_FWD_SourceModel_6__SourceModel();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD Target Model 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD Target Model 6</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_0__TARGETMODEL = eINSTANCE
-				.getClass1__IsAppropriate_BWD_TargetModel_0__TargetModel();
+		EOperation CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_6__TARGETMODEL = eINSTANCE
+				.getClass1__IsAppropriate_BWD_TargetModel_6__TargetModel();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
@@ -3052,22 +3318,22 @@ public interface RulesPackage extends EPackage {
 				.getA2SRule__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 22</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation A2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE = eINSTANCE
-				.getA2SRule__IsAppropriate_FWD_EMoflonEdge_0__EMoflonEdge();
+		EOperation A2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_22__EMOFLONEDGE = eINSTANCE
+				.getA2SRule__IsAppropriate_FWD_EMoflonEdge_22__EMoflonEdge();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 28</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation A2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE = eINSTANCE
-				.getA2SRule__IsAppropriate_BWD_EMoflonEdge_0__EMoflonEdge();
+		EOperation A2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_28__EMOFLONEDGE = eINSTANCE
+				.getA2SRule__IsAppropriate_BWD_EMoflonEdge_28__EMoflonEdge();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
@@ -3305,22 +3571,22 @@ public interface RulesPackage extends EPackage {
 				.getSpM2SpSRule__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 1</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 23</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SP_M2_SP_SRULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1__EMOFLONEDGE = eINSTANCE
-				.getSpM2SpSRule__IsAppropriate_FWD_EMoflonEdge_1__EMoflonEdge();
+		EOperation SP_M2_SP_SRULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_23__EMOFLONEDGE = eINSTANCE
+				.getSpM2SpSRule__IsAppropriate_FWD_EMoflonEdge_23__EMoflonEdge();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 1</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 29</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation SP_M2_SP_SRULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE = eINSTANCE
-				.getSpM2SpSRule__IsAppropriate_BWD_EMoflonEdge_1__EMoflonEdge();
+		EOperation SP_M2_SP_SRULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_29__EMOFLONEDGE = eINSTANCE
+				.getSpM2SpSRule__IsAppropriate_BWD_EMoflonEdge_29__EMoflonEdge();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
@@ -3558,22 +3824,22 @@ public interface RulesPackage extends EPackage {
 				.getNextRule__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 2</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 30</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation NEXT_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_2__EMOFLONEDGE = eINSTANCE
-				.getNextRule__IsAppropriate_BWD_EMoflonEdge_2__EMoflonEdge();
+		EOperation NEXT_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_30__EMOFLONEDGE = eINSTANCE
+				.getNextRule__IsAppropriate_BWD_EMoflonEdge_30__EMoflonEdge();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 2</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 24</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation NEXT_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_2__EMOFLONEDGE = eINSTANCE
-				.getNextRule__IsAppropriate_FWD_EMoflonEdge_2__EMoflonEdge();
+		EOperation NEXT_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_24__EMOFLONEDGE = eINSTANCE
+				.getNextRule__IsAppropriate_FWD_EMoflonEdge_24__EMoflonEdge();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
@@ -3631,13 +3897,113 @@ public interface RulesPackage extends EPackage {
 		EClass CONTINUE_RULE = eINSTANCE.getContinueRule();
 
 		/**
+		 * The meta object literal for the '{@link SourceToTargetCorr.Rules.impl.ContinueFixRuleImpl <em>Continue Fix Rule</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SourceToTargetCorr.Rules.impl.ContinueFixRuleImpl
+		 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#getContinueFixRule()
+		 * @generated
+		 */
+		EClass CONTINUE_FIX_RULE = eINSTANCE.getContinueFixRule();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Appropriate FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_FWD__MATCH_SPLITMERGE_SPLITMERGE = eINSTANCE
+				.getContinueFixRule__IsAppropriate_FWD__Match_SplitMerge_SplitMerge();
+
+		/**
+		 * The meta object literal for the '<em><b>Perform FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___PERFORM_FWD__ISAPPLICABLEMATCH = eINSTANCE
+				.getContinueFixRule__Perform_FWD__IsApplicableMatch();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Applicable FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___IS_APPLICABLE_FWD__MATCH = eINSTANCE
+				.getContinueFixRule__IsApplicable_FWD__Match();
+
+		/**
+		 * The meta object literal for the '<em><b>Register Objects To Match FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_SPLITMERGE_SPLITMERGE = eINSTANCE
+				.getContinueFixRule__RegisterObjectsToMatch_FWD__Match_SplitMerge_SplitMerge();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Appropriate solve Csp FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_SPLITMERGE_SPLITMERGE = eINSTANCE
+				.getContinueFixRule__IsAppropriate_solveCsp_FWD__Match_SplitMerge_SplitMerge();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Appropriate check Csp FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = eINSTANCE
+				.getContinueFixRule__IsAppropriate_checkCsp_FWD__CSP();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Applicable solve Csp FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_SPECIALSTEP_SPECIALSTEP_SPLITMERGE_SPLITMERGE_E2S_E2S = eINSTANCE
+				.getContinueFixRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_SpecialStep_SpecialStep_SplitMerge_SplitMerge_E2S_E2S();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Applicable check Csp FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = eINSTANCE
+				.getContinueFixRule__IsApplicable_checkCsp_FWD__CSP();
+
+		/**
+		 * The meta object literal for the '<em><b>Register Objects FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = eINSTANCE
+				.getContinueFixRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
+
+		/**
+		 * The meta object literal for the '<em><b>Check Types FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___CHECK_TYPES_FWD__MATCH = eINSTANCE
+				.getContinueFixRule__CheckTypes_FWD__Match();
+
+		/**
 		 * The meta object literal for the '<em><b>Is Appropriate BWD</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___IS_APPROPRIATE_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = eINSTANCE
-				.getContinueRule__IsAppropriate_BWD__Match_SpecialStep_SpecialStep();
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = eINSTANCE
+				.getContinueFixRule__IsAppropriate_BWD__Match_SpecialStep_SpecialStep();
 
 		/**
 		 * The meta object literal for the '<em><b>Perform BWD</b></em>' operation.
@@ -3645,8 +4011,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = eINSTANCE
-				.getContinueRule__Perform_BWD__IsApplicableMatch();
+		EOperation CONTINUE_FIX_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = eINSTANCE
+				.getContinueFixRule__Perform_BWD__IsApplicableMatch();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable BWD</b></em>' operation.
@@ -3654,8 +4020,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___IS_APPLICABLE_BWD__MATCH = eINSTANCE
-				.getContinueRule__IsApplicable_BWD__Match();
+		EOperation CONTINUE_FIX_RULE___IS_APPLICABLE_BWD__MATCH = eINSTANCE
+				.getContinueFixRule__IsApplicable_BWD__Match();
 
 		/**
 		 * The meta object literal for the '<em><b>Register Objects To Match BWD</b></em>' operation.
@@ -3663,8 +4029,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = eINSTANCE
-				.getContinueRule__RegisterObjectsToMatch_BWD__Match_SpecialStep_SpecialStep();
+		EOperation CONTINUE_FIX_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = eINSTANCE
+				.getContinueFixRule__RegisterObjectsToMatch_BWD__Match_SpecialStep_SpecialStep();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate solve Csp BWD</b></em>' operation.
@@ -3672,8 +4038,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = eINSTANCE
-				.getContinueRule__IsAppropriate_solveCsp_BWD__Match_SpecialStep_SpecialStep();
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_SPECIALSTEP_SPECIALSTEP = eINSTANCE
+				.getContinueFixRule__IsAppropriate_solveCsp_BWD__Match_SpecialStep_SpecialStep();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate check Csp BWD</b></em>' operation.
@@ -3681,8 +4047,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = eINSTANCE
-				.getContinueRule__IsAppropriate_checkCsp_BWD__CSP();
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = eINSTANCE
+				.getContinueFixRule__IsAppropriate_checkCsp_BWD__CSP();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable solve Csp BWD</b></em>' operation.
@@ -3690,8 +4056,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPLITMERGE_SPLITMERGE_SPECIALSTEP_SPECIALSTEP_E2S_E2S = eINSTANCE
-				.getContinueRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_SplitMerge_SplitMerge_SpecialStep_SpecialStep_E2S_E2S();
+		EOperation CONTINUE_FIX_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPECIALSTEP_SPECIALSTEP_SPLITMERGE_SPLITMERGE_E2S_E2S = eINSTANCE
+				.getContinueFixRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_SpecialStep_SpecialStep_SplitMerge_SplitMerge_E2S_E2S();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable check Csp BWD</b></em>' operation.
@@ -3699,8 +4065,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = eINSTANCE
-				.getContinueRule__IsApplicable_checkCsp_BWD__CSP();
+		EOperation CONTINUE_FIX_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = eINSTANCE
+				.getContinueFixRule__IsApplicable_checkCsp_BWD__CSP();
 
 		/**
 		 * The meta object literal for the '<em><b>Register Objects BWD</b></em>' operation.
@@ -3708,8 +4074,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = eINSTANCE
-				.getContinueRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
+		EOperation CONTINUE_FIX_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = eINSTANCE
+				.getContinueFixRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Types BWD</b></em>' operation.
@@ -3717,17 +4083,35 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___CHECK_TYPES_BWD__MATCH = eINSTANCE
-				.getContinueRule__CheckTypes_BWD__Match();
+		EOperation CONTINUE_FIX_RULE___CHECK_TYPES_BWD__MATCH = eINSTANCE
+				.getContinueFixRule__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 3</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 31</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_3__EMOFLONEDGE = eINSTANCE
-				.getContinueRule__IsAppropriate_BWD_EMoflonEdge_3__EMoflonEdge();
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_31__EMOFLONEDGE = eINSTANCE
+				.getContinueFixRule__IsAppropriate_BWD_EMoflonEdge_31__EMoflonEdge();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 25</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_25__EMOFLONEDGE = eINSTANCE
+				.getContinueFixRule__IsAppropriate_FWD_EMoflonEdge_25__EMoflonEdge();
+
+		/**
+		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CONTINUE_FIX_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = eINSTANCE
+				.getContinueFixRule__CheckAttributes_FWD__TripleMatch();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes BWD</b></em>' operation.
@@ -3735,8 +4119,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = eINSTANCE
-				.getContinueRule__CheckAttributes_BWD__TripleMatch();
+		EOperation CONTINUE_FIX_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = eINSTANCE
+				.getContinueFixRule__CheckAttributes_BWD__TripleMatch();
 
 		/**
 		 * The meta object literal for the '<em><b>Generate Model</b></em>' operation.
@@ -3744,8 +4128,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_E2S_E2S = eINSTANCE
-				.getContinueRule__GenerateModel__RuleEntryContainer_E2S_E2S();
+		EOperation CONTINUE_FIX_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_E2S_E2S = eINSTANCE
+				.getContinueFixRule__GenerateModel__RuleEntryContainer_E2S_E2S();
 
 		/**
 		 * The meta object literal for the '<em><b>Generate Model solve Csp BWD</b></em>' operation.
@@ -3753,8 +4137,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPLITMERGE_SPLITMERGE_SPECIALSTEP_SPECIALSTEP_E2S_E2S_MODELGENERATORRULERESULT = eINSTANCE
-				.getContinueRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SplitMerge_SplitMerge_SpecialStep_SpecialStep_E2S_E2S_ModelgeneratorRuleResult();
+		EOperation CONTINUE_FIX_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SPECIALSTEP_SPECIALSTEP_SPLITMERGE_SPLITMERGE_E2S_E2S_MODELGENERATORRULERESULT = eINSTANCE
+				.getContinueFixRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SpecialStep_SpecialStep_SplitMerge_SplitMerge_E2S_E2S_ModelgeneratorRuleResult();
 
 		/**
 		 * The meta object literal for the '<em><b>Generate Model check Csp BWD</b></em>' operation.
@@ -3762,8 +4146,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CONTINUE_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = eINSTANCE
-				.getContinueRule__GenerateModel_checkCsp_BWD__CSP();
+		EOperation CONTINUE_FIX_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = eINSTANCE
+				.getContinueFixRule__GenerateModel_checkCsp_BWD__CSP();
 
 	}
 

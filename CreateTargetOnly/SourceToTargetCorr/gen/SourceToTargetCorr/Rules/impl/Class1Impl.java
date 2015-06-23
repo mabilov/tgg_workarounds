@@ -669,7 +669,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_SourceModel_0(SourceModel source) {
+	public EObjectContainer isAppropriate_FWD_SourceModel_6(SourceModel source) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl
 				.pattern_Class1_20_1_bindingAndBlackFFB(this);
@@ -726,7 +726,7 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_TargetModel_0(TargetModel target) {
+	public EObjectContainer isAppropriate_BWD_TargetModel_6(TargetModel target) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = Class1Impl
 				.pattern_Class1_21_1_bindingAndBlackFFB(this);
@@ -958,11 +958,11 @@ public class Class1Impl extends AbstractRuleImpl implements Class1 {
 			return null;
 		case RulesPackage.CLASS1___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_0__SOURCEMODEL:
-			return isAppropriate_FWD_SourceModel_0((SourceModel) arguments
+		case RulesPackage.CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_6__SOURCEMODEL:
+			return isAppropriate_FWD_SourceModel_6((SourceModel) arguments
 					.get(0));
-		case RulesPackage.CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_0__TARGETMODEL:
-			return isAppropriate_BWD_TargetModel_0((TargetModel) arguments
+		case RulesPackage.CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_6__TARGETMODEL:
+			return isAppropriate_BWD_TargetModel_6((TargetModel) arguments
 					.get(0));
 		case RulesPackage.CLASS1___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));

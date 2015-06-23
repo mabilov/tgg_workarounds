@@ -22,7 +22,7 @@ public class SourceToTargetCorrTrafo extends DebugSynchronizationHelper {
 
 		// Forward Transformation
 		SourceToTargetCorrTrafo helper = new SourceToTargetCorrTrafo();
-		helper.performForward("instances/fwd.src.xmi");
+		helper.performForward("instances/v2/fwd.src.xmi");
 
 		// Backward Transformation
 		// helper = new SourceToTargetCorrTrafo();
@@ -33,9 +33,9 @@ public class SourceToTargetCorrTrafo extends DebugSynchronizationHelper {
 		SourcePreprocessor.preprocessSource((SourceModel) this.src);
 		integrateForward();
 
-		saveTrg("instances/fwd.trg.xmi");
-		saveCorr("instances/fwd.corr.xmi");
-		saveSynchronizationProtocol("instances/fwd.protocol.xmi");
+		saveTrg("instances/v2/fwd.trg.xmi");
+		saveCorr("instances/v2/fwd.corr.xmi");
+		saveSynchronizationProtocol("instances/v2/fwd.protocol.xmi");
 
 		System.out.println("Completed forward transformation!");
 	}

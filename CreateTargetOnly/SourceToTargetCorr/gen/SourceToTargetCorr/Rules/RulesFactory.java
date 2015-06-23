@@ -59,13 +59,13 @@ public interface RulesFactory extends EFactory {
 	NextRule createNextRule();
 
 	/**
-	 * Returns a new object of class '<em>Continue Rule</em>'.
+	 * Returns a new object of class '<em>Continue Fix Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Continue Rule</em>'.
+	 * @return a new object of class '<em>Continue Fix Rule</em>'.
 	 * @generated
 	 */
-	ContinueRule createContinueRule();
+	ContinueFixRule createContinueFixRule();
 
 	/**
 	 * Returns the package supported by this factory.

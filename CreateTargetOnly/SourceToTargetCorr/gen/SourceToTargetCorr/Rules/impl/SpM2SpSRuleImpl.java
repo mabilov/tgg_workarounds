@@ -771,7 +771,7 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_1(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_23(
 			EMoflonEdge _edge_elements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SpM2SpSRuleImpl
@@ -833,7 +833,7 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_1(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_29(
 			EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = SpM2SpSRuleImpl
@@ -1117,11 +1117,11 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 			return null;
 		case RulesPackage.SP_M2_SP_SRULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.SP_M2_SP_SRULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_1((EMoflonEdge) arguments
+		case RulesPackage.SP_M2_SP_SRULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_23__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_23((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.SP_M2_SP_SRULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_1((EMoflonEdge) arguments
+		case RulesPackage.SP_M2_SP_SRULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_29__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_29((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.SP_M2_SP_SRULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));

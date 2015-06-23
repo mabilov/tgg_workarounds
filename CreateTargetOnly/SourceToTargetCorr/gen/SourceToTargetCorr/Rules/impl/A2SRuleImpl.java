@@ -748,7 +748,7 @@ public class A2SRuleImpl extends AbstractRuleImpl implements A2SRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_0(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_22(
 			EMoflonEdge _edge_elements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = A2SRuleImpl
@@ -808,7 +808,7 @@ public class A2SRuleImpl extends AbstractRuleImpl implements A2SRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_0(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_28(
 			EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = A2SRuleImpl
@@ -1080,11 +1080,11 @@ public class A2SRuleImpl extends AbstractRuleImpl implements A2SRule {
 			return null;
 		case RulesPackage.A2S_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.A2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_0((EMoflonEdge) arguments
+		case RulesPackage.A2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_22__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_22((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.A2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_0((EMoflonEdge) arguments
+		case RulesPackage.A2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_28__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_28((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.A2S_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
@@ -2177,9 +2177,9 @@ public class A2SRuleImpl extends AbstractRuleImpl implements A2SRule {
 
 	public static final Object[] pattern_A2SRule_21_2_black_nac_0BB(Step s,
 			TargetModel tm) {
-		for (TargetModel __DEC_s_steps_253426 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (TargetModel __DEC_s_steps_681844 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(s, TargetModel.class, "steps")) {
-			if (!tm.equals(__DEC_s_steps_253426)) {
+			if (!tm.equals(__DEC_s_steps_681844)) {
 				return new Object[] { s, tm };
 			}
 		}

@@ -881,7 +881,7 @@ public class NextRuleImpl extends AbstractRuleImpl implements NextRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_2(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_30(
 			EMoflonEdge _edge_next) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = NextRuleImpl
@@ -943,7 +943,7 @@ public class NextRuleImpl extends AbstractRuleImpl implements NextRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_2(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_24(
 			EMoflonEdge _edge_next) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = NextRuleImpl
@@ -1287,11 +1287,11 @@ public class NextRuleImpl extends AbstractRuleImpl implements NextRule {
 			return null;
 		case RulesPackage.NEXT_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.NEXT_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_2__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_2((EMoflonEdge) arguments
+		case RulesPackage.NEXT_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_30__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_30((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.NEXT_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_2__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_2((EMoflonEdge) arguments
+		case RulesPackage.NEXT_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_24__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_24((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.NEXT_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));

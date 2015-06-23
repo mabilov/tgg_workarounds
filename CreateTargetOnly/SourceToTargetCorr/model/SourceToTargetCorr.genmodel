@@ -90,11 +90,11 @@
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_FWD_SourceModel_0">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_FWD_SourceModel_0/source"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_FWD_SourceModel_6">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_FWD_SourceModel_6/source"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_BWD_TargetModel_0">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_BWD_TargetModel_0/target"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_BWD_TargetModel_6">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_BWD_TargetModel_6/target"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/checkAttributes_FWD/tripleMatch"/>
@@ -206,11 +206,11 @@
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_FWD_EMoflonEdge_0">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_FWD_EMoflonEdge_0/_edge_elements"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_FWD_EMoflonEdge_22">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_FWD_EMoflonEdge_22/_edge_elements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_28">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_28/_edge_steps"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/A2SRule/checkAttributes_FWD/tripleMatch"/>
@@ -326,11 +326,11 @@
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_FWD_EMoflonEdge_1">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_FWD_EMoflonEdge_1/_edge_elements"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_FWD_EMoflonEdge_23">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_FWD_EMoflonEdge_23/_edge_elements"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_BWD_EMoflonEdge_1">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_BWD_EMoflonEdge_1/_edge_steps"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_BWD_EMoflonEdge_29">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/isAppropriate_BWD_EMoflonEdge_29/_edge_steps"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/SpM2SpSRule/checkAttributes_FWD/tripleMatch"/>
@@ -468,11 +468,11 @@
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/checkTypes_BWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/checkTypes_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_BWD_EMoflonEdge_2">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_BWD_EMoflonEdge_2/_edge_next"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_BWD_EMoflonEdge_30">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_BWD_EMoflonEdge_30/_edge_next"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_FWD_EMoflonEdge_2">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_FWD_EMoflonEdge_2/_edge_next"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_FWD_EMoflonEdge_24">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/isAppropriate_FWD_EMoflonEdge_24/_edge_next"/>
         </genOperations>
         <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/checkAttributes_FWD">
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/checkAttributes_FWD/tripleMatch"/>
@@ -501,78 +501,133 @@
           <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/generateModel_checkCsp_BWD/csp"/>
         </genOperations>
       </genClasses>
-      <genClasses ecoreClass="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule">
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_BWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_BWD/sps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_BWD/sps2"/>
+      <genClasses image="false" ecoreClass="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule"/>
+      <genClasses ecoreClass="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule">
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_FWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_FWD/spm1"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/perform_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/perform_BWD/isApplicableMatch"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/perform_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/perform_FWD/isApplicableMatch"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_BWD/match"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_FWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjectsToMatch_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjectsToMatch_BWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjectsToMatch_BWD/sps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjectsToMatch_BWD/sps2"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_FWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_FWD/spm1"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_solveCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_solveCsp_BWD/match"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_solveCsp_BWD/sps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_solveCsp_BWD/sps2"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_FWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_FWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_FWD/spm1"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_checkCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_checkCsp_BWD/csp"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_checkCsp_FWD/csp"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD/spm1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD/spm2"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD/sps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD/sps2"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD/spm1ToSps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD/spm2ToSps2"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD/sps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD/spm1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD/spm1ToSps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD/spm2ToSps2"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_checkCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_checkCsp_BWD/csp"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_checkCsp_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_checkCsp_FWD/csp"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD/ruleresult"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD/spm1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD/spm2"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD/sps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD/sps2"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD/spm1ToSps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD/spm2ToSps2"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD/sps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD/spm1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD/spm1ToSps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD/spm2ToSps2"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/checkTypes_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/checkTypes_BWD/match"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkTypes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkTypes_FWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_BWD_EMoflonEdge_3">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_BWD_EMoflonEdge_3/_edge_continue"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_BWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_BWD/sps1"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/checkAttributes_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/checkAttributes_BWD/tripleMatch"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/perform_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/perform_BWD/isApplicableMatch"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel/ruleEntryContainer"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel/spm1ToSps1Parameter"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel/spm2ToSps2Parameter"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_BWD/match"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/spm1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/spm2"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/sps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/sps2"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/spm1ToSps1"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/spm2ToSps2"/>
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD/ruleResult"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_BWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_BWD/sps1"/>
         </genOperations>
-        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_checkCsp_BWD">
-          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_checkCsp_BWD/csp"/>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_BWD/match"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_BWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_BWD/sps1"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD/sps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD/spm1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD/spm1ToSps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD/spm2ToSps2"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_checkCsp_BWD/csp"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD/ruleresult"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD/sps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD/spm1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD/spm1ToSps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD/spm2ToSps2"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkTypes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkTypes_BWD/match"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_BWD_EMoflonEdge_31">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_BWD_EMoflonEdge_31/_edge_continue"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_FWD_EMoflonEdge_25">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_FWD_EMoflonEdge_25/_edge___con"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkAttributes_FWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkAttributes_FWD/tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkAttributes_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkAttributes_BWD/tripleMatch"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel/ruleEntryContainer"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel/spm2ToSps2Parameter"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel/spm1ToSps1Parameter"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/isApplicableMatch"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/sps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/sps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/spm2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/spm1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/spm1ToSps1"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/spm2ToSps2"/>
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD/ruleResult"/>
+        </genOperations>
+        <genOperations ecoreOperation="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_checkCsp_BWD">
+          <genParameters ecoreParameter="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_checkCsp_BWD/csp"/>
         </genOperations>
       </genClasses>
     </nestedGenPackages>

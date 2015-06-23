@@ -168,26 +168,47 @@
   <compilerInjectionEntries content="return true;">
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_solveCsp_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_spm1_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm1.merge&quot;, true, csp);&#xD;&#xA;var_spm1_merge.setValue(spm1.isMerge());&#xD;&#xA;var_spm1_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;Variable var_spm2_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm2.merge&quot;, true, csp);&#xD;&#xA;var_spm2_merge.setValue(spm2.isMerge());&#xD;&#xA;var_spm2_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_false = CSPFactoryHelper.eINSTANCE.createVariable(&quot;false&quot;, csp);&#xD;&#xA;var_false.setType(&quot;boolean&quot;);&#xD;&#xA;Variable var_true = CSPFactoryHelper.eINSTANCE.createVariable(&quot;true&quot;, csp);&#xD;&#xA;var_true.setType(&quot;boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_spm1_merge,var_false);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_spm2_merge,var_true);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;sps1&quot;, sps1);&#xA;match.registerObject(&quot;sps2&quot;, sps2);&#xA;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjectsToMatch_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isAppropriate_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_spm1_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm1.merge&quot;, true, csp);&#xD;&#xA;var_spm1_merge.setValue(spm1.isMerge());&#xD;&#xA;var_spm1_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;Variable var_spm2_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm2.merge&quot;, true, csp);&#xD;&#xA;var_spm2_merge.setValue(spm2.isMerge());&#xD;&#xA;var_spm2_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_false = CSPFactoryHelper.eINSTANCE.createVariable(&quot;false&quot;, csp);&#xD;&#xA;var_false.setType(&quot;boolean&quot;);&#xD;&#xA;Variable var_true = CSPFactoryHelper.eINSTANCE.createVariable(&quot;true&quot;, csp);&#xD;&#xA;var_true.setType(&quot;boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_spm1_merge,var_false);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_spm2_merge,var_true);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1&quot;,spm1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2&quot;,spm2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps1&quot;,sps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps2&quot;,sps2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1ToSps1&quot;,spm1ToSps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2ToSps2&quot;,spm2ToSps2);&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_solveCsp_BWD"/>
+  <compilerInjectionEntries content="match.registerObject(&quot;spm2&quot;, spm2);&#xA;match.registerObject(&quot;spm1&quot;, spm1);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/isApplicable_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_checkCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;spm1&quot;, spm1);&#xA;ruleresult.registerObject(&quot;spm2&quot;, spm2);&#xA;ruleresult.registerObject(&quot;sps1&quot;, sps1);&#xA;ruleresult.registerObject(&quot;sps2&quot;, sps2);&#xA;ruleresult.registerObject(&quot;spm1ToSps1&quot;, spm1ToSps1);&#xA;ruleresult.registerObject(&quot;spm2ToSps2&quot;, spm2ToSps2);&#xA;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/registerObjects_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps2&quot;,sps2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps1&quot;,sps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2&quot;,spm2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1&quot;,spm1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1ToSps1&quot;,spm1ToSps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2ToSps2&quot;,spm2ToSps2);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;sps2&quot;, sps2);&#xA;ruleresult.registerObject(&quot;sps1&quot;, sps1);&#xA;ruleresult.registerObject(&quot;spm2&quot;, spm2);&#xA;ruleresult.registerObject(&quot;spm1&quot;, spm1);&#xA;ruleresult.registerObject(&quot;spm1ToSps1&quot;, spm1ToSps1);&#xA;ruleresult.registerObject(&quot;spm2ToSps2&quot;, spm2ToSps2);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return true;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/checkTypes_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkTypes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="match.registerObject(&quot;sps2&quot;, sps2);&#xA;match.registerObject(&quot;sps1&quot;, sps1);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjectsToMatch_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isAppropriate_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_spm1_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm1.merge&quot;, true, csp);&#xD;&#xA;var_spm1_merge.setValue(spm1.isMerge());&#xD;&#xA;var_spm1_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;Variable var_spm2_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm2.merge&quot;, true, csp);&#xD;&#xA;var_spm2_merge.setValue(spm2.isMerge());&#xD;&#xA;var_spm2_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_false = CSPFactoryHelper.eINSTANCE.createVariable(&quot;false&quot;, csp);&#xD;&#xA;var_false.setType(&quot;boolean&quot;);&#xD;&#xA;Variable var_true = CSPFactoryHelper.eINSTANCE.createVariable(&quot;true&quot;, csp);&#xD;&#xA;var_true.setType(&quot;boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_spm1_merge,var_false);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_spm2_merge,var_true);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps2&quot;,sps2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps1&quot;,sps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2&quot;,spm2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1&quot;,spm1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1ToSps1&quot;,spm1ToSps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2ToSps2&quot;,spm2ToSps2);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_solveCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;sps2&quot;, sps2);&#xA;ruleresult.registerObject(&quot;sps1&quot;, sps1);&#xA;ruleresult.registerObject(&quot;spm2&quot;, spm2);&#xA;ruleresult.registerObject(&quot;spm1&quot;, spm1);&#xA;ruleresult.registerObject(&quot;spm1ToSps1&quot;, spm1ToSps1);&#xA;ruleresult.registerObject(&quot;spm2ToSps2&quot;, spm2ToSps2);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="throw new UnsupportedOperationException(&quot;developments on attribute synchronization with eMoflon not yet completed&quot;);">
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/checkAttributes_FWD"/>
@@ -214,7 +235,10 @@
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="throw new UnsupportedOperationException(&quot;developments on attribute synchronization with eMoflon not yet completed&quot;);">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/checkAttributes_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkAttributes_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="throw new UnsupportedOperationException(&quot;developments on attribute synchronization with eMoflon not yet completed&quot;);">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;return csp;">
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/generateModel_solveCsp_BWD"/>
@@ -240,11 +264,11 @@
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_spm1_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm1.merge&quot;, true, csp);&#xD;&#xA;var_spm1_merge.setValue(spm1.isMerge());&#xD;&#xA;var_spm1_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;Variable var_spm2_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm2.merge&quot;, true, csp);&#xD;&#xA;var_spm2_merge.setValue(spm2.isMerge());&#xD;&#xA;var_spm2_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_false = CSPFactoryHelper.eINSTANCE.createVariable(&quot;false&quot;, csp);&#xD;&#xA;var_false.setType(&quot;boolean&quot;);&#xD;&#xA;Variable var_true = CSPFactoryHelper.eINSTANCE.createVariable(&quot;true&quot;, csp);&#xD;&#xA;var_true.setType(&quot;boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_spm1_merge,var_false);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_spm2_merge,var_true);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1&quot;,spm1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2&quot;,spm2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps1&quot;,sps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps2&quot;,sps2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1ToSps1&quot;,spm1ToSps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2ToSps2&quot;,spm2ToSps2);&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_solveCsp_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_spm1_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm1.merge&quot;, true, csp);&#xD;&#xA;var_spm1_merge.setValue(spm1.isMerge());&#xD;&#xA;var_spm1_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;Variable var_spm2_merge = CSPFactoryHelper.eINSTANCE.createVariable(&quot;spm2.merge&quot;, true, csp);&#xD;&#xA;var_spm2_merge.setValue(spm2.isMerge());&#xD;&#xA;var_spm2_merge.setType(&quot;Boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_false = CSPFactoryHelper.eINSTANCE.createVariable(&quot;false&quot;, csp);&#xD;&#xA;var_false.setType(&quot;boolean&quot;);&#xD;&#xA;Variable var_true = CSPFactoryHelper.eINSTANCE.createVariable(&quot;true&quot;, csp);&#xD;&#xA;var_true.setType(&quot;boolean&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_spm1_merge,var_false);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_spm2_merge,var_true);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps2&quot;,sps2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sps1&quot;,sps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2&quot;,spm2);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1&quot;,spm1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm1ToSps1&quot;,spm1ToSps1);&#xD;&#xA;isApplicableMatch.registerObject(&quot;spm2ToSps2&quot;,spm2ToSps2);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule/generateModel_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
   <importInjectionEntries content="org.moflon.csp.*">
     <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1"/>
@@ -283,12 +307,12 @@
     <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/NextRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.csp.*">
-    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule"/>
+    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="csp.constraints.*">
-    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule"/>
+    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="TGGLanguage.csp.*">
-    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueRule"/>
+    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/ContinueFixRule"/>
   </importInjectionEntries>
 </sdmUtil:CompilerInjection>

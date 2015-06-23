@@ -64,8 +64,8 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createSpM2SpSRule();
 		case RulesPackage.NEXT_RULE:
 			return createNextRule();
-		case RulesPackage.CONTINUE_RULE:
-			return createContinueRule();
+		case RulesPackage.CONTINUE_FIX_RULE:
+			return createContinueFixRule();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName()
 					+ "' is not a valid classifier");
@@ -117,9 +117,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ContinueRule createContinueRule() {
-		ContinueRuleImpl continueRule = new ContinueRuleImpl();
-		return continueRule;
+	public ContinueFixRule createContinueFixRule() {
+		ContinueFixRuleImpl continueFixRule = new ContinueFixRuleImpl();
+		return continueFixRule;
 	}
 
 	/**

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Target:TargetModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Target="platform:/plugin/Target/model/Target.ecore">
+  <steps next="//@steps.1" id="a3"/>
+  <steps xsi:type="Target:SpecialStep" id="spm2"/>
+  <steps xsi:type="Target:SpecialStep" next="//@steps.4" id="spm1" continue="//@steps.1"/>
+  <steps next="//@steps.2" id="a1"/>
+  <steps next="//@steps.0" id="a2"/>
+</Target:TargetModel>

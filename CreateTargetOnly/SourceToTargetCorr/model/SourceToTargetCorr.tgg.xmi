@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SourceToTargetCorr">
-  <domain name="Source" metamodel="//@metamodel.0" type="SOURCE"/>
-  <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
+  <domain name="Source" metamodel="//@metamodel.2" type="SOURCE"/>
+  <domain name="Target" metamodel="//@metamodel.0" type="TARGET"/>
   <domain name="Correspondence" metamodel="//@metamodel.1"/>
   <tggRule name="Class1" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="source" incomingLink="//@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
@@ -193,38 +193,41 @@
     </linkVariable>
     <csp/>
   </tggRule>
-  <tggRule name="ContinueRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm1" incomingLink="//@tggRule.4/@linkVariable.1" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SplitMerge"/>
-    </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm2" incomingLink="//@tggRule.4/@linkVariable.3" domain="//@domain.0">
-      <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SplitMerge"/>
-    </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sps1" incomingLink="//@tggRule.4/@linkVariable.2" outgoingLink="//@tggRule.4/@linkVariable.0" domain="//@domain.1">
+  <tggRule name="ContinueFixRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sps2" incomingLink="//@tggRule.4/@linkVariable.0 //@tggRule.4/@linkVariable.5" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//SpecialStep"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sps2" incomingLink="//@tggRule.4/@linkVariable.0 //@tggRule.4/@linkVariable.4" domain="//@domain.1">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sps1" incomingLink="//@tggRule.4/@linkVariable.3" outgoingLink="//@tggRule.4/@linkVariable.0" domain="//@domain.1">
       <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//SpecialStep"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm1ToSps1" outgoingLink="//@tggRule.4/@linkVariable.1 //@tggRule.4/@linkVariable.2" domain="//@domain.2">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm2" incomingLink="//@tggRule.4/@linkVariable.1 //@tggRule.4/@linkVariable.4" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SplitMerge"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm1" incomingLink="//@tggRule.4/@linkVariable.2" outgoingLink="//@tggRule.4/@linkVariable.1" domain="//@domain.0">
+      <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SplitMerge"/>
+    </objectVariable>
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm1ToSps1" outgoingLink="//@tggRule.4/@linkVariable.2 //@tggRule.4/@linkVariable.3" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S"/>
     </objectVariable>
-    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm2ToSps2" outgoingLink="//@tggRule.4/@linkVariable.3 //@tggRule.4/@linkVariable.4" domain="//@domain.2">
+    <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spm2ToSps2" outgoingLink="//@tggRule.4/@linkVariable.4 //@tggRule.4/@linkVariable.5" domain="//@domain.2">
       <type xsi:type="ecore:EClass" href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S"/>
     </objectVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="continue" target="//@tggRule.4/@objectVariable.3" source="//@tggRule.4/@objectVariable.2" bindingOperator="CREATE" domain="//@domain.1">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="continue" target="//@tggRule.4/@objectVariable.0" source="//@tggRule.4/@objectVariable.1" bindingOperator="CREATE" domain="//@domain.1">
       <type href="platform:/plugin/Target/model/Target.ecore#//SpecialStep/continue"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.0" source="//@tggRule.4/@objectVariable.4" domain="//@domain.2">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="__con" target="//@tggRule.4/@objectVariable.2" source="//@tggRule.4/@objectVariable.3" bindingOperator="CREATE" domain="//@domain.0">
+      <type href="platform:/plugin/Source/model/Source.ecore#//SplitMerge/__con"/>
+    </linkVariable>
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.3" source="//@tggRule.4/@objectVariable.4" domain="//@domain.2">
       <type href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S/source"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.2" source="//@tggRule.4/@objectVariable.4" domain="//@domain.2">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.4" domain="//@domain.2">
       <type href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S/target"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.1" source="//@tggRule.4/@objectVariable.5" domain="//@domain.2">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="source" target="//@tggRule.4/@objectVariable.2" source="//@tggRule.4/@objectVariable.5" domain="//@domain.2">
       <type href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S/source"/>
     </linkVariable>
-    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.3" source="//@tggRule.4/@objectVariable.5" domain="//@domain.2">
+    <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.4/@objectVariable.0" source="//@tggRule.4/@objectVariable.5" domain="//@domain.2">
       <type href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S/target"/>
     </linkVariable>
     <csp>
@@ -256,13 +259,13 @@
       <variables xsi:type="csp:LocalVariable" type="boolean" name="true"/>
     </csp>
   </tggRule>
-  <metamodel name="Source">
-    <outermostPackage href="platform:/plugin/Source/model/Source.ecore#/"/>
+  <metamodel name="Target">
+    <outermostPackage href="platform:/plugin/Target/model/Target.ecore#/"/>
   </metamodel>
   <metamodel name="SourceToTargetCorr">
     <outermostPackage href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#/"/>
   </metamodel>
-  <metamodel name="Target">
-    <outermostPackage href="platform:/plugin/Target/model/Target.ecore#/"/>
+  <metamodel name="Source">
+    <outermostPackage href="platform:/plugin/Source/model/Source.ecore#/"/>
   </metamodel>
 </TGGLanguage:TripleGraphGrammar>

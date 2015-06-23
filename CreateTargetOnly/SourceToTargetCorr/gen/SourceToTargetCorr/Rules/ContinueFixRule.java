@@ -2,11 +2,9 @@
  */
 package SourceToTargetCorr.Rules;
 
-import Source.Element;
-import Source.SourceModel;
+import Source.SplitMerge;
 
 import SourceToTargetCorr.E2S;
-import SourceToTargetCorr.SM2TM;
 
 import TGGLanguage.csp.CSP;
 
@@ -23,8 +21,7 @@ import TGGRuntime.PerformRuleResult;
 import TGGRuntime.RuleResult;
 import TGGRuntime.TripleMatch;
 
-import Target.Step;
-import Target.TargetModel;
+import Target.SpecialStep;
 
 import org.eclipse.emf.ecore.EObject;
 // <-- [user defined imports]
@@ -32,23 +29,22 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Next Rule</b></em>'.
+ * A representation of the model object '<em><b>Continue Fix Rule</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see SourceToTargetCorr.Rules.RulesPackage#getNextRule()
+ * @see SourceToTargetCorr.Rules.RulesPackage#getContinueFixRule()
  * @model
  * @generated
  */
-public interface NextRule extends EObject, AbstractRule {
+public interface ContinueFixRule extends EObject, AbstractRule {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, SourceModel sm, Element e2,
-			Element e1);
+	boolean isAppropriate_FWD(Match match, SplitMerge spm2, SplitMerge spm1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -72,8 +68,8 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, SourceModel sm, Element e2,
-			Element e1);
+	void registerObjectsToMatch_FWD(Match match, SplitMerge spm2,
+			SplitMerge spm1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,8 +77,7 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, SourceModel sm, Element e2,
-			Element e1);
+	CSP isAppropriate_solveCsp_FWD(Match match, SplitMerge spm2, SplitMerge spm1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,8 +94,8 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch,
-			SourceModel sm, Element e2, Step s1, Element e1, TargetModel tm,
-			SM2TM smToTm, E2S e1ToS1, E2S e2ToS2, Step s2);
+			SpecialStep sps2, SpecialStep sps1, SplitMerge spm2,
+			SplitMerge spm1, E2S spm1ToSps1, E2S spm2ToSps2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -116,9 +111,9 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_FWD(PerformRuleResult ruleresult, EObject sm,
-			EObject e2, EObject s1, EObject e1, EObject tm, EObject smToTm,
-			EObject e1ToS1, EObject e2ToS2, EObject s2);
+	void registerObjects_FWD(PerformRuleResult ruleresult, EObject sps2,
+			EObject sps1, EObject spm2, EObject spm1, EObject spm1ToSps1,
+			EObject spm2ToSps2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,7 +129,7 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, Step s1, TargetModel tm, Step s2);
+	boolean isAppropriate_BWD(Match match, SpecialStep sps2, SpecialStep sps1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,8 +153,8 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, Step s1, TargetModel tm,
-			Step s2);
+	void registerObjectsToMatch_BWD(Match match, SpecialStep sps2,
+			SpecialStep sps1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,7 +162,8 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, Step s1, TargetModel tm, Step s2);
+	CSP isAppropriate_solveCsp_BWD(Match match, SpecialStep sps2,
+			SpecialStep sps1);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,8 +180,8 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			SourceModel sm, Element e2, Step s1, Element e1, TargetModel tm,
-			SM2TM smToTm, E2S e1ToS1, E2S e2ToS2, Step s2);
+			SpecialStep sps2, SpecialStep sps1, SplitMerge spm2,
+			SplitMerge spm1, E2S spm1ToSps1, E2S spm2ToSps2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,9 +197,9 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjects_BWD(PerformRuleResult ruleresult, EObject sm,
-			EObject e2, EObject s1, EObject e1, EObject tm, EObject smToTm,
-			EObject e1ToS1, EObject e2ToS2, EObject s2);
+	void registerObjects_BWD(PerformRuleResult ruleresult, EObject sps2,
+			EObject sps1, EObject spm2, EObject spm1, EObject spm1ToSps1,
+			EObject spm2ToSps2);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -219,7 +215,7 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_30(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_31(EMoflonEdge _edge_continue);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -227,7 +223,7 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_24(EMoflonEdge _edge_next);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_25(EMoflonEdge _edge___con);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,7 +248,8 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	ModelgeneratorRuleResult generateModel(
-			RuleEntryContainer ruleEntryContainer, E2S e1ToS1Parameter);
+			RuleEntryContainer ruleEntryContainer, E2S spm2ToSps2Parameter,
+			E2S spm1ToSps1Parameter);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,8 +258,8 @@ public interface NextRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			SourceModel sm, Element e2, Step s1, Element e1, TargetModel tm,
-			SM2TM smToTm, E2S e1ToS1, E2S e2ToS2, Step s2,
+			SpecialStep sps2, SpecialStep sps1, SplitMerge spm2,
+			SplitMerge spm1, E2S spm1ToSps1, E2S spm2ToSps2,
 			ModelgeneratorRuleResult ruleResult);
 
 	/**
@@ -275,4 +272,4 @@ public interface NextRule extends EObject, AbstractRule {
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->
-} // NextRule
+} // ContinueFixRule
