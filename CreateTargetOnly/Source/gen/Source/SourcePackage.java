@@ -113,13 +113,22 @@ public interface SourcePackage extends EPackage {
 	int ELEMENT__NEXT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__ID = 1;
+
+	/**
 	 * The number of structural features of the '<em>Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_FEATURE_COUNT = 1;
+	int ELEMENT_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Element</em>' class.
@@ -148,6 +157,15 @@ public interface SourcePackage extends EPackage {
 	 * @ordered
 	 */
 	int ACTIVITY__NEXT = ELEMENT__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTIVITY__ID = ELEMENT__ID;
 
 	/**
 	 * The number of structural features of the '<em>Activity</em>' class.
@@ -185,6 +203,15 @@ public interface SourcePackage extends EPackage {
 	 * @ordered
 	 */
 	int SPLIT_MERGE__NEXT = ELEMENT__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPLIT_MERGE__ID = ELEMENT__ID;
 
 	/**
 	 * The feature id for the '<em><b>Merge</b></em>' attribute.
@@ -254,6 +281,17 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getElement_Next();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Source.Element#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see Source.Element#getId()
+	 * @see #getElement()
+	 * @generated
+	 */
+	EAttribute getElement_Id();
 
 	/**
 	 * Returns the meta object for class '{@link Source.Activity <em>Activity</em>}'.
@@ -344,6 +382,14 @@ public interface SourcePackage extends EPackage {
 		 * @generated
 		 */
 		EReference ELEMENT__NEXT = eINSTANCE.getElement_Next();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ELEMENT__ID = eINSTANCE.getElement_Id();
 
 		/**
 		 * The meta object literal for the '{@link Source.impl.ActivityImpl <em>Activity</em>}' class.

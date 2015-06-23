@@ -171,9 +171,9 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		TargetModel tm = (TargetModel) result1_bindingAndBlack[1];
 		SM2TM smToTm = (SM2TM) result1_bindingAndBlack[2];
 		SplitMerge spM = (SplitMerge) result1_bindingAndBlack[3];
-		// CSP csp = (CSP) result1_bindingAndBlack[4];
+		CSP csp = (CSP) result1_bindingAndBlack[4];
 		Object[] result1_green = SpM2SpSRuleImpl
-				.pattern_SpM2SpSRule_1_1_greenBBFF(tm, spM);
+				.pattern_SpM2SpSRule_1_1_greenBBFFB(tm, spM, csp);
 		SpecialStep spS = (SpecialStep) result1_green[2];
 		E2S spMToSpS = (E2S) result1_green[3];
 
@@ -360,12 +360,24 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		// Create literals
 
 		// Create attribute variables
+		Variable var_spM_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"spM.id", true, csp);
+		var_spM_id.setValue(spM.getId());
+		var_spM_id.setType("String");
 
 		// Create unbound variables
+		Variable var_spS_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"spS.id", csp);
+		var_spS_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_spM_id, var_spS_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("sm", sm);
@@ -500,9 +512,9 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		TargetModel tm = (TargetModel) result1_bindingAndBlack[1];
 		SM2TM smToTm = (SM2TM) result1_bindingAndBlack[2];
 		SpecialStep spS = (SpecialStep) result1_bindingAndBlack[3];
-		// CSP csp = (CSP) result1_bindingAndBlack[4];
+		CSP csp = (CSP) result1_bindingAndBlack[4];
 		Object[] result1_green = SpM2SpSRuleImpl
-				.pattern_SpM2SpSRule_11_1_greenBFBF(sm, spS);
+				.pattern_SpM2SpSRule_11_1_greenBFBFB(sm, spS, csp);
 		SplitMerge spM = (SplitMerge) result1_green[1];
 		E2S spMToSpS = (E2S) result1_green[3];
 
@@ -691,12 +703,24 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		// Create literals
 
 		// Create attribute variables
+		Variable var_spS_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"spS.id", true, csp);
+		var_spS_id.setValue(spS.getId());
+		var_spS_id.setType("String");
 
 		// Create unbound variables
+		Variable var_spM_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"spM.id", csp);
+		var_spM_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_spM_id, var_spS_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("sm", sm);
@@ -949,8 +973,8 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 										+ "[smToTm] = " + smToTm + ", "
 										+ "[ruleResult] = " + ruleResult + ".");
 					}
-					SpM2SpSRuleImpl.pattern_SpM2SpSRule_24_6_greenBBFFFB(sm,
-							tm, ruleResult);
+					SpM2SpSRuleImpl.pattern_SpM2SpSRule_24_6_greenBBFFFBB(sm,
+							tm, ruleResult, csp);
 					// SplitMerge spM = (SplitMerge) result6_green[2];
 					// SpecialStep spS = (SpecialStep) result6_green[3];
 					// E2S spMToSpS = (E2S) result6_green[4];
@@ -982,10 +1006,21 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		// Create attribute variables
 
 		// Create unbound variables
+		Variable var_spM_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"spM.id", csp);
+		var_spM_id.setType("String");
+		Variable var_spS_id = CSPFactoryHelper.eINSTANCE.createVariable(
+				"spS.id", csp);
+		var_spS_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_spM_id, var_spS_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("sm", sm);
@@ -1255,14 +1290,17 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		return null;
 	}
 
-	public static final Object[] pattern_SpM2SpSRule_1_1_greenBBFF(
-			TargetModel tm, SplitMerge spM) {
+	public static final Object[] pattern_SpM2SpSRule_1_1_greenBBFFB(
+			TargetModel tm, SplitMerge spM, CSP csp) {
 		SpecialStep spS = TargetFactory.eINSTANCE.createSpecialStep();
 		E2S spMToSpS = SourceToTargetCorrFactory.eINSTANCE.createE2S();
+		Object _localVariable_0 = csp.getValue("spS", "id");
 		tm.getSteps().add(spS);
 		spMToSpS.setSource(spM);
 		spMToSpS.setTarget(spS);
-		return new Object[] { tm, spM, spS, spMToSpS };
+		String spS_id_prime = (String) _localVariable_0;
+		spS.setId(spS_id_prime);
+		return new Object[] { tm, spM, spS, spMToSpS, csp };
 	}
 
 	public static final Object[] pattern_SpM2SpSRule_1_2_blackBBB(
@@ -1718,14 +1756,17 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		return null;
 	}
 
-	public static final Object[] pattern_SpM2SpSRule_11_1_greenBFBF(
-			SourceModel sm, SpecialStep spS) {
+	public static final Object[] pattern_SpM2SpSRule_11_1_greenBFBFB(
+			SourceModel sm, SpecialStep spS, CSP csp) {
 		SplitMerge spM = SourceFactory.eINSTANCE.createSplitMerge();
 		E2S spMToSpS = SourceToTargetCorrFactory.eINSTANCE.createE2S();
+		Object _localVariable_0 = csp.getValue("spM", "id");
 		sm.getElements().add(spM);
 		spMToSpS.setSource(spM);
 		spMToSpS.setTarget(spS);
-		return new Object[] { sm, spM, spS, spMToSpS };
+		String spM_id_prime = (String) _localVariable_0;
+		spM.setId(spM_id_prime);
+		return new Object[] { sm, spM, spS, spMToSpS, csp };
 	}
 
 	public static final Object[] pattern_SpM2SpSRule_11_2_blackBBB(
@@ -2373,13 +2414,16 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		return new Object[] { sm, tm, smToTm, ruleResult };
 	}
 
-	public static final Object[] pattern_SpM2SpSRule_24_6_greenBBFFFB(
-			SourceModel sm, TargetModel tm, ModelgeneratorRuleResult ruleResult) {
+	public static final Object[] pattern_SpM2SpSRule_24_6_greenBBFFFBB(
+			SourceModel sm, TargetModel tm,
+			ModelgeneratorRuleResult ruleResult, CSP csp) {
 		SplitMerge spM = SourceFactory.eINSTANCE.createSplitMerge();
 		SpecialStep spS = TargetFactory.eINSTANCE.createSpecialStep();
 		E2S spMToSpS = SourceToTargetCorrFactory.eINSTANCE.createE2S();
+		Object _localVariable_0 = csp.getValue("spM", "id");
+		Object _localVariable_1 = csp.getValue("spS", "id");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
+		int _localVariable_2 = ruleResult.getIncrementedPerformCount();
 		sm.getElements().add(spM);
 		ruleResult.getSourceObjects().add(spM);
 		tm.getSteps().add(spS);
@@ -2387,11 +2431,15 @@ public class SpM2SpSRuleImpl extends AbstractRuleImpl implements SpM2SpSRule {
 		spMToSpS.setSource(spM);
 		spMToSpS.setTarget(spS);
 		ruleResult.getCorrObjects().add(spMToSpS);
+		String spM_id_prime = (String) _localVariable_0;
+		String spS_id_prime = (String) _localVariable_1;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
+		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_2);
+		spM.setId(spM_id_prime);
+		spS.setId(spS_id_prime);
 		ruleResult.setPerformCount(Integer
 				.valueOf(ruleResult_performCount_prime));
-		return new Object[] { sm, tm, spM, spS, spMToSpS, ruleResult };
+		return new Object[] { sm, tm, spM, spS, spMToSpS, ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_SpM2SpSRule_24_7_expressionFB(

@@ -156,6 +156,15 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getElement_Id() {
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getActivity() {
 		return activityEClass;
 	}
@@ -212,6 +221,7 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 
 		elementEClass = createEClass(ELEMENT);
 		createEReference(elementEClass, ELEMENT__NEXT);
+		createEAttribute(elementEClass, ELEMENT__ID);
 
 		activityEClass = createEClass(ACTIVITY);
 
@@ -265,6 +275,10 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 				null, 0, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getElement_Id(), ecorePackage.getEString(), "id", null,
+				1, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		initEClass(activityEClass, Activity.class, "Activity", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

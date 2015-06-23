@@ -1526,6 +1526,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="s" incomingLink="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1 //Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Step"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;s&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable name="csp" incomingLink="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.3">
@@ -1549,9 +1564,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED0005740009612E67657449642829" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+                <forward variables="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/A2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -1669,7 +1697,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/A2SRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/A2SRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -1778,7 +1820,21 @@
               <linkVariable name="allContextElements" target="//Rules/A2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/A2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/A2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/A2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2163,6 +2219,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="a" incomingLink="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0 //Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//Activity"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;a&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="s" incomingLink="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1" bindingState="BOUND">
@@ -2198,9 +2269,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED0005740009732E67657449642829" type="String" attribute="id" objectVariable="s"/>
+                <forward variables="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/A2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -2318,7 +2402,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/A2SRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/A2SRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2427,7 +2525,21 @@
               <linkVariable name="allContextElements" target="//Rules/A2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/A2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/A2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/A2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2606,7 +2718,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/A2SRule/isAppropriate_FWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/A2SRule/isAppropriate_FWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2718,7 +2844,7 @@
                   </valueExpression>
                 </attributeAssignment>
               </objectVariable>
-              <objectVariable name="__DEC_s_steps_69522" outgoingLink="//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@linkVariable.3" bindingSemantics="NEGATIVE">
+              <objectVariable name="__DEC_s_steps_253426" outgoingLink="//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@linkVariable.3" bindingSemantics="NEGATIVE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//TargetModel"/>
               </objectVariable>
               <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.1" source="//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.0">
@@ -2734,7 +2860,21 @@
               <linkVariable name="steps" target="//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.1" source="//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.4"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/A2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="a"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2878,10 +3018,40 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="a" incomingLink="//Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.0 //Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.2 //Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.5" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//Activity"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;a&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/A2SRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="s" incomingLink="//Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.1 //Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.3 //Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.6" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Step"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;s&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/A2SRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable name="ruleResult" outgoingLink="//Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.4 //Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.5 //Rules/A2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.6" bindingState="BOUND">
@@ -3278,6 +3448,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spS" incomingLink="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0 //Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//SpecialStep"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;spS&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" type="//E2S" name="spMToSpS" outgoingLink="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1 //Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
@@ -3304,9 +3489,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED000574000B73704D2E67657449642829" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spS"/>
+                <forward variables="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/SpM2SpSRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -3424,7 +3622,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/SpM2SpSRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spS"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -3533,7 +3745,21 @@
               <linkVariable name="allContextElements" target="//Rules/SpM2SpSRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/SpM2SpSRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/SpM2SpSRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spS"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -3915,6 +4141,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spM" incomingLink="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0 //Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SplitMerge"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;spM&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spS" incomingLink="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingState="BOUND">
@@ -3953,9 +4194,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED000574000B7370532E67657449642829" type="String" attribute="id" objectVariable="spS"/>
+                <forward variables="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/SpM2SpSRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -4073,7 +4327,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/SpM2SpSRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spS"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4182,7 +4450,21 @@
               <linkVariable name="allContextElements" target="//Rules/SpM2SpSRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/SpM2SpSRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/SpM2SpSRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spS"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4361,7 +4643,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/SpM2SpSRule/isAppropriate_FWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/isAppropriate_FWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spS"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4485,7 +4781,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/SpM2SpSRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/SpM2SpSRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spM"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="spS"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4626,10 +4936,40 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spM" incomingLink="//Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.0 //Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.2 //Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.4" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SplitMerge"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;spM&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="spS" incomingLink="//Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.1 //Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.3 //Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.5" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//SpecialStep"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;spS&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" type="//E2S" name="spMToSpS" incomingLink="//Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.6" outgoingLink="//Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.2 //Rules/SpM2SpSRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.3" bindingOperator="CREATE">

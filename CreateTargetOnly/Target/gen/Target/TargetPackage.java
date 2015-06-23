@@ -2,6 +2,7 @@
  */
 package Target;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -112,13 +113,22 @@ public interface TargetPackage extends EPackage {
 	int STEP__NEXT = 0;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STEP__ID = 1;
+
+	/**
 	 * The number of structural features of the '<em>Step</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STEP_FEATURE_COUNT = 1;
+	int STEP_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Step</em>' class.
@@ -147,6 +157,15 @@ public interface TargetPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPECIAL_STEP__NEXT = STEP__NEXT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPECIAL_STEP__ID = STEP__ID;
 
 	/**
 	 * The feature id for the '<em><b>Continue</b></em>' reference.
@@ -216,6 +235,17 @@ public interface TargetPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getStep_Next();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Target.Step#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see Target.Step#getId()
+	 * @see #getStep()
+	 * @generated
+	 */
+	EAttribute getStep_Id();
 
 	/**
 	 * Returns the meta object for class '{@link Target.SpecialStep <em>Special Step</em>}'.
@@ -296,6 +326,14 @@ public interface TargetPackage extends EPackage {
 		 * @generated
 		 */
 		EReference STEP__NEXT = eINSTANCE.getStep_Next();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute STEP__ID = eINSTANCE.getStep_Id();
 
 		/**
 		 * The meta object literal for the '{@link Target.impl.SpecialStepImpl <em>Special Step</em>}' class.

@@ -1823,7 +1823,18 @@
               <attribute name="containment" value="false" index="5" />
             </children>
           </children>
-          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="attributes" index="1" xsi:type="MocaTree:Node">
+            <children name="EAttribute" index="0" xsi:type="MocaTree:Node">
+              <attribute name="type" value="EString" index="0" />
+              <attribute name="typeGuid" value="" index="1" />
+              <attribute name="name" value="id" index="2" />
+              <attribute name="guid" value="{85A7125B-BD6D-438b-85A4-5ABBEBAFE56F}" index="3" />
+              <attribute name="ordered" value="false" index="4" />
+              <attribute name="lowerBound" value="1" index="5" />
+              <attribute name="upperBound" value="1" index="6" />
+              <attribute name="isId" value="false" index="7" />
+            </children>
+          </children>
           <children name="operations" index="2" xsi:type="MocaTree:Node" />
           <attribute name="name" value="Element" index="0" />
           <attribute name="isAbstract" value="true" index="1" />
@@ -1910,7 +1921,18 @@
               <attribute name="containment" value="false" index="5" />
             </children>
           </children>
-          <children name="attributes" index="1" xsi:type="MocaTree:Node" />
+          <children name="attributes" index="1" xsi:type="MocaTree:Node">
+            <children name="EAttribute" index="0" xsi:type="MocaTree:Node">
+              <attribute name="type" value="EString" index="0" />
+              <attribute name="typeGuid" value="" index="1" />
+              <attribute name="name" value="id" index="2" />
+              <attribute name="guid" value="{7BCA33AA-3B9B-43af-8F29-93EC64D1732E}" index="3" />
+              <attribute name="ordered" value="false" index="4" />
+              <attribute name="lowerBound" value="1" index="5" />
+              <attribute name="upperBound" value="1" index="6" />
+              <attribute name="isId" value="false" index="7" />
+            </children>
+          </children>
           <children name="operations" index="2" xsi:type="MocaTree:Node" />
           <attribute name="name" value="Step" index="0" />
           <attribute name="isAbstract" value="false" index="1" />
@@ -2288,12 +2310,37 @@
                   <attribute name="domain" value="target" index="8" />
                 </children>
               </children>
+              <children name="csps" index="4" xsi:type="MocaTree:Node">
+                <children name="ConstraintInstance" index="0" xsi:type="MocaTree:Node">
+                  <children name="entries" index="0" xsi:type="MocaTree:Node">
+                    <children name="Entry" index="0" xsi:type="MocaTree:Node">
+                      <children name="expressions" index="0" xsi:type="MocaTree:Node">
+                        <children name="Expression" index="0" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{85A7125B-BD6D-438b-85A4-5ABBEBAFE56F}" index="1" />
+                          <attribute name="attributeName" value="id" index="2" />
+                          <attribute name="objectVariableGuid" value="{218E66C1-128B-4162-A650-87C91B85F25B}" index="3" />
+                          <attribute name="objectVariableName" value="a" index="4" />
+                        </children>
+                        <children name="Expression" index="1" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{7BCA33AA-3B9B-43af-8F29-93EC64D1732E}" index="1" />
+                          <attribute name="attributeName" value="id" index="2" />
+                          <attribute name="objectVariableGuid" value="{FAF487FA-7A59-4d0d-B1E7-A41F25C9A5AD}" index="3" />
+                          <attribute name="objectVariableName" value="s" index="4" />
+                        </children>
+                      </children>
+                      <attribute name="constraintName" value="eq" index="0" />
+                    </children>
+                  </children>
+                </children>
+              </children>
               <attribute name="name" value="A2SRule" index="0" />
               <attribute name="isAbstract" value="false" index="1" />
               <attribute name="isInterface" value="false" index="2" />
               <attribute name="guid" value="{28DC6B91-1C80-4328-B424-DFD6C40286CD}" index="3" />
               <attribute name="alias" value="" index="4" />
-              <attribute name="cspSpec" value="" index="5" />
+              <attribute name="cspSpec" value="eq(a.id, s.id)" index="5" />
               <attribute name="refines" value="" index="6" />
               <attribute name="baseClasses" value="" index="7" />
               <attribute name="kernel" value="" index="8" />
@@ -2482,12 +2529,37 @@
                   <attribute name="domain" value="correspondence" index="8" />
                 </children>
               </children>
+              <children name="csps" index="4" xsi:type="MocaTree:Node">
+                <children name="ConstraintInstance" index="0" xsi:type="MocaTree:Node">
+                  <children name="entries" index="0" xsi:type="MocaTree:Node">
+                    <children name="Entry" index="0" xsi:type="MocaTree:Node">
+                      <children name="expressions" index="0" xsi:type="MocaTree:Node">
+                        <children name="Expression" index="0" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{85A7125B-BD6D-438b-85A4-5ABBEBAFE56F}" index="1" />
+                          <attribute name="attributeName" value="id" index="2" />
+                          <attribute name="objectVariableGuid" value="{3FDB8741-6840-4158-8FE3-942B5AA58A96}" index="3" />
+                          <attribute name="objectVariableName" value="spM" index="4" />
+                        </children>
+                        <children name="Expression" index="1" xsi:type="MocaTree:Node">
+                          <attribute name="type" value="AttributeValueExpression" index="0" />
+                          <attribute name="attributeGuid" value="{7BCA33AA-3B9B-43af-8F29-93EC64D1732E}" index="1" />
+                          <attribute name="attributeName" value="id" index="2" />
+                          <attribute name="objectVariableGuid" value="{07DD5050-4D31-4679-AE0E-4C4BC77CA484}" index="3" />
+                          <attribute name="objectVariableName" value="spS" index="4" />
+                        </children>
+                      </children>
+                      <attribute name="constraintName" value="eq" index="0" />
+                    </children>
+                  </children>
+                </children>
+              </children>
               <attribute name="name" value="SpM2SpSRule" index="0" />
               <attribute name="isAbstract" value="false" index="1" />
               <attribute name="isInterface" value="false" index="2" />
               <attribute name="guid" value="{EE71CA7C-AD0C-47e2-875E-74BE9E6CA64E}" index="3" />
               <attribute name="alias" value="" index="4" />
-              <attribute name="cspSpec" value="" index="5" />
+              <attribute name="cspSpec" value="eq(spM.id, spS.id)" index="5" />
               <attribute name="refines" value="" index="6" />
               <attribute name="baseClasses" value="" index="7" />
               <attribute name="kernel" value="" index="8" />

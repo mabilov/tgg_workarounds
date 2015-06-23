@@ -58,7 +58,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.2" source="//@tggRule.1/@objectVariable.3" domain="//@domain.2">
       <type href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//SM2TM/target"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.1/@csp/@variables.0 //@tggRule.1/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="a"/>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="s"/>
+    </csp>
   </tggRule>
   <tggRule name="SpM2SpSRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sm" incomingLink="//@tggRule.2/@linkVariable.2" outgoingLink="//@tggRule.2/@linkVariable.0" domain="//@domain.0">
@@ -97,7 +111,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.2/@objectVariable.4" source="//@tggRule.2/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.2">
       <type href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S/target"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.2/@csp/@variables.0 //@tggRule.2/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="spM"/>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="spS"/>
+    </csp>
   </tggRule>
   <tggRule name="NextRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sm" incomingLink="//@tggRule.3/@linkVariable.6" outgoingLink="//@tggRule.3/@linkVariable.0 //@tggRule.3/@linkVariable.1" domain="//@domain.0">

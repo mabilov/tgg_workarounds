@@ -10,6 +10,7 @@
     </genClasses>
     <genClasses image="false" ecoreClass="platform:/plugin/Source/model/Source.ecore#//Element">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/Source/model/Source.ecore#//Element/next"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/Source/model/Source.ecore#//Element/id"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//Activity"/>
     <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//SplitMerge">

@@ -8,6 +8,7 @@ import Target.TargetFactory;
 import Target.TargetModel;
 import Target.TargetPackage;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -147,6 +148,15 @@ public class TargetPackageImpl extends EPackageImpl implements TargetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getStep_Id() {
+		return (EAttribute) stepEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSpecialStep() {
 		return specialStepEClass;
 	}
@@ -194,6 +204,7 @@ public class TargetPackageImpl extends EPackageImpl implements TargetPackage {
 
 		stepEClass = createEClass(STEP);
 		createEReference(stepEClass, STEP__NEXT);
+		createEAttribute(stepEClass, STEP__ID);
 
 		specialStepEClass = createEClass(SPECIAL_STEP);
 		createEReference(specialStepEClass, SPECIAL_STEP__CONTINUE);
@@ -244,6 +255,9 @@ public class TargetPackageImpl extends EPackageImpl implements TargetPackage {
 				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1,
+				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(specialStepEClass, SpecialStep.class, "SpecialStep",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

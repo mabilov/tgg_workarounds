@@ -26,8 +26,8 @@ public class SourceToTargetCorrTrafo extends DebugSynchronizationHelper{
 		helper.performForward("instances/fwd.src.xmi");
 		
 		// Backward Transformation
-		helper = new SourceToTargetCorrTrafo();
-		helper.performBackward("instances/bwd.src.xmi");
+		//helper = new SourceToTargetCorrTrafo();
+		//helper.performBackward("instances/bwd.src.xmi");
 	}
 
 	public void performForward() {
