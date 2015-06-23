@@ -5,5 +5,5 @@ Each folder in the repository represents a project for one specific problem. Thi
 To contribute or to benefit from the repository simply clone it to your PC and import projects from one of the folders. 
 
 ## Requirements
-- eMoflon beta 
+- Eclipse Luna with installed eMoflon beta plugin  
 - Enterprise Architect 12 with installed eMoflon beta extension
