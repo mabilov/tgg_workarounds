@@ -1,0 +1,15 @@
+Problem 1 [CreateTargetOnly]: No node or links should be created on the source side, but if pattern matches a node or link should be created on the target side. 
+The synchronization engine skips this rule, because it might create indefinite loop. 
+Workaround: Change source metamodel with adding fake edge between elements on the context side, this edge should be added by preprocessing of the source model. 
+
+Problem 2 [NotInstanceOf]: The rule should match all elements with subtype inherit from some basic type except some specific type(s). 
+Normally it should be possible to define either Negative Application Condition (NAC) or constraint.
+However in order to be effective the synchronization engine restricts the ways of specification of the NAC and constraints.
+Workaround: Create core abstract rule for basic type, for each subtype that is allowed to be matched, create refined rule.
+
+Problem 3 [Attribute2Node]: Adding attribute in the source model should trigger the adding of a node in the target model
+Normally it should be possible to resolve using attribute increments. However not every synchronization engine supports them.
+Workaround: Change source metamodel by creating fake referenced property for the attribute, this property should be added by preprocessing of the source model.
+
+Problem 4 [FindPattern]: Complex pattern recognition in the source or in the target model. For example start and end nodes of the pattern are not linked and there can be arbitrary number of elements in between. 
+Workaround: Change source metamodel by creating fake link between the start and the end node of the pattern. This link should be added by preprocessing of the source model. 
