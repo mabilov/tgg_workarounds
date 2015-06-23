@@ -1855,7 +1855,16 @@
           <attribute name="baseClasses" value="{99D0B4BC-7B9E-4387-8DB3-7574ECBF875C} " index="5" />
         </children>
         <children name="EClass" index="3" xsi:type="MocaTree:Node">
-          <children name="references" index="0" xsi:type="MocaTree:Node" />
+          <children name="references" index="0" xsi:type="MocaTree:Node">
+            <children name="EReference" index="0" xsi:type="MocaTree:Node">
+              <attribute name="typeGuid" value="{B9846501-65EF-49a1-A1E0-CE37088E1E41}" index="0" />
+              <attribute name="name" value="__con" index="1" />
+              <attribute name="guid" value="{5C53C45A-0A49-4a61-916F-1D29C07CEC4C}Supplier" index="2" />
+              <attribute name="lowerBound" value="0" index="3" />
+              <attribute name="upperBound" value="1" index="4" />
+              <attribute name="containment" value="false" index="5" />
+            </children>
+          </children>
           <children name="attributes" index="1" xsi:type="MocaTree:Node">
             <children name="EAttribute" index="0" xsi:type="MocaTree:Node">
               <attribute name="type" value="EBoolean" index="0" />

@@ -214,13 +214,22 @@ public interface SourcePackage extends EPackage {
 	int SPLIT_MERGE__ID = ELEMENT__ID;
 
 	/**
+	 * The feature id for the '<em><b>con</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPLIT_MERGE__CON = ELEMENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Merge</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_MERGE__MERGE = ELEMENT_FEATURE_COUNT + 0;
+	int SPLIT_MERGE__MERGE = ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Split Merge</em>' class.
@@ -229,7 +238,7 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SPLIT_MERGE_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
+	int SPLIT_MERGE_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Split Merge</em>' class.
@@ -312,6 +321,17 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSplitMerge();
+
+	/**
+	 * Returns the meta object for the reference '{@link Source.SplitMerge#get__con <em>con</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>con</em>'.
+	 * @see Source.SplitMerge#get__con()
+	 * @see #getSplitMerge()
+	 * @generated
+	 */
+	EReference getSplitMerge___con();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Source.SplitMerge#isMerge <em>Merge</em>}'.
@@ -410,6 +430,14 @@ public interface SourcePackage extends EPackage {
 		 * @generated
 		 */
 		EClass SPLIT_MERGE = eINSTANCE.getSplitMerge();
+
+		/**
+		 * The meta object literal for the '<em><b>con</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SPLIT_MERGE__CON = eINSTANCE.getSplitMerge___con();
 
 		/**
 		 * The meta object literal for the '<em><b>Merge</b></em>' attribute feature.

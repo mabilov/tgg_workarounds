@@ -1,36 +1,36 @@
 package org.moflon.tie;
 
 import java.io.IOException;
+
 import org.apache.log4j.BasicConfigurator;
-import org.moflon.ide.debug.DebugSynchronizationHelper;
-import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.EObject;
+import org.moflon.ide.debug.DebugSynchronizationHelper;
 
+import Source.SourceModel;
+import Source.util.SourcePreprocessor;
 import SourceToTargetCorr.SourceToTargetCorrPackage;
 
+public class SourceToTargetCorrTrafo extends DebugSynchronizationHelper {
 
-public class SourceToTargetCorrTrafo extends DebugSynchronizationHelper{
-
-   public SourceToTargetCorrTrafo()
-   {
-      super(SourceToTargetCorrPackage.eINSTANCE, ".");
-   }
+	public SourceToTargetCorrTrafo() {
+		super(SourceToTargetCorrPackage.eINSTANCE, ".");
+	}
 
 	public static void main(String[] args) throws IOException {
 		// Set up logging
-        BasicConfigurator.configure();
+		BasicConfigurator.configure();
 
 		// Forward Transformation
-        SourceToTargetCorrTrafo helper = new SourceToTargetCorrTrafo();
+		SourceToTargetCorrTrafo helper = new SourceToTargetCorrTrafo();
 		helper.performForward("instances/fwd.src.xmi");
-		
+
 		// Backward Transformation
-		//helper = new SourceToTargetCorrTrafo();
-		//helper.performBackward("instances/bwd.src.xmi");
+		// helper = new SourceToTargetCorrTrafo();
+		// helper.performBackward("instances/bwd.src.xmi");
 	}
 
 	public void performForward() {
+		SourcePreprocessor.preprocessSource((SourceModel) this.src);
 		integrateForward();
 
 		saveTrg("instances/fwd.trg.xmi");

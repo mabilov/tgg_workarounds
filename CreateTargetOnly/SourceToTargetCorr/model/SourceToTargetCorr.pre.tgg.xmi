@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SourceToTargetCorr">
-  <domain name="Source" metamodel="//@metamodel.0" type="SOURCE"/>
+  <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
   <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
-  <domain name="Correspondence" metamodel="//@metamodel.1"/>
+  <domain name="Correspondence" metamodel="//@metamodel.0"/>
   <tggRule name="Class1" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="source" incomingLink="//@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SourceModel"/>
@@ -256,11 +256,11 @@
       <variables xsi:type="csp:LocalVariable" name="true"/>
     </csp>
   </tggRule>
-  <metamodel name="Source">
-    <outermostPackage href="platform:/plugin/Source/model/Source.ecore#/"/>
-  </metamodel>
   <metamodel name="SourceToTargetCorr">
     <outermostPackage href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#/"/>
+  </metamodel>
+  <metamodel name="Source">
+    <outermostPackage href="platform:/plugin/Source/model/Source.ecore#/"/>
   </metamodel>
   <metamodel name="Target">
     <outermostPackage href="platform:/plugin/Target/model/Target.ecore#/"/>

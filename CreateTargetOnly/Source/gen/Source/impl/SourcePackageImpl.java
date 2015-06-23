@@ -183,8 +183,17 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getSplitMerge___con() {
+		return (EReference) splitMergeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getSplitMerge_Merge() {
-		return (EAttribute) splitMergeEClass.getEStructuralFeatures().get(0);
+		return (EAttribute) splitMergeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -226,6 +235,7 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 		activityEClass = createEClass(ACTIVITY);
 
 		splitMergeEClass = createEClass(SPLIT_MERGE);
+		createEReference(splitMergeEClass, SPLIT_MERGE__CON);
 		createEAttribute(splitMergeEClass, SPLIT_MERGE__MERGE);
 	}
 
@@ -285,6 +295,10 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 
 		initEClass(splitMergeEClass, SplitMerge.class, "SplitMerge",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSplitMerge___con(), this.getSplitMerge(), null,
+				"__con", null, 0, 1, SplitMerge.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSplitMerge_Merge(), ecorePackage.getEBoolean(),
 				"merge", null, 1, 1, SplitMerge.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
