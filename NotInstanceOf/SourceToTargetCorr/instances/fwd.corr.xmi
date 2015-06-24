@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SourceToTargetCorr="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <correspondences xsi:type="SourceToTargetCorr:SM2TM">
+    <source href="fwd.src.xmi#/"/>
+    <target href="fwd.trg.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="SourceToTargetCorr:E2S">
+    <source href="fwd.src.xmi#//@elements.1"/>
+    <target href="fwd.trg.xmi#//@steps.0"/>
+  </correspondences>
+  <correspondences xsi:type="SourceToTargetCorr:E2S">
+    <source href="fwd.src.xmi#//@elements.0"/>
+    <target href="fwd.trg.xmi#//@steps.1"/>
+  </correspondences>
+  <source href="fwd.src.xmi#/"/>
+  <target href="fwd.trg.xmi#/"/>
+</TGGRuntime:CorrespondenceModel>

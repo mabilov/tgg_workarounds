@@ -2,6 +2,7 @@
  */
 package Source;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -103,13 +104,22 @@ public interface SourcePackage extends EPackage {
 	int ELEMENT = 1;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__ID = 0;
+
+	/**
 	 * The number of structural features of the '<em>Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_FEATURE_COUNT = 0;
+	int ELEMENT_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Element</em>' class.
@@ -129,6 +139,15 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 */
 	int ELEMENT_TYPE_A = 2;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_TYPE_A__ID = ELEMENT__ID;
 
 	/**
 	 * The number of structural features of the '<em>Element Type A</em>' class.
@@ -159,6 +178,15 @@ public interface SourcePackage extends EPackage {
 	int ELEMENT_TYPE_B = 3;
 
 	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_TYPE_B__ID = ELEMENT__ID;
+
+	/**
 	 * The number of structural features of the '<em>Element Type B</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -185,6 +213,15 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 */
 	int ELEMENT_TYPE_C = 4;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_TYPE_C__ID = ELEMENT__ID;
 
 	/**
 	 * The number of structural features of the '<em>Element Type C</em>' class.
@@ -234,6 +271,17 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getElement();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Source.Element#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see Source.Element#getId()
+	 * @see #getElement()
+	 * @generated
+	 */
+	EAttribute getElement_Id();
 
 	/**
 	 * Returns the meta object for class '{@link Source.ElementTypeA <em>Element Type A</em>}'.
@@ -315,6 +363,14 @@ public interface SourcePackage extends EPackage {
 		 * @generated
 		 */
 		EClass ELEMENT = eINSTANCE.getElement();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ELEMENT__ID = eINSTANCE.getElement_Id();
 
 		/**
 		 * The meta object literal for the '{@link Source.impl.ElementTypeAImpl <em>Element Type A</em>}' class.

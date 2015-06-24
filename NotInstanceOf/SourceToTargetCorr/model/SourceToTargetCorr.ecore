@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:activities="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities" xmlns:callExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//calls/callExpressions" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="SourceToTargetCorr" nsURI="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore" nsPrefix="SourceToTargetCorr">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:activities="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities" xmlns:callExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//calls/callExpressions" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:expressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//expressions" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="SourceToTargetCorr" nsURI="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore" nsPrefix="SourceToTargetCorr">
   <eClassifiers xsi:type="ecore:EClass" name="SM2TM">
     <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractCorrespondence"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1">
@@ -1526,6 +1526,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="s" incomingLink="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0 //Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Step"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;s&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" type="//E2S" name="e2S" outgoingLink="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1 //Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
@@ -1552,9 +1567,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED0005740009652E67657449642829" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+                <forward variables="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EA2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -1672,7 +1700,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EA2SRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -1781,7 +1823,21 @@
               <linkVariable name="allContextElements" target="//Rules/EA2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/EA2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EA2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2128,6 +2184,21 @@
             <storyPattern xsi:type="TGGLanguage:TGGRule" name="EA2SRule">
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="e" incomingLink="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0 //Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//ElementTypeA"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;e&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sm" outgoingLink="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0" bindingState="BOUND">
@@ -2201,9 +2272,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED0005740009732E67657449642829" type="String" attribute="id" objectVariable="s"/>
+                <forward variables="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EA2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -2321,7 +2405,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EA2SRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2430,7 +2528,21 @@
               <linkVariable name="allContextElements" target="//Rules/EA2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/EA2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EA2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2609,7 +2721,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EA2SRule/isAppropriate_FWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/isAppropriate_FWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2721,7 +2847,7 @@
                   </valueExpression>
                 </attributeAssignment>
               </objectVariable>
-              <objectVariable name="__DEC_s_steps_840634" outgoingLink="//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@linkVariable.3" bindingSemantics="NEGATIVE">
+              <objectVariable name="__DEC_s_steps_48733" outgoingLink="//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@linkVariable.3" bindingSemantics="NEGATIVE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//TargetModel"/>
               </objectVariable>
               <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.1" source="//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.0">
@@ -2737,7 +2863,21 @@
               <linkVariable name="steps" target="//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.1" source="//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.4"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_0/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -2867,6 +3007,21 @@
             <storyPattern>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="e" incomingLink="//Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.0 //Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.2 //Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.4" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//ElementTypeA"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;e&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sm" outgoingLink="//Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.0" bindingState="BOUND">
@@ -2882,6 +3037,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="s" incomingLink="//Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.1 //Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.3 //Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.5" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Step"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;s&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" type="//E2S" name="e2S" incomingLink="//Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.6" outgoingLink="//Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.2 //Rules/EA2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.3" bindingOperator="CREATE">
@@ -3281,6 +3451,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="s" incomingLink="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0 //Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Step"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;s&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" type="//E2S" name="e2S" outgoingLink="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1 //Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.2" bindingOperator="CREATE">
@@ -3307,9 +3492,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED0005740009652E67657449642829" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+                <forward variables="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EB2SRule/perform_FWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -3427,7 +3625,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EB2SRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/isApplicable_FWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -3536,7 +3748,21 @@
               <linkVariable name="allContextElements" target="//Rules/EB2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/EB2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EB2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/isApplicable_FWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -3883,6 +4109,21 @@
             <storyPattern xsi:type="TGGLanguage:TGGRule" name="EB2SRule">
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="e" incomingLink="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0 //Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.1" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//ElementTypeB"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;e&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.6"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sm" outgoingLink="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@linkVariable.0" bindingState="BOUND">
@@ -3956,9 +4197,22 @@
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               <csp>
-                <forward/>
-                <simultaneous/>
-                <backward/>
+                <constraints variables="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" bound="true" value="ACED0005740009732E67657449642829" type="String" attribute="id" objectVariable="s"/>
+                <forward variables="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <simultaneous variables="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
+                <backward variables="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@variables.1" constraints="//Rules/EB2SRule/perform_BWD/@activity/@ownedActivityNode.6/@storyPattern/@csp/@constraints.0"/>
                 <source/>
                 <target/>
               </csp>
@@ -4076,7 +4330,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EB2SRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/isApplicable_BWD/@activity/@ownedActivityNode.4/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4185,7 +4453,21 @@
               <linkVariable name="allContextElements" target="//Rules/EB2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.7" source="//Rules/EB2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@objectVariable.4" bindingOperator="CREATE"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EB2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/isApplicable_BWD/@activity/@ownedActivityNode.7/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4364,7 +4646,21 @@
               </linkVariable>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EB2SRule/isAppropriate_FWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/isAppropriate_FWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4476,7 +4772,7 @@
                   </valueExpression>
                 </attributeAssignment>
               </objectVariable>
-              <objectVariable name="__DEC_s_steps_608846" outgoingLink="//Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@linkVariable.3" bindingSemantics="NEGATIVE">
+              <objectVariable name="__DEC_s_steps_659651" outgoingLink="//Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@linkVariable.3" bindingSemantics="NEGATIVE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//TargetModel"/>
               </objectVariable>
               <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="steps" target="//Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.1" source="//Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.0">
@@ -4492,7 +4788,21 @@
               <linkVariable name="steps" target="//Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.1" source="//Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@objectVariable.4"/>
               <correspondence href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.2"/>
               <source href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
-              <csp/>
+              <csp>
+                <constraints variables="//Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.0 //Rules/EB2SRule/isAppropriate_BWD_EMoflonEdge_1/@activity/@ownedActivityNode.3/@storyPattern/@csp/@variables.1" name="eq">
+                  <signature type=""/>
+                  <signature type="" index="1"/>
+                  <allowedAdornments value="BB"/>
+                  <allowedAdornments value="BF"/>
+                  <allowedAdornments value="FB"/>
+                  <modelgenAdornments value="BB"/>
+                  <modelgenAdornments value="BF"/>
+                  <modelgenAdornments value="FB"/>
+                  <modelgenAdornments value="FF"/>
+                </constraints>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="e"/>
+                <variables xsi:type="csp:AttributeVariable" type="String" attribute="id" objectVariable="s"/>
+              </csp>
               <target href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
             </storyPattern>
           </ownedActivityNode>
@@ -4622,6 +4932,21 @@
             <storyPattern>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="e" incomingLink="//Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.0 //Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.2 //Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.4" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//ElementTypeB"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;e&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.0"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sm" outgoingLink="//Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.0" bindingState="BOUND">
@@ -4637,6 +4962,21 @@
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="s" incomingLink="//Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.1 //Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.3 //Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.5" bindingOperator="CREATE">
                 <type xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Step"/>
+                <attributeAssignment>
+                  <attribute href="platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+                  <valueExpression xsi:type="callExpressions:MethodCallExpression">
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;id&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/attrName"/>
+                    </ownedParameterBindings>
+                    <ownedParameterBindings>
+                      <valueExpression xsi:type="expressions:LiteralExpression" value="&quot;s&quot;"/>
+                      <parameter href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue/ovName"/>
+                    </ownedParameterBindings>
+                    <callee href="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp/CSP/getValue"/>
+                    <target xsi:type="patternExpressions:ObjectVariableExpression" object="//Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0"/>
+                  </valueExpression>
+                </attributeAssignment>
                 <domain href="platform:/resource/SourceToTargetCorr/model/SourceToTargetCorr.tgg.xmi#//@domain.1"/>
               </objectVariable>
               <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" type="//E2S" name="e2S" incomingLink="//Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.6" outgoingLink="//Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.2 //Rules/EB2SRule/generateModel/@activity/@ownedActivityNode.4/@storyPattern/@linkVariable.3" bindingOperator="CREATE">

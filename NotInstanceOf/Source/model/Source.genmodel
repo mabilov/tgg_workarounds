@@ -8,7 +8,9 @@
     <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//SourceModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/Source/model/Source.ecore#//SourceModel/elements"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//Element"/>
+    <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/Source/model/Source.ecore#//Element/id"/>
+    </genClasses>
     <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//ElementTypeA"/>
     <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//ElementTypeB"/>
     <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//ElementTypeC"/>

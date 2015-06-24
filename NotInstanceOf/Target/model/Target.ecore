@@ -3,5 +3,9 @@
   <eClassifiers xsi:type="ecore:EClass" name="TargetModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="steps" upperBound="-1" eType="//Step" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Step"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Step">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
 </ecore:EPackage>

@@ -168,9 +168,9 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		SourceModel sm = (SourceModel) result1_bindingAndBlack[1];
 		TargetModel tm = (TargetModel) result1_bindingAndBlack[2];
 		SM2TM sm2Tm = (SM2TM) result1_bindingAndBlack[3];
-		// CSP csp = (CSP) result1_bindingAndBlack[4];
-		Object[] result1_green = EA2SRuleImpl.pattern_EA2SRule_1_1_greenBBFF(e,
-				tm);
+		CSP csp = (CSP) result1_bindingAndBlack[4];
+		Object[] result1_green = EA2SRuleImpl.pattern_EA2SRule_1_1_greenBBFFB(
+				e, tm, csp);
 		Step s = (Step) result1_green[2];
 		E2S e2S = (E2S) result1_green[3];
 
@@ -353,12 +353,24 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		// Create literals
 
 		// Create attribute variables
+		Variable var_e_id = CSPFactoryHelper.eINSTANCE.createVariable("e.id",
+				true, csp);
+		var_e_id.setValue(e.getId());
+		var_e_id.setType("String");
 
 		// Create unbound variables
+		Variable var_s_id = CSPFactoryHelper.eINSTANCE.createVariable("s.id",
+				csp);
+		var_s_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_e_id, var_s_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("e", e);
@@ -488,9 +500,9 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		TargetModel tm = (TargetModel) result1_bindingAndBlack[1];
 		SM2TM sm2Tm = (SM2TM) result1_bindingAndBlack[2];
 		Step s = (Step) result1_bindingAndBlack[3];
-		// CSP csp = (CSP) result1_bindingAndBlack[4];
-		Object[] result1_green = EA2SRuleImpl.pattern_EA2SRule_11_1_greenFBBF(
-				sm, s);
+		CSP csp = (CSP) result1_bindingAndBlack[4];
+		Object[] result1_green = EA2SRuleImpl.pattern_EA2SRule_11_1_greenFBBFB(
+				sm, s, csp);
 		ElementTypeA e = (ElementTypeA) result1_green[0];
 		E2S e2S = (E2S) result1_green[3];
 
@@ -672,12 +684,24 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		// Create literals
 
 		// Create attribute variables
+		Variable var_s_id = CSPFactoryHelper.eINSTANCE.createVariable("s.id",
+				true, csp);
+		var_s_id.setValue(s.getId());
+		var_s_id.setType("String");
 
 		// Create unbound variables
+		Variable var_e_id = CSPFactoryHelper.eINSTANCE.createVariable("e.id",
+				csp);
+		var_e_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_e_id, var_s_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("sm", sm);
@@ -925,8 +949,8 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 										+ "[sm2Tm] = " + sm2Tm + ", "
 										+ "[ruleResult] = " + ruleResult + ".");
 					}
-					EA2SRuleImpl.pattern_EA2SRule_24_6_greenFBBFFB(sm, tm,
-							ruleResult);
+					EA2SRuleImpl.pattern_EA2SRule_24_6_greenFBBFFBB(sm, tm,
+							ruleResult, csp);
 					// ElementTypeA e = (ElementTypeA) result6_green[0];
 					// Step s = (Step) result6_green[3];
 					// E2S e2S = (E2S) result6_green[4];
@@ -957,10 +981,21 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		// Create attribute variables
 
 		// Create unbound variables
+		Variable var_e_id = CSPFactoryHelper.eINSTANCE.createVariable("e.id",
+				csp);
+		var_e_id.setType("String");
+		Variable var_s_id = CSPFactoryHelper.eINSTANCE.createVariable("s.id",
+				csp);
+		var_s_id.setType("String");
 
 		// Create constraints
+		Eq eq = new Eq();
+
+		csp.getConstraints().add(eq);
 
 		// Solve CSP
+		eq.setRuleName("");
+		eq.solve(var_e_id, var_s_id);
 
 		// Snapshot pattern match on which CSP is solved
 		isApplicableMatch.registerObject("sm", sm);
@@ -1227,14 +1262,17 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		return null;
 	}
 
-	public static final Object[] pattern_EA2SRule_1_1_greenBBFF(ElementTypeA e,
-			TargetModel tm) {
+	public static final Object[] pattern_EA2SRule_1_1_greenBBFFB(
+			ElementTypeA e, TargetModel tm, CSP csp) {
 		Step s = TargetFactory.eINSTANCE.createStep();
 		E2S e2S = SourceToTargetCorrFactory.eINSTANCE.createE2S();
+		Object _localVariable_0 = csp.getValue("s", "id");
 		tm.getSteps().add(s);
 		e2S.setSource(e);
 		e2S.setTarget(s);
-		return new Object[] { e, tm, s, e2S };
+		String s_id_prime = (String) _localVariable_0;
+		s.setId(s_id_prime);
+		return new Object[] { e, tm, s, e2S, csp };
 	}
 
 	public static final Object[] pattern_EA2SRule_1_2_blackBBB(ElementTypeA e,
@@ -1684,14 +1722,17 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		return null;
 	}
 
-	public static final Object[] pattern_EA2SRule_11_1_greenFBBF(
-			SourceModel sm, Step s) {
+	public static final Object[] pattern_EA2SRule_11_1_greenFBBFB(
+			SourceModel sm, Step s, CSP csp) {
 		ElementTypeA e = SourceFactory.eINSTANCE.createElementTypeA();
 		E2S e2S = SourceToTargetCorrFactory.eINSTANCE.createE2S();
+		Object _localVariable_0 = csp.getValue("e", "id");
 		sm.getElements().add(e);
 		e2S.setSource(e);
 		e2S.setTarget(s);
-		return new Object[] { e, sm, s, e2S };
+		String e_id_prime = (String) _localVariable_0;
+		e.setId(e_id_prime);
+		return new Object[] { e, sm, s, e2S, csp };
 	}
 
 	public static final Object[] pattern_EA2SRule_11_2_blackBBB(ElementTypeA e,
@@ -2143,9 +2184,9 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 
 	public static final Object[] pattern_EA2SRule_21_2_black_nac_0BB(Step s,
 			TargetModel tm) {
-		for (TargetModel __DEC_s_steps_840634 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (TargetModel __DEC_s_steps_48733 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(s, TargetModel.class, "steps")) {
-			if (!tm.equals(__DEC_s_steps_840634)) {
+			if (!tm.equals(__DEC_s_steps_48733)) {
 				return new Object[] { s, tm };
 			}
 		}
@@ -2341,13 +2382,16 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		return new Object[] { sm, tm, sm2Tm, ruleResult };
 	}
 
-	public static final Object[] pattern_EA2SRule_24_6_greenFBBFFB(
-			SourceModel sm, TargetModel tm, ModelgeneratorRuleResult ruleResult) {
+	public static final Object[] pattern_EA2SRule_24_6_greenFBBFFBB(
+			SourceModel sm, TargetModel tm,
+			ModelgeneratorRuleResult ruleResult, CSP csp) {
 		ElementTypeA e = SourceFactory.eINSTANCE.createElementTypeA();
 		Step s = TargetFactory.eINSTANCE.createStep();
 		E2S e2S = SourceToTargetCorrFactory.eINSTANCE.createE2S();
+		Object _localVariable_0 = csp.getValue("e", "id");
+		Object _localVariable_1 = csp.getValue("s", "id");
 		boolean ruleResult_success_prime = Boolean.valueOf(true);
-		int _localVariable_0 = ruleResult.getIncrementedPerformCount();
+		int _localVariable_2 = ruleResult.getIncrementedPerformCount();
 		sm.getElements().add(e);
 		ruleResult.getSourceObjects().add(e);
 		tm.getSteps().add(s);
@@ -2355,11 +2399,15 @@ public class EA2SRuleImpl extends AbstractRuleImpl implements EA2SRule {
 		e2S.setSource(e);
 		e2S.setTarget(s);
 		ruleResult.getCorrObjects().add(e2S);
+		String e_id_prime = (String) _localVariable_0;
+		String s_id_prime = (String) _localVariable_1;
 		ruleResult.setSuccess(Boolean.valueOf(ruleResult_success_prime));
-		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_0);
+		int ruleResult_performCount_prime = Integer.valueOf(_localVariable_2);
+		e.setId(e_id_prime);
+		s.setId(s_id_prime);
 		ruleResult.setPerformCount(Integer
 				.valueOf(ruleResult_performCount_prime));
-		return new Object[] { e, sm, tm, s, e2S, ruleResult };
+		return new Object[] { e, sm, tm, s, e2S, ruleResult, csp };
 	}
 
 	public static final ModelgeneratorRuleResult pattern_EA2SRule_24_7_expressionFB(

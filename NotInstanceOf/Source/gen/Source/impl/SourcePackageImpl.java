@@ -10,6 +10,7 @@ import Source.SourceFactory;
 import Source.SourceModel;
 import Source.SourcePackage;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -154,6 +155,15 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getElement_Id() {
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getElementTypeA() {
 		return elementTypeAEClass;
 	}
@@ -209,6 +219,7 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 		createEReference(sourceModelEClass, SOURCE_MODEL__ELEMENTS);
 
 		elementEClass = createEClass(ELEMENT);
+		createEAttribute(elementEClass, ELEMENT__ID);
 
 		elementTypeAEClass = createEClass(ELEMENT_TYPE_A);
 
@@ -260,6 +271,10 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 
 		initEClass(elementEClass, Element.class, "Element", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getElement_Id(), ecorePackage.getEString(), "id", null,
+				1, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		initEClass(elementTypeAEClass, ElementTypeA.class, "ElementTypeA",
 				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

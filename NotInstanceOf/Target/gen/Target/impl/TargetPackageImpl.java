@@ -7,6 +7,7 @@ import Target.TargetFactory;
 import Target.TargetModel;
 import Target.TargetPackage;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -130,6 +131,15 @@ public class TargetPackageImpl extends EPackageImpl implements TargetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getStep_Id() {
+		return (EAttribute) stepEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public TargetFactory getTargetFactory() {
 		return (TargetFactory) getEFactoryInstance();
 	}
@@ -158,6 +168,7 @@ public class TargetPackageImpl extends EPackageImpl implements TargetPackage {
 		createEReference(targetModelEClass, TARGET_MODEL__STEPS);
 
 		stepEClass = createEClass(STEP);
+		createEAttribute(stepEClass, STEP__ID);
 	}
 
 	/**
@@ -200,6 +211,9 @@ public class TargetPackageImpl extends EPackageImpl implements TargetPackage {
 
 		initEClass(stepEClass, Step.class, "Step", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1,
+				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

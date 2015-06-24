@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
-<TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SourceToTargetCorr">
-  <domain name="Source" metamodel="//@metamodel.0" type="SOURCE"/>
+<TGGLanguage:TripleGraphGrammar xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGLanguage="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore" xmlns:csp="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//csp" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SourceToTargetCorr">
+  <domain name="Source" metamodel="//@metamodel.1" type="SOURCE"/>
   <domain name="Target" metamodel="//@metamodel.2" type="TARGET"/>
-  <domain name="Correspondence" metamodel="//@metamodel.1"/>
+  <domain name="Correspondence" metamodel="//@metamodel.0"/>
   <tggRule name="SM2TMRule" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="sm" incomingLink="//@tggRule.0/@linkVariable.0" bindingOperator="CREATE" domain="//@domain.0">
       <type xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//SourceModel"/>
@@ -58,7 +58,21 @@
     <linkVariable xsi:type="TGGLanguage:TGGLinkVariable" name="target" target="//@tggRule.1/@objectVariable.4" source="//@tggRule.1/@objectVariable.5" bindingOperator="CREATE" domain="//@domain.2">
       <type href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//E2S/target"/>
     </linkVariable>
-    <csp/>
+    <csp>
+      <constraints variables="//@tggRule.1/@csp/@variables.0 //@tggRule.1/@csp/@variables.1" name="eq">
+        <signature type=""/>
+        <signature type="" index="1"/>
+        <allowedAdornments value="BB"/>
+        <allowedAdornments value="BF"/>
+        <allowedAdornments value="FB"/>
+        <modelgenAdornments value="BB"/>
+        <modelgenAdornments value="BF"/>
+        <modelgenAdornments value="FB"/>
+        <modelgenAdornments value="FF"/>
+      </constraints>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="e"/>
+      <variables xsi:type="csp:AttributeVariable" attribute="id" objectVariable="s"/>
+    </csp>
   </tggRule>
   <tggRule name="EA2SRule" refines="//@tggRule.1" correspondence="//@domain.2" source="//@domain.0" target="//@domain.1">
     <objectVariable xsi:type="TGGLanguage:TGGObjectVariable" name="e" bindingOperator="CREATE" domain="//@domain.0">
@@ -72,11 +86,11 @@
     </objectVariable>
     <csp/>
   </tggRule>
-  <metamodel name="Source">
-    <outermostPackage href="platform:/plugin/Source/model/Source.ecore#/"/>
-  </metamodel>
   <metamodel name="SourceToTargetCorr">
     <outermostPackage href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#/"/>
+  </metamodel>
+  <metamodel name="Source">
+    <outermostPackage href="platform:/plugin/Source/model/Source.ecore#/"/>
   </metamodel>
   <metamodel name="Target">
     <outermostPackage href="platform:/plugin/Target/model/Target.ecore#/"/>

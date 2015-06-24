@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Target:TargetModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Target="platform:/plugin/Target/model/Target.ecore">
+  <steps id="e2"/>
+  <steps id="e1"/>
+</Target:TargetModel>

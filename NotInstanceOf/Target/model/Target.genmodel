@@ -8,6 +8,8 @@
     <genClasses ecoreClass="platform:/plugin/Target/model/Target.ecore#//TargetModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/Target/model/Target.ecore#//TargetModel/steps"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/plugin/Target/model/Target.ecore#//Step"/>
+    <genClasses ecoreClass="platform:/plugin/Target/model/Target.ecore#//Step">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/Target/model/Target.ecore#//Step/id"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
