@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<analysis:StaticAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:analysis="platform:/plugin/TGGLanguage/model/TGGLanguage.ecore#//analysis">
+  <sourceRules>
+    <rules ruleName="Class1">
+      <isAppropriateMethods href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_FWD_SourceModel_0"/>
+    </rules>
+    <rules ruleName="E2SRule">
+      <isAppropriateMethods href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/E2SRule/isAppropriate_FWD_EMoflonEdge_0"/>
+    </rules>
+    <rules ruleName="EA2SRule">
+      <isAppropriateMethods href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isAppropriate_FWD_EMoflonEdge_1"/>
+    </rules>
+  </sourceRules>
+  <targetRules>
+    <rules ruleName="Class1">
+      <isAppropriateMethods href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/isAppropriate_BWD_TargetModel_0"/>
+    </rules>
+    <rules ruleName="E2SRule">
+      <isAppropriateMethods href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/E2SRule/isAppropriate_BWD_EMoflonEdge_0"/>
+    </rules>
+    <rules ruleName="EA2SRule">
+      <isAppropriateMethods href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_1"/>
+      <isAppropriateMethods href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isAppropriate_BWD_EMoflonEdge_2"/>
+    </rules>
+  </targetRules>
+</analysis:StaticAnalysis>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Source:SourceModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:Source="platform:/plugin/Source/model/Source.ecore"
+    xsi:schemaLocation="platform:/plugin/Source/model/Source.ecore ../../Source/model/Source.ecore">
+  <elements
+      id="test"
+      specialAttr=""/>
+</Source:SourceModel>
