@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Source:SourceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Source="platform:/plugin/Source/model/Source.ecore">
+  <elements id="test">
+    <_special value="spesial"/>
+  </elements>
+</Source:SourceModel>

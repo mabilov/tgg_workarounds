@@ -258,22 +258,22 @@ public interface RulesPackage extends EPackage {
 	int CLASS1___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD Source Model 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD Source Model 15</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_0__SOURCEMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+	int CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_15__SOURCEMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD Target Model 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD Target Model 15</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_0__TARGETMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
+	int CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_15__TARGETMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
@@ -529,22 +529,22 @@ public interface RulesPackage extends EPackage {
 	int E2S_RULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 42</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+	int E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_42__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 0</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 57</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
+	int E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_57__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
@@ -601,23 +601,51 @@ public interface RulesPackage extends EPackage {
 	int E2S_RULE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 27;
 
 	/**
-	 * The meta object id for the '{@link SourceToTargetCorr.Rules.impl.EA2SRuleImpl <em>EA2S Rule</em>}' class.
+	 * The meta object id for the '{@link SourceToTargetCorr.Rules.impl.ElSpAt2SpRuleImpl <em>El Sp At2 Sp Rule</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see SourceToTargetCorr.Rules.impl.EA2SRuleImpl
-	 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#getEA2SRule()
+	 * @see SourceToTargetCorr.Rules.impl.ElSpAt2SpRuleImpl
+	 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#getElSpAt2SpRule()
 	 * @generated
 	 */
-	int EA2S_RULE = 2;
+	int EL_SP_AT2_SP_RULE = 2;
 
 	/**
-	 * The number of structural features of the '<em>EA2S Rule</em>' class.
+	 * The number of structural features of the '<em>El Sp At2 Sp Rule</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+	int EL_SP_AT2_SP_RULE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>El Sp At2 Sp Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL_SP_AT2_SP_RULE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link SourceToTargetCorr.Rules.impl._SpAT2SpRuleImpl <em>Sp AT2 Sp Rule</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SourceToTargetCorr.Rules.impl._SpAT2SpRuleImpl
+	 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#get_SpAT2SpRule()
+	 * @generated
+	 */
+	int _SP_AT2_SP_RULE = 3;
+
+	/**
+	 * The number of structural features of the '<em>Sp AT2 Sp Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SP_AT2_SP_RULE_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_RULE_FEATURE_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate FWD</em>' operation.
@@ -626,7 +654,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_FWD__MATCH_ELEMENT_SOURCEMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_FWD__MATCH_ELEMENT__SPECIALATTRTYPE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 0;
 
 	/**
 	 * The operation id for the '<em>Perform FWD</em>' operation.
@@ -635,7 +663,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
+	int _SP_AT2_SP_RULE___PERFORM_FWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Is Applicable FWD</em>' operation.
@@ -644,7 +672,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
+	int _SP_AT2_SP_RULE___IS_APPLICABLE_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 2;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match FWD</em>' operation.
@@ -653,7 +681,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_ELEMENT_SOURCEMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 3;
+	int _SP_AT2_SP_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_ELEMENT__SPECIALATTRTYPE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate solve Csp FWD</em>' operation.
@@ -662,7 +690,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_ELEMENT_SOURCEMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 4;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_ELEMENT__SPECIALATTRTYPE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 4;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate check Csp FWD</em>' operation.
@@ -671,7 +699,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp FWD</em>' operation.
@@ -680,7 +708,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_ELEMENT_SOURCEMODEL_TARGETMODEL_SM2TM = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 6;
+	int _SP_AT2_SP_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S__SPECIALATTRTYPE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Is Applicable check Csp FWD</em>' operation.
@@ -689,7 +717,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
+	int _SP_AT2_SP_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Register Objects FWD</em>' operation.
@@ -698,7 +726,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 8;
+	int _SP_AT2_SP_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Check Types FWD</em>' operation.
@@ -707,7 +735,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
+	int _SP_AT2_SP_RULE___CHECK_TYPES_FWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate BWD</em>' operation.
@@ -716,7 +744,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_BWD__MATCH_STEP_SPECIAL_TARGETMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 10;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_BWD__MATCH_STEP_SPECIAL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Perform BWD</em>' operation.
@@ -725,7 +753,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
+	int _SP_AT2_SP_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Is Applicable BWD</em>' operation.
@@ -734,7 +762,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
+	int _SP_AT2_SP_RULE___IS_APPLICABLE_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Register Objects To Match BWD</em>' operation.
@@ -743,7 +771,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEP_SPECIAL_TARGETMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 13;
+	int _SP_AT2_SP_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEP_SPECIAL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate solve Csp BWD</em>' operation.
@@ -752,7 +780,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEP_SPECIAL_TARGETMODEL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 14;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEP_SPECIAL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Is Appropriate check Csp BWD</em>' operation.
@@ -761,7 +789,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Is Applicable solve Csp BWD</em>' operation.
@@ -770,7 +798,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_STEP_SPECIAL_SOURCEMODEL_TARGETMODEL_SM2TM = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 16;
+	int _SP_AT2_SP_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S_SPECIAL = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 16;
 
 	/**
 	 * The operation id for the '<em>Is Applicable check Csp BWD</em>' operation.
@@ -779,7 +807,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
+	int _SP_AT2_SP_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Register Objects BWD</em>' operation.
@@ -788,7 +816,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 18;
+	int _SP_AT2_SP_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 18;
 
 	/**
 	 * The operation id for the '<em>Check Types BWD</em>' operation.
@@ -797,34 +825,25 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
+	int _SP_AT2_SP_RULE___CHECK_TYPES_BWD__MATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 19;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 1</em>' operation.
+	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 43</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_43__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 20;
 
 	/**
-	 * The operation id for the '<em>Is Appropriate FWD EMoflon Edge 1</em>' operation.
+	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 58</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
-
-	/**
-	 * The operation id for the '<em>Is Appropriate BWD EMoflon Edge 2</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EA2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_2__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 22;
+	int _SP_AT2_SP_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_58__EMOFLONEDGE = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Check Attributes FWD</em>' operation.
@@ -833,7 +852,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 23;
+	int _SP_AT2_SP_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 22;
 
 	/**
 	 * The operation id for the '<em>Check Attributes BWD</em>' operation.
@@ -842,7 +861,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 24;
+	int _SP_AT2_SP_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 23;
 
 	/**
 	 * The operation id for the '<em>Generate Model</em>' operation.
@@ -851,7 +870,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_SM2TM = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 25;
+	int _SP_AT2_SP_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_E2S = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 24;
 
 	/**
 	 * The operation id for the '<em>Generate Model solve Csp BWD</em>' operation.
@@ -860,7 +879,7 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SOURCEMODEL_TARGETMODEL_SM2TM_MODELGENERATORRULERESULT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 26;
+	int _SP_AT2_SP_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S_MODELGENERATORRULERESULT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 25;
 
 	/**
 	 * The operation id for the '<em>Generate Model check Csp BWD</em>' operation.
@@ -869,16 +888,16 @@ public interface RulesPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 27;
+	int _SP_AT2_SP_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 26;
 
 	/**
-	 * The number of operations of the '<em>EA2S Rule</em>' class.
+	 * The number of operations of the '<em>Sp AT2 Sp Rule</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EA2S_RULE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 28;
+	int _SP_AT2_SP_RULE_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_RULE_OPERATION_COUNT + 27;
 
 	/**
 	 * Returns the meta object for class '{@link SourceToTargetCorr.Rules.Class1 <em>Class1</em>}'.
@@ -1091,24 +1110,24 @@ public interface RulesPackage extends EPackage {
 	EOperation getClass1__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_0(Source.SourceModel) <em>Is Appropriate FWD Source Model 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_15(Source.SourceModel) <em>Is Appropriate FWD Source Model 15</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD Source Model 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_0(Source.SourceModel)
+	 * @return the meta object for the '<em>Is Appropriate FWD Source Model 15</em>' operation.
+	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_FWD_SourceModel_15(Source.SourceModel)
 	 * @generated
 	 */
-	EOperation getClass1__IsAppropriate_FWD_SourceModel_0__SourceModel();
+	EOperation getClass1__IsAppropriate_FWD_SourceModel_15__SourceModel();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_0(Target.TargetModel) <em>Is Appropriate BWD Target Model 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_15(Target.TargetModel) <em>Is Appropriate BWD Target Model 15</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD Target Model 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_0(Target.TargetModel)
+	 * @return the meta object for the '<em>Is Appropriate BWD Target Model 15</em>' operation.
+	 * @see SourceToTargetCorr.Rules.Class1#isAppropriate_BWD_TargetModel_15(Target.TargetModel)
 	 * @generated
 	 */
-	EOperation getClass1__IsAppropriate_BWD_TargetModel_0__TargetModel();
+	EOperation getClass1__IsAppropriate_BWD_TargetModel_15__TargetModel();
 
 	/**
 	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.Class1#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -1371,24 +1390,24 @@ public interface RulesPackage extends EPackage {
 	EOperation getE2SRule__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.E2SRule#isAppropriate_FWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.E2SRule#isAppropriate_FWD_EMoflonEdge_42(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 42</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.E2SRule#isAppropriate_FWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 42</em>' operation.
+	 * @see SourceToTargetCorr.Rules.E2SRule#isAppropriate_FWD_EMoflonEdge_42(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getE2SRule__IsAppropriate_FWD_EMoflonEdge_0__EMoflonEdge();
+	EOperation getE2SRule__IsAppropriate_FWD_EMoflonEdge_42__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.E2SRule#isAppropriate_BWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 0</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.E2SRule#isAppropriate_BWD_EMoflonEdge_57(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 57</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 0</em>' operation.
-	 * @see SourceToTargetCorr.Rules.E2SRule#isAppropriate_BWD_EMoflonEdge_0(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 57</em>' operation.
+	 * @see SourceToTargetCorr.Rules.E2SRule#isAppropriate_BWD_EMoflonEdge_57(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getE2SRule__IsAppropriate_BWD_EMoflonEdge_0__EMoflonEdge();
+	EOperation getE2SRule__IsAppropriate_BWD_EMoflonEdge_57__EMoflonEdge();
 
 	/**
 	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.E2SRule#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
@@ -1441,294 +1460,294 @@ public interface RulesPackage extends EPackage {
 	EOperation getE2SRule__GenerateModel_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for class '{@link SourceToTargetCorr.Rules.EA2SRule <em>EA2S Rule</em>}'.
+	 * Returns the meta object for class '{@link SourceToTargetCorr.Rules.ElSpAt2SpRule <em>El Sp At2 Sp Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>EA2S Rule</em>'.
-	 * @see SourceToTargetCorr.Rules.EA2SRule
+	 * @return the meta object for class '<em>El Sp At2 Sp Rule</em>'.
+	 * @see SourceToTargetCorr.Rules.ElSpAt2SpRule
 	 * @generated
 	 */
-	EClass getEA2SRule();
+	EClass getElSpAt2SpRule();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_FWD(TGGRuntime.Match, Source.Element, Source.SourceModel) <em>Is Appropriate FWD</em>}' operation.
+	 * Returns the meta object for class '{@link SourceToTargetCorr.Rules._SpAT2SpRule <em>Sp AT2 Sp Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sp AT2 Sp Rule</em>'.
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule
+	 * @generated
+	 */
+	EClass get_SpAT2SpRule();
+
+	/**
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_FWD(TGGRuntime.Match, Source.Element, Source._SpecialAttrType) <em>Is Appropriate FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_FWD(TGGRuntime.Match, Source.Element, Source.SourceModel)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_FWD(TGGRuntime.Match, Source.Element, Source._SpecialAttrType)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_FWD__Match_Element_SourceModel();
+	EOperation get_SpAT2SpRule__IsAppropriate_FWD__Match_Element__SpecialAttrType();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#perform_FWD(TGGRuntime.IsApplicableMatch) <em>Perform FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#perform_FWD(TGGRuntime.IsApplicableMatch)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#perform_FWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getEA2SRule__Perform_FWD__IsApplicableMatch();
+	EOperation get_SpAT2SpRule__Perform_FWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_FWD(TGGRuntime.Match) <em>Is Applicable FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isApplicable_FWD(TGGRuntime.Match)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsApplicable_FWD__Match();
+	EOperation get_SpAT2SpRule__IsApplicable_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#registerObjectsToMatch_FWD(TGGRuntime.Match, Source.Element, Source.SourceModel) <em>Register Objects To Match FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#registerObjectsToMatch_FWD(TGGRuntime.Match, Source.Element, Source._SpecialAttrType) <em>Register Objects To Match FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#registerObjectsToMatch_FWD(TGGRuntime.Match, Source.Element, Source.SourceModel)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#registerObjectsToMatch_FWD(TGGRuntime.Match, Source.Element, Source._SpecialAttrType)
 	 * @generated
 	 */
-	EOperation getEA2SRule__RegisterObjectsToMatch_FWD__Match_Element_SourceModel();
+	EOperation get_SpAT2SpRule__RegisterObjectsToMatch_FWD__Match_Element__SpecialAttrType();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_solveCsp_FWD(TGGRuntime.Match, Source.Element, Source.SourceModel) <em>Is Appropriate solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_solveCsp_FWD(TGGRuntime.Match, Source.Element, Source._SpecialAttrType) <em>Is Appropriate solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_solveCsp_FWD(TGGRuntime.Match, Source.Element, Source.SourceModel)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_solveCsp_FWD(TGGRuntime.Match, Source.Element, Source._SpecialAttrType)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_solveCsp_FWD__Match_Element_SourceModel();
+	EOperation get_SpAT2SpRule__IsAppropriate_solveCsp_FWD__Match_Element__SpecialAttrType();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_checkCsp_FWD__CSP();
+	EOperation get_SpAT2SpRule__IsAppropriate_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, Source.Element, Source.SourceModel, Target.TargetModel, SourceToTargetCorr.SM2TM) <em>Is Applicable solve Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, Source.Element, Target.Step, SourceToTargetCorr.E2S, Source._SpecialAttrType) <em>Is Applicable solve Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, Source.Element, Source.SourceModel, Target.TargetModel, SourceToTargetCorr.SM2TM)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_solveCsp_FWD(TGGRuntime.IsApplicableMatch, Source.Element, Target.Step, SourceToTargetCorr.E2S, Source._SpecialAttrType)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_SourceModel_TargetModel_SM2TM();
+	EOperation get_SpAT2SpRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_Step_E2S__SpecialAttrType();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_checkCsp_FWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsApplicable_checkCsp_FWD__CSP();
+	EOperation get_SpAT2SpRule__IsApplicable_checkCsp_FWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#registerObjects_FWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getEA2SRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation get_SpAT2SpRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#checkTypes_FWD(TGGRuntime.Match) <em>Check Types FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#checkTypes_FWD(TGGRuntime.Match)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#checkTypes_FWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getEA2SRule__CheckTypes_FWD__Match();
+	EOperation get_SpAT2SpRule__CheckTypes_FWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_BWD(TGGRuntime.Match, Target.Step, Target.Special, Target.TargetModel) <em>Is Appropriate BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_BWD(TGGRuntime.Match, Target.Step, Target.Special) <em>Is Appropriate BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_BWD(TGGRuntime.Match, Target.Step, Target.Special, Target.TargetModel)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_BWD(TGGRuntime.Match, Target.Step, Target.Special)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_BWD__Match_Step_Special_TargetModel();
+	EOperation get_SpAT2SpRule__IsAppropriate_BWD__Match_Step_Special();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#perform_BWD(TGGRuntime.IsApplicableMatch) <em>Perform BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Perform BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#perform_BWD(TGGRuntime.IsApplicableMatch)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#perform_BWD(TGGRuntime.IsApplicableMatch)
 	 * @generated
 	 */
-	EOperation getEA2SRule__Perform_BWD__IsApplicableMatch();
+	EOperation get_SpAT2SpRule__Perform_BWD__IsApplicableMatch();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_BWD(TGGRuntime.Match) <em>Is Applicable BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isApplicable_BWD(TGGRuntime.Match)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsApplicable_BWD__Match();
+	EOperation get_SpAT2SpRule__IsApplicable_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.Step, Target.Special, Target.TargetModel) <em>Register Objects To Match BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.Step, Target.Special) <em>Register Objects To Match BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects To Match BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.Step, Target.Special, Target.TargetModel)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#registerObjectsToMatch_BWD(TGGRuntime.Match, Target.Step, Target.Special)
 	 * @generated
 	 */
-	EOperation getEA2SRule__RegisterObjectsToMatch_BWD__Match_Step_Special_TargetModel();
+	EOperation get_SpAT2SpRule__RegisterObjectsToMatch_BWD__Match_Step_Special();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.Step, Target.Special, Target.TargetModel) <em>Is Appropriate solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.Step, Target.Special) <em>Is Appropriate solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate solve Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.Step, Target.Special, Target.TargetModel)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_solveCsp_BWD(TGGRuntime.Match, Target.Step, Target.Special)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_solveCsp_BWD__Match_Step_Special_TargetModel();
+	EOperation get_SpAT2SpRule__IsAppropriate_solveCsp_BWD__Match_Step_Special();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Appropriate check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Appropriate check Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_checkCsp_BWD__CSP();
+	EOperation get_SpAT2SpRule__IsAppropriate_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Target.Step, Target.Special, Source.SourceModel, Target.TargetModel, SourceToTargetCorr.SM2TM) <em>Is Applicable solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.Element, Target.Step, SourceToTargetCorr.E2S, Target.Special) <em>Is Applicable solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable solve Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Target.Step, Target.Special, Source.SourceModel, Target.TargetModel, SourceToTargetCorr.SM2TM)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.Element, Target.Step, SourceToTargetCorr.E2S, Target.Special)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Step_Special_SourceModel_TargetModel_SM2TM();
+	EOperation get_SpAT2SpRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_Special();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Is Applicable check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Is Applicable check Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isApplicable_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsApplicable_checkCsp_BWD__CSP();
+	EOperation get_SpAT2SpRule__IsApplicable_checkCsp_BWD__CSP();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject) <em>Register Objects BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Register Objects BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#registerObjects_BWD(TGGRuntime.PerformRuleResult, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject, org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
-	EOperation getEA2SRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+	EOperation get_SpAT2SpRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#checkTypes_BWD(TGGRuntime.Match) <em>Check Types BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Types BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#checkTypes_BWD(TGGRuntime.Match)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#checkTypes_BWD(TGGRuntime.Match)
 	 * @generated
 	 */
-	EOperation getEA2SRule__CheckTypes_BWD__Match();
+	EOperation get_SpAT2SpRule__CheckTypes_BWD__Match();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_BWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 1</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_FWD_EMoflonEdge_43(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 43</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 1</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_BWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 43</em>' operation.
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_FWD_EMoflonEdge_43(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_BWD_EMoflonEdge_1__EMoflonEdge();
+	EOperation get_SpAT2SpRule__IsAppropriate_FWD_EMoflonEdge_43__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_FWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge) <em>Is Appropriate FWD EMoflon Edge 1</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_BWD_EMoflonEdge_58(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 58</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate FWD EMoflon Edge 1</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_FWD_EMoflonEdge_1(TGGRuntime.EMoflonEdge)
+	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 58</em>' operation.
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#isAppropriate_BWD_EMoflonEdge_58(TGGRuntime.EMoflonEdge)
 	 * @generated
 	 */
-	EOperation getEA2SRule__IsAppropriate_FWD_EMoflonEdge_1__EMoflonEdge();
+	EOperation get_SpAT2SpRule__IsAppropriate_BWD_EMoflonEdge_58__EMoflonEdge();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#isAppropriate_BWD_EMoflonEdge_2(TGGRuntime.EMoflonEdge) <em>Is Appropriate BWD EMoflon Edge 2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Is Appropriate BWD EMoflon Edge 2</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#isAppropriate_BWD_EMoflonEdge_2(TGGRuntime.EMoflonEdge)
-	 * @generated
-	 */
-	EOperation getEA2SRule__IsAppropriate_BWD_EMoflonEdge_2__EMoflonEdge();
-
-	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#checkAttributes_FWD(TGGRuntime.TripleMatch) <em>Check Attributes FWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes FWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#checkAttributes_FWD(TGGRuntime.TripleMatch)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#checkAttributes_FWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getEA2SRule__CheckAttributes_FWD__TripleMatch();
+	EOperation get_SpAT2SpRule__CheckAttributes_FWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#checkAttributes_BWD(TGGRuntime.TripleMatch) <em>Check Attributes BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Check Attributes BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#checkAttributes_BWD(TGGRuntime.TripleMatch)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#checkAttributes_BWD(TGGRuntime.TripleMatch)
 	 * @generated
 	 */
-	EOperation getEA2SRule__CheckAttributes_BWD__TripleMatch();
+	EOperation get_SpAT2SpRule__CheckAttributes_BWD__TripleMatch();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.SM2TM) <em>Generate Model</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.E2S) <em>Generate Model</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Generate Model</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.SM2TM)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#generateModel(TGGLanguage.modelgenerator.RuleEntryContainer, SourceToTargetCorr.E2S)
 	 * @generated
 	 */
-	EOperation getEA2SRule__GenerateModel__RuleEntryContainer_SM2TM();
+	EOperation get_SpAT2SpRule__GenerateModel__RuleEntryContainer_E2S();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.SourceModel, Target.TargetModel, SourceToTargetCorr.SM2TM, TGGRuntime.ModelgeneratorRuleResult) <em>Generate Model solve Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.Element, Target.Step, SourceToTargetCorr.E2S, TGGRuntime.ModelgeneratorRuleResult) <em>Generate Model solve Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Generate Model solve Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.SourceModel, Target.TargetModel, SourceToTargetCorr.SM2TM, TGGRuntime.ModelgeneratorRuleResult)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#generateModel_solveCsp_BWD(TGGRuntime.IsApplicableMatch, Source.Element, Target.Step, SourceToTargetCorr.E2S, TGGRuntime.ModelgeneratorRuleResult)
 	 * @generated
 	 */
-	EOperation getEA2SRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SourceModel_TargetModel_SM2TM_ModelgeneratorRuleResult();
+	EOperation get_SpAT2SpRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_ModelgeneratorRuleResult();
 
 	/**
-	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules.EA2SRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Generate Model check Csp BWD</em>}' operation.
+	 * Returns the meta object for the '{@link SourceToTargetCorr.Rules._SpAT2SpRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP) <em>Generate Model check Csp BWD</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Generate Model check Csp BWD</em>' operation.
-	 * @see SourceToTargetCorr.Rules.EA2SRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP)
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule#generateModel_checkCsp_BWD(TGGLanguage.csp.CSP)
 	 * @generated
 	 */
-	EOperation getEA2SRule__GenerateModel_checkCsp_BWD__CSP();
+	EOperation get_SpAT2SpRule__GenerateModel_checkCsp_BWD__CSP();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1944,22 +1963,22 @@ public interface RulesPackage extends EPackage {
 				.getClass1__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate FWD Source Model 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate FWD Source Model 15</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_0__SOURCEMODEL = eINSTANCE
-				.getClass1__IsAppropriate_FWD_SourceModel_0__SourceModel();
+		EOperation CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_15__SOURCEMODEL = eINSTANCE
+				.getClass1__IsAppropriate_FWD_SourceModel_15__SourceModel();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD Target Model 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD Target Model 15</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_0__TARGETMODEL = eINSTANCE
-				.getClass1__IsAppropriate_BWD_TargetModel_0__TargetModel();
+		EOperation CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_15__TARGETMODEL = eINSTANCE
+				.getClass1__IsAppropriate_BWD_TargetModel_15__TargetModel();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
@@ -2197,22 +2216,22 @@ public interface RulesPackage extends EPackage {
 				.getE2SRule__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 42</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE = eINSTANCE
-				.getE2SRule__IsAppropriate_FWD_EMoflonEdge_0__EMoflonEdge();
+		EOperation E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_42__EMOFLONEDGE = eINSTANCE
+				.getE2SRule__IsAppropriate_FWD_EMoflonEdge_42__EMoflonEdge();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 0</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 57</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE = eINSTANCE
-				.getE2SRule__IsAppropriate_BWD_EMoflonEdge_0__EMoflonEdge();
+		EOperation E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_57__EMOFLONEDGE = eINSTANCE
+				.getE2SRule__IsAppropriate_BWD_EMoflonEdge_57__EMoflonEdge();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
@@ -2260,14 +2279,24 @@ public interface RulesPackage extends EPackage {
 				.getE2SRule__GenerateModel_checkCsp_BWD__CSP();
 
 		/**
-		 * The meta object literal for the '{@link SourceToTargetCorr.Rules.impl.EA2SRuleImpl <em>EA2S Rule</em>}' class.
+		 * The meta object literal for the '{@link SourceToTargetCorr.Rules.impl.ElSpAt2SpRuleImpl <em>El Sp At2 Sp Rule</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see SourceToTargetCorr.Rules.impl.EA2SRuleImpl
-		 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#getEA2SRule()
+		 * @see SourceToTargetCorr.Rules.impl.ElSpAt2SpRuleImpl
+		 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#getElSpAt2SpRule()
 		 * @generated
 		 */
-		EClass EA2S_RULE = eINSTANCE.getEA2SRule();
+		EClass EL_SP_AT2_SP_RULE = eINSTANCE.getElSpAt2SpRule();
+
+		/**
+		 * The meta object literal for the '{@link SourceToTargetCorr.Rules.impl._SpAT2SpRuleImpl <em>Sp AT2 Sp Rule</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SourceToTargetCorr.Rules.impl._SpAT2SpRuleImpl
+		 * @see SourceToTargetCorr.Rules.impl.RulesPackageImpl#get_SpAT2SpRule()
+		 * @generated
+		 */
+		EClass _SP_AT2_SP_RULE = eINSTANCE.get_SpAT2SpRule();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate FWD</b></em>' operation.
@@ -2275,8 +2304,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_FWD__MATCH_ELEMENT_SOURCEMODEL = eINSTANCE
-				.getEA2SRule__IsAppropriate_FWD__Match_Element_SourceModel();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_FWD__MATCH_ELEMENT__SPECIALATTRTYPE = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_FWD__Match_Element__SpecialAttrType();
 
 		/**
 		 * The meta object literal for the '<em><b>Perform FWD</b></em>' operation.
@@ -2284,8 +2313,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___PERFORM_FWD__ISAPPLICABLEMATCH = eINSTANCE
-				.getEA2SRule__Perform_FWD__IsApplicableMatch();
+		EOperation _SP_AT2_SP_RULE___PERFORM_FWD__ISAPPLICABLEMATCH = eINSTANCE
+				.get_SpAT2SpRule__Perform_FWD__IsApplicableMatch();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable FWD</b></em>' operation.
@@ -2293,8 +2322,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPLICABLE_FWD__MATCH = eINSTANCE
-				.getEA2SRule__IsApplicable_FWD__Match();
+		EOperation _SP_AT2_SP_RULE___IS_APPLICABLE_FWD__MATCH = eINSTANCE
+				.get_SpAT2SpRule__IsApplicable_FWD__Match();
 
 		/**
 		 * The meta object literal for the '<em><b>Register Objects To Match FWD</b></em>' operation.
@@ -2302,8 +2331,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_ELEMENT_SOURCEMODEL = eINSTANCE
-				.getEA2SRule__RegisterObjectsToMatch_FWD__Match_Element_SourceModel();
+		EOperation _SP_AT2_SP_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_ELEMENT__SPECIALATTRTYPE = eINSTANCE
+				.get_SpAT2SpRule__RegisterObjectsToMatch_FWD__Match_Element__SpecialAttrType();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate solve Csp FWD</b></em>' operation.
@@ -2311,8 +2340,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_ELEMENT_SOURCEMODEL = eINSTANCE
-				.getEA2SRule__IsAppropriate_solveCsp_FWD__Match_Element_SourceModel();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_ELEMENT__SPECIALATTRTYPE = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_solveCsp_FWD__Match_Element__SpecialAttrType();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate check Csp FWD</b></em>' operation.
@@ -2320,8 +2349,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = eINSTANCE
-				.getEA2SRule__IsAppropriate_checkCsp_FWD__CSP();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_checkCsp_FWD__CSP();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable solve Csp FWD</b></em>' operation.
@@ -2329,8 +2358,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_ELEMENT_SOURCEMODEL_TARGETMODEL_SM2TM = eINSTANCE
-				.getEA2SRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_SourceModel_TargetModel_SM2TM();
+		EOperation _SP_AT2_SP_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S__SPECIALATTRTYPE = eINSTANCE
+				.get_SpAT2SpRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_Step_E2S__SpecialAttrType();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable check Csp FWD</b></em>' operation.
@@ -2338,8 +2367,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = eINSTANCE
-				.getEA2SRule__IsApplicable_checkCsp_FWD__CSP();
+		EOperation _SP_AT2_SP_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP = eINSTANCE
+				.get_SpAT2SpRule__IsApplicable_checkCsp_FWD__CSP();
 
 		/**
 		 * The meta object literal for the '<em><b>Register Objects FWD</b></em>' operation.
@@ -2347,8 +2376,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = eINSTANCE
-				.getEA2SRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+		EOperation _SP_AT2_SP_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = eINSTANCE
+				.get_SpAT2SpRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Types FWD</b></em>' operation.
@@ -2356,8 +2385,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___CHECK_TYPES_FWD__MATCH = eINSTANCE
-				.getEA2SRule__CheckTypes_FWD__Match();
+		EOperation _SP_AT2_SP_RULE___CHECK_TYPES_FWD__MATCH = eINSTANCE
+				.get_SpAT2SpRule__CheckTypes_FWD__Match();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate BWD</b></em>' operation.
@@ -2365,8 +2394,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_BWD__MATCH_STEP_SPECIAL_TARGETMODEL = eINSTANCE
-				.getEA2SRule__IsAppropriate_BWD__Match_Step_Special_TargetModel();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_BWD__MATCH_STEP_SPECIAL = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_BWD__Match_Step_Special();
 
 		/**
 		 * The meta object literal for the '<em><b>Perform BWD</b></em>' operation.
@@ -2374,8 +2403,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = eINSTANCE
-				.getEA2SRule__Perform_BWD__IsApplicableMatch();
+		EOperation _SP_AT2_SP_RULE___PERFORM_BWD__ISAPPLICABLEMATCH = eINSTANCE
+				.get_SpAT2SpRule__Perform_BWD__IsApplicableMatch();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable BWD</b></em>' operation.
@@ -2383,8 +2412,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPLICABLE_BWD__MATCH = eINSTANCE
-				.getEA2SRule__IsApplicable_BWD__Match();
+		EOperation _SP_AT2_SP_RULE___IS_APPLICABLE_BWD__MATCH = eINSTANCE
+				.get_SpAT2SpRule__IsApplicable_BWD__Match();
 
 		/**
 		 * The meta object literal for the '<em><b>Register Objects To Match BWD</b></em>' operation.
@@ -2392,8 +2421,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEP_SPECIAL_TARGETMODEL = eINSTANCE
-				.getEA2SRule__RegisterObjectsToMatch_BWD__Match_Step_Special_TargetModel();
+		EOperation _SP_AT2_SP_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEP_SPECIAL = eINSTANCE
+				.get_SpAT2SpRule__RegisterObjectsToMatch_BWD__Match_Step_Special();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate solve Csp BWD</b></em>' operation.
@@ -2401,8 +2430,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEP_SPECIAL_TARGETMODEL = eINSTANCE
-				.getEA2SRule__IsAppropriate_solveCsp_BWD__Match_Step_Special_TargetModel();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEP_SPECIAL = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_solveCsp_BWD__Match_Step_Special();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Appropriate check Csp BWD</b></em>' operation.
@@ -2410,8 +2439,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = eINSTANCE
-				.getEA2SRule__IsAppropriate_checkCsp_BWD__CSP();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_checkCsp_BWD__CSP();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable solve Csp BWD</b></em>' operation.
@@ -2419,8 +2448,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_STEP_SPECIAL_SOURCEMODEL_TARGETMODEL_SM2TM = eINSTANCE
-				.getEA2SRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Step_Special_SourceModel_TargetModel_SM2TM();
+		EOperation _SP_AT2_SP_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S_SPECIAL = eINSTANCE
+				.get_SpAT2SpRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_Special();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Applicable check Csp BWD</b></em>' operation.
@@ -2428,8 +2457,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = eINSTANCE
-				.getEA2SRule__IsApplicable_checkCsp_BWD__CSP();
+		EOperation _SP_AT2_SP_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP = eINSTANCE
+				.get_SpAT2SpRule__IsApplicable_checkCsp_BWD__CSP();
 
 		/**
 		 * The meta object literal for the '<em><b>Register Objects BWD</b></em>' operation.
@@ -2437,8 +2466,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = eINSTANCE
-				.getEA2SRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject();
+		EOperation _SP_AT2_SP_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT = eINSTANCE
+				.get_SpAT2SpRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Types BWD</b></em>' operation.
@@ -2446,35 +2475,26 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___CHECK_TYPES_BWD__MATCH = eINSTANCE
-				.getEA2SRule__CheckTypes_BWD__Match();
+		EOperation _SP_AT2_SP_RULE___CHECK_TYPES_BWD__MATCH = eINSTANCE
+				.get_SpAT2SpRule__CheckTypes_BWD__Match();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 1</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 43</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE = eINSTANCE
-				.getEA2SRule__IsAppropriate_BWD_EMoflonEdge_1__EMoflonEdge();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_43__EMOFLONEDGE = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_FWD_EMoflonEdge_43__EMoflonEdge();
 
 		/**
-		 * The meta object literal for the '<em><b>Is Appropriate FWD EMoflon Edge 1</b></em>' operation.
+		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 58</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1__EMOFLONEDGE = eINSTANCE
-				.getEA2SRule__IsAppropriate_FWD_EMoflonEdge_1__EMoflonEdge();
-
-		/**
-		 * The meta object literal for the '<em><b>Is Appropriate BWD EMoflon Edge 2</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation EA2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_2__EMOFLONEDGE = eINSTANCE
-				.getEA2SRule__IsAppropriate_BWD_EMoflonEdge_2__EMoflonEdge();
+		EOperation _SP_AT2_SP_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_58__EMOFLONEDGE = eINSTANCE
+				.get_SpAT2SpRule__IsAppropriate_BWD_EMoflonEdge_58__EMoflonEdge();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes FWD</b></em>' operation.
@@ -2482,8 +2502,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = eINSTANCE
-				.getEA2SRule__CheckAttributes_FWD__TripleMatch();
+		EOperation _SP_AT2_SP_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH = eINSTANCE
+				.get_SpAT2SpRule__CheckAttributes_FWD__TripleMatch();
 
 		/**
 		 * The meta object literal for the '<em><b>Check Attributes BWD</b></em>' operation.
@@ -2491,8 +2511,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = eINSTANCE
-				.getEA2SRule__CheckAttributes_BWD__TripleMatch();
+		EOperation _SP_AT2_SP_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH = eINSTANCE
+				.get_SpAT2SpRule__CheckAttributes_BWD__TripleMatch();
 
 		/**
 		 * The meta object literal for the '<em><b>Generate Model</b></em>' operation.
@@ -2500,8 +2520,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_SM2TM = eINSTANCE
-				.getEA2SRule__GenerateModel__RuleEntryContainer_SM2TM();
+		EOperation _SP_AT2_SP_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_E2S = eINSTANCE
+				.get_SpAT2SpRule__GenerateModel__RuleEntryContainer_E2S();
 
 		/**
 		 * The meta object literal for the '<em><b>Generate Model solve Csp BWD</b></em>' operation.
@@ -2509,8 +2529,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SOURCEMODEL_TARGETMODEL_SM2TM_MODELGENERATORRULERESULT = eINSTANCE
-				.getEA2SRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SourceModel_TargetModel_SM2TM_ModelgeneratorRuleResult();
+		EOperation _SP_AT2_SP_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S_MODELGENERATORRULERESULT = eINSTANCE
+				.get_SpAT2SpRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_ModelgeneratorRuleResult();
 
 		/**
 		 * The meta object literal for the '<em><b>Generate Model check Csp BWD</b></em>' operation.
@@ -2518,8 +2538,8 @@ public interface RulesPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation EA2S_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = eINSTANCE
-				.getEA2SRule__GenerateModel_checkCsp_BWD__CSP();
+		EOperation _SP_AT2_SP_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP = eINSTANCE
+				.get_SpAT2SpRule__GenerateModel_checkCsp_BWD__CSP();
 
 	}
 

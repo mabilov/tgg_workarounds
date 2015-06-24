@@ -6,6 +6,7 @@ import Source.Element;
 import Source.SourceFactory;
 import Source.SourceModel;
 import Source.SourcePackage;
+import Source._SpecialAttrType;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -34,6 +35,13 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 	 * @generated
 	 */
 	private EClass elementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass _SpecialAttrTypeEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -131,8 +139,17 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getElement__special() {
+		return (EReference) elementEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getElement_Id() {
-		return (EAttribute) elementEClass.getEStructuralFeatures().get(0);
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -141,7 +158,26 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 	 * @generated
 	 */
 	public EAttribute getElement_SpecialAttr() {
-		return (EAttribute) elementEClass.getEStructuralFeatures().get(1);
+		return (EAttribute) elementEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass get_SpecialAttrType() {
+		return _SpecialAttrTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute get_SpecialAttrType_Value() {
+		return (EAttribute) _SpecialAttrTypeEClass.getEStructuralFeatures()
+				.get(0);
 	}
 
 	/**
@@ -177,8 +213,12 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 		createEReference(sourceModelEClass, SOURCE_MODEL__ELEMENTS);
 
 		elementEClass = createEClass(ELEMENT);
+		createEReference(elementEClass, ELEMENT__SPECIAL);
 		createEAttribute(elementEClass, ELEMENT__ID);
 		createEAttribute(elementEClass, ELEMENT__SPECIAL_ATTR);
+
+		_SpecialAttrTypeEClass = createEClass(_SPECIAL_ATTR_TYPE);
+		createEAttribute(_SpecialAttrTypeEClass, _SPECIAL_ATTR_TYPE__VALUE);
 	}
 
 	/**
@@ -221,12 +261,24 @@ public class SourcePackageImpl extends EPackageImpl implements SourcePackage {
 
 		initEClass(elementEClass, Element.class, "Element", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getElement__special(), this.get_SpecialAttrType(), null,
+				"_special", null, 0, 1, Element.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getElement_Id(), ecorePackage.getEString(), "id", null,
 				1, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
 				!IS_ORDERED);
 		initEAttribute(getElement_SpecialAttr(), ecorePackage.getEString(),
 				"specialAttr", null, 1, 1, Element.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, !IS_ORDERED);
+
+		initEClass(_SpecialAttrTypeEClass, _SpecialAttrType.class,
+				"_SpecialAttrType", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(get_SpecialAttrType_Value(), ecorePackage.getEString(),
+				"value", null, 1, 1, _SpecialAttrType.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, !IS_ORDERED);
 

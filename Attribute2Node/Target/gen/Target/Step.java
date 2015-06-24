@@ -25,26 +25,26 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Step extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Special</b></em>' reference.
+	 * Returns the value of the '<em><b>Special</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Special</em>' reference isn't clear,
+	 * If the meaning of the '<em>Special</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Special</em>' reference.
+	 * @return the value of the '<em>Special</em>' containment reference.
 	 * @see #setSpecial(Special)
 	 * @see Target.TargetPackage#getStep_Special()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	Special getSpecial();
 
 	/**
-	 * Sets the value of the '{@link Target.Step#getSpecial <em>Special</em>}' reference.
+	 * Sets the value of the '{@link Target.Step#getSpecial <em>Special</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Special</em>' reference.
+	 * @param value the new value of the '<em>Special</em>' containment reference.
 	 * @see #getSpecial()
 	 * @generated
 	 */

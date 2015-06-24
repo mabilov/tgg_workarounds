@@ -104,7 +104,7 @@ public interface TargetPackage extends EPackage {
 	int STEP = 1;
 
 	/**
-	 * The feature id for the '<em><b>Special</b></em>' reference.
+	 * The feature id for the '<em><b>Special</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -208,10 +208,10 @@ public interface TargetPackage extends EPackage {
 	EClass getStep();
 
 	/**
-	 * Returns the meta object for the reference '{@link Target.Step#getSpecial <em>Special</em>}'.
+	 * Returns the meta object for the containment reference '{@link Target.Step#getSpecial <em>Special</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Special</em>'.
+	 * @return the meta object for the containment reference '<em>Special</em>'.
 	 * @see Target.Step#getSpecial()
 	 * @see #getStep()
 	 * @generated
@@ -302,7 +302,7 @@ public interface TargetPackage extends EPackage {
 		EClass STEP = eINSTANCE.getStep();
 
 		/**
-		 * The meta object literal for the '<em><b>Special</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Special</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

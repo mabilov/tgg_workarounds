@@ -95,6 +95,15 @@ public class SourceToTargetCorrSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case SourceToTargetCorrPackage._SP_AT2_SP: {
+			_SpAt2Sp _SpAt2Sp = (_SpAt2Sp) theEObject;
+			T result = case_SpAt2Sp(_SpAt2Sp);
+			if (result == null)
+				result = caseAbstractCorrespondence(_SpAt2Sp);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -142,6 +151,21 @@ public class SourceToTargetCorrSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseE2Sp(E2Sp object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sp At2 Sp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sp At2 Sp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T case_SpAt2Sp(_SpAt2Sp object) {
 		return null;
 	}
 

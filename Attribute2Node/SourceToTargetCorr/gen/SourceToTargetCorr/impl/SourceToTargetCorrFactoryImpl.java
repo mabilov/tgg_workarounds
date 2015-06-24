@@ -63,6 +63,8 @@ public class SourceToTargetCorrFactoryImpl extends EFactoryImpl implements
 			return createE2S();
 		case SourceToTargetCorrPackage.E2_SP:
 			return createE2Sp();
+		case SourceToTargetCorrPackage._SP_AT2_SP:
+			return create_SpAt2Sp();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName()
 					+ "' is not a valid classifier");
@@ -97,6 +99,16 @@ public class SourceToTargetCorrFactoryImpl extends EFactoryImpl implements
 	public E2Sp createE2Sp() {
 		E2SpImpl e2Sp = new E2SpImpl();
 		return e2Sp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public _SpAt2Sp create_SpAt2Sp() {
+		_SpAt2SpImpl _SpAt2Sp = new _SpAt2SpImpl();
+		return _SpAt2Sp;
 	}
 
 	/**

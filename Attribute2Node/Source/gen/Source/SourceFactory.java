@@ -40,6 +40,15 @@ public interface SourceFactory extends EFactory {
 	Element createElement();
 
 	/**
+	 * Returns a new object of class '<em>Special Attr Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Special Attr Type</em>'.
+	 * @generated
+	 */
+	_SpecialAttrType create_SpecialAttrType();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

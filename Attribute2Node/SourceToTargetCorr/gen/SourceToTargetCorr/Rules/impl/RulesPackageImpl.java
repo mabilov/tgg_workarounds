@@ -6,9 +6,10 @@ import Source.SourcePackage;
 
 import SourceToTargetCorr.Rules.Class1;
 import SourceToTargetCorr.Rules.E2SRule;
-import SourceToTargetCorr.Rules.EA2SRule;
+import SourceToTargetCorr.Rules.ElSpAt2SpRule;
 import SourceToTargetCorr.Rules.RulesFactory;
 import SourceToTargetCorr.Rules.RulesPackage;
+import SourceToTargetCorr.Rules._SpAT2SpRule;
 
 import SourceToTargetCorr.SourceToTargetCorrPackage;
 
@@ -56,7 +57,14 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass ea2SRuleEClass = null;
+	private EClass elSpAt2SpRuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass _SpAT2SpRuleEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -329,7 +337,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getClass1__IsAppropriate_FWD_SourceModel_0__SourceModel() {
+	public EOperation getClass1__IsAppropriate_FWD_SourceModel_15__SourceModel() {
 		return class1EClass.getEOperations().get(20);
 	}
 
@@ -338,7 +346,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getClass1__IsAppropriate_BWD_TargetModel_0__TargetModel() {
+	public EOperation getClass1__IsAppropriate_BWD_TargetModel_15__TargetModel() {
 		return class1EClass.getEOperations().get(21);
 	}
 
@@ -581,7 +589,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getE2SRule__IsAppropriate_FWD_EMoflonEdge_0__EMoflonEdge() {
+	public EOperation getE2SRule__IsAppropriate_FWD_EMoflonEdge_42__EMoflonEdge() {
 		return e2SRuleEClass.getEOperations().get(20);
 	}
 
@@ -590,7 +598,7 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getE2SRule__IsAppropriate_BWD_EMoflonEdge_0__EMoflonEdge() {
+	public EOperation getE2SRule__IsAppropriate_BWD_EMoflonEdge_57__EMoflonEdge() {
 		return e2SRuleEClass.getEOperations().get(21);
 	}
 
@@ -644,8 +652,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getEA2SRule() {
-		return ea2SRuleEClass;
+	public EClass getElSpAt2SpRule() {
+		return elSpAt2SpRuleEClass;
 	}
 
 	/**
@@ -653,8 +661,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_FWD__Match_Element_SourceModel() {
-		return ea2SRuleEClass.getEOperations().get(0);
+	public EClass get_SpAT2SpRule() {
+		return _SpAT2SpRuleEClass;
 	}
 
 	/**
@@ -662,8 +670,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__Perform_FWD__IsApplicableMatch() {
-		return ea2SRuleEClass.getEOperations().get(1);
+	public EOperation get_SpAT2SpRule__IsAppropriate_FWD__Match_Element__SpecialAttrType() {
+		return _SpAT2SpRuleEClass.getEOperations().get(0);
 	}
 
 	/**
@@ -671,8 +679,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsApplicable_FWD__Match() {
-		return ea2SRuleEClass.getEOperations().get(2);
+	public EOperation get_SpAT2SpRule__Perform_FWD__IsApplicableMatch() {
+		return _SpAT2SpRuleEClass.getEOperations().get(1);
 	}
 
 	/**
@@ -680,8 +688,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__RegisterObjectsToMatch_FWD__Match_Element_SourceModel() {
-		return ea2SRuleEClass.getEOperations().get(3);
+	public EOperation get_SpAT2SpRule__IsApplicable_FWD__Match() {
+		return _SpAT2SpRuleEClass.getEOperations().get(2);
 	}
 
 	/**
@@ -689,8 +697,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_solveCsp_FWD__Match_Element_SourceModel() {
-		return ea2SRuleEClass.getEOperations().get(4);
+	public EOperation get_SpAT2SpRule__RegisterObjectsToMatch_FWD__Match_Element__SpecialAttrType() {
+		return _SpAT2SpRuleEClass.getEOperations().get(3);
 	}
 
 	/**
@@ -698,8 +706,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_checkCsp_FWD__CSP() {
-		return ea2SRuleEClass.getEOperations().get(5);
+	public EOperation get_SpAT2SpRule__IsAppropriate_solveCsp_FWD__Match_Element__SpecialAttrType() {
+		return _SpAT2SpRuleEClass.getEOperations().get(4);
 	}
 
 	/**
@@ -707,8 +715,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_SourceModel_TargetModel_SM2TM() {
-		return ea2SRuleEClass.getEOperations().get(6);
+	public EOperation get_SpAT2SpRule__IsAppropriate_checkCsp_FWD__CSP() {
+		return _SpAT2SpRuleEClass.getEOperations().get(5);
 	}
 
 	/**
@@ -716,8 +724,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsApplicable_checkCsp_FWD__CSP() {
-		return ea2SRuleEClass.getEOperations().get(7);
+	public EOperation get_SpAT2SpRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_Step_E2S__SpecialAttrType() {
+		return _SpAT2SpRuleEClass.getEOperations().get(6);
 	}
 
 	/**
@@ -725,8 +733,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject() {
-		return ea2SRuleEClass.getEOperations().get(8);
+	public EOperation get_SpAT2SpRule__IsApplicable_checkCsp_FWD__CSP() {
+		return _SpAT2SpRuleEClass.getEOperations().get(7);
 	}
 
 	/**
@@ -734,8 +742,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__CheckTypes_FWD__Match() {
-		return ea2SRuleEClass.getEOperations().get(9);
+	public EOperation get_SpAT2SpRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject() {
+		return _SpAT2SpRuleEClass.getEOperations().get(8);
 	}
 
 	/**
@@ -743,8 +751,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_BWD__Match_Step_Special_TargetModel() {
-		return ea2SRuleEClass.getEOperations().get(10);
+	public EOperation get_SpAT2SpRule__CheckTypes_FWD__Match() {
+		return _SpAT2SpRuleEClass.getEOperations().get(9);
 	}
 
 	/**
@@ -752,8 +760,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__Perform_BWD__IsApplicableMatch() {
-		return ea2SRuleEClass.getEOperations().get(11);
+	public EOperation get_SpAT2SpRule__IsAppropriate_BWD__Match_Step_Special() {
+		return _SpAT2SpRuleEClass.getEOperations().get(10);
 	}
 
 	/**
@@ -761,8 +769,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsApplicable_BWD__Match() {
-		return ea2SRuleEClass.getEOperations().get(12);
+	public EOperation get_SpAT2SpRule__Perform_BWD__IsApplicableMatch() {
+		return _SpAT2SpRuleEClass.getEOperations().get(11);
 	}
 
 	/**
@@ -770,8 +778,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__RegisterObjectsToMatch_BWD__Match_Step_Special_TargetModel() {
-		return ea2SRuleEClass.getEOperations().get(13);
+	public EOperation get_SpAT2SpRule__IsApplicable_BWD__Match() {
+		return _SpAT2SpRuleEClass.getEOperations().get(12);
 	}
 
 	/**
@@ -779,8 +787,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_solveCsp_BWD__Match_Step_Special_TargetModel() {
-		return ea2SRuleEClass.getEOperations().get(14);
+	public EOperation get_SpAT2SpRule__RegisterObjectsToMatch_BWD__Match_Step_Special() {
+		return _SpAT2SpRuleEClass.getEOperations().get(13);
 	}
 
 	/**
@@ -788,8 +796,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_checkCsp_BWD__CSP() {
-		return ea2SRuleEClass.getEOperations().get(15);
+	public EOperation get_SpAT2SpRule__IsAppropriate_solveCsp_BWD__Match_Step_Special() {
+		return _SpAT2SpRuleEClass.getEOperations().get(14);
 	}
 
 	/**
@@ -797,8 +805,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Step_Special_SourceModel_TargetModel_SM2TM() {
-		return ea2SRuleEClass.getEOperations().get(16);
+	public EOperation get_SpAT2SpRule__IsAppropriate_checkCsp_BWD__CSP() {
+		return _SpAT2SpRuleEClass.getEOperations().get(15);
 	}
 
 	/**
@@ -806,8 +814,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsApplicable_checkCsp_BWD__CSP() {
-		return ea2SRuleEClass.getEOperations().get(17);
+	public EOperation get_SpAT2SpRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_Special() {
+		return _SpAT2SpRuleEClass.getEOperations().get(16);
 	}
 
 	/**
@@ -815,8 +823,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject() {
-		return ea2SRuleEClass.getEOperations().get(18);
+	public EOperation get_SpAT2SpRule__IsApplicable_checkCsp_BWD__CSP() {
+		return _SpAT2SpRuleEClass.getEOperations().get(17);
 	}
 
 	/**
@@ -824,8 +832,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__CheckTypes_BWD__Match() {
-		return ea2SRuleEClass.getEOperations().get(19);
+	public EOperation get_SpAT2SpRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject() {
+		return _SpAT2SpRuleEClass.getEOperations().get(18);
 	}
 
 	/**
@@ -833,8 +841,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_BWD_EMoflonEdge_1__EMoflonEdge() {
-		return ea2SRuleEClass.getEOperations().get(20);
+	public EOperation get_SpAT2SpRule__CheckTypes_BWD__Match() {
+		return _SpAT2SpRuleEClass.getEOperations().get(19);
 	}
 
 	/**
@@ -842,8 +850,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_FWD_EMoflonEdge_1__EMoflonEdge() {
-		return ea2SRuleEClass.getEOperations().get(21);
+	public EOperation get_SpAT2SpRule__IsAppropriate_FWD_EMoflonEdge_43__EMoflonEdge() {
+		return _SpAT2SpRuleEClass.getEOperations().get(20);
 	}
 
 	/**
@@ -851,8 +859,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__IsAppropriate_BWD_EMoflonEdge_2__EMoflonEdge() {
-		return ea2SRuleEClass.getEOperations().get(22);
+	public EOperation get_SpAT2SpRule__IsAppropriate_BWD_EMoflonEdge_58__EMoflonEdge() {
+		return _SpAT2SpRuleEClass.getEOperations().get(21);
 	}
 
 	/**
@@ -860,8 +868,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__CheckAttributes_FWD__TripleMatch() {
-		return ea2SRuleEClass.getEOperations().get(23);
+	public EOperation get_SpAT2SpRule__CheckAttributes_FWD__TripleMatch() {
+		return _SpAT2SpRuleEClass.getEOperations().get(22);
 	}
 
 	/**
@@ -869,8 +877,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__CheckAttributes_BWD__TripleMatch() {
-		return ea2SRuleEClass.getEOperations().get(24);
+	public EOperation get_SpAT2SpRule__CheckAttributes_BWD__TripleMatch() {
+		return _SpAT2SpRuleEClass.getEOperations().get(23);
 	}
 
 	/**
@@ -878,8 +886,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__GenerateModel__RuleEntryContainer_SM2TM() {
-		return ea2SRuleEClass.getEOperations().get(25);
+	public EOperation get_SpAT2SpRule__GenerateModel__RuleEntryContainer_E2S() {
+		return _SpAT2SpRuleEClass.getEOperations().get(24);
 	}
 
 	/**
@@ -887,8 +895,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SourceModel_TargetModel_SM2TM_ModelgeneratorRuleResult() {
-		return ea2SRuleEClass.getEOperations().get(26);
+	public EOperation get_SpAT2SpRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_ModelgeneratorRuleResult() {
+		return _SpAT2SpRuleEClass.getEOperations().get(25);
 	}
 
 	/**
@@ -896,8 +904,8 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getEA2SRule__GenerateModel_checkCsp_BWD__CSP() {
-		return ea2SRuleEClass.getEOperations().get(27);
+	public EOperation get_SpAT2SpRule__GenerateModel_checkCsp_BWD__CSP() {
+		return _SpAT2SpRuleEClass.getEOperations().get(26);
 	}
 
 	/**
@@ -965,9 +973,9 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				CLASS1___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT);
 		createEOperation(class1EClass, CLASS1___CHECK_TYPES_BWD__MATCH);
 		createEOperation(class1EClass,
-				CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_0__SOURCEMODEL);
+				CLASS1___IS_APPROPRIATE_FWD_SOURCE_MODEL_15__SOURCEMODEL);
 		createEOperation(class1EClass,
-				CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_0__TARGETMODEL);
+				CLASS1___IS_APPROPRIATE_BWD_TARGET_MODEL_15__TARGETMODEL);
 		createEOperation(class1EClass,
 				CLASS1___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
 		createEOperation(class1EClass,
@@ -1022,9 +1030,9 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				E2S_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
 		createEOperation(e2SRuleEClass, E2S_RULE___CHECK_TYPES_BWD__MATCH);
 		createEOperation(e2SRuleEClass,
-				E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE);
+				E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_42__EMOFLONEDGE);
 		createEOperation(e2SRuleEClass,
-				E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE);
+				E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_57__EMOFLONEDGE);
 		createEOperation(e2SRuleEClass,
 				E2S_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
 		createEOperation(e2SRuleEClass,
@@ -1037,64 +1045,68 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 		createEOperation(e2SRuleEClass,
 				E2S_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP);
 
-		ea2SRuleEClass = createEClass(EA2S_RULE);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_FWD__MATCH_ELEMENT_SOURCEMODEL);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___PERFORM_FWD__ISAPPLICABLEMATCH);
-		createEOperation(ea2SRuleEClass, EA2S_RULE___IS_APPLICABLE_FWD__MATCH);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_ELEMENT_SOURCEMODEL);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_ELEMENT_SOURCEMODEL);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP);
+		elSpAt2SpRuleEClass = createEClass(EL_SP_AT2_SP_RULE);
+
+		_SpAT2SpRuleEClass = createEClass(_SP_AT2_SP_RULE);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_FWD__MATCH_ELEMENT__SPECIALATTRTYPE);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___PERFORM_FWD__ISAPPLICABLEMATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPLICABLE_FWD__MATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___REGISTER_OBJECTS_TO_MATCH_FWD__MATCH_ELEMENT__SPECIALATTRTYPE);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_SOLVE_CSP_FWD__MATCH_ELEMENT__SPECIALATTRTYPE);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_CHECK_CSP_FWD__CSP);
 		createEOperation(
-				ea2SRuleEClass,
-				EA2S_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_ELEMENT_SOURCEMODEL_TARGETMODEL_SM2TM);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP);
+				_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPLICABLE_SOLVE_CSP_FWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S__SPECIALATTRTYPE);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPLICABLE_CHECK_CSP_FWD__CSP);
 		createEOperation(
-				ea2SRuleEClass,
-				EA2S_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
-		createEOperation(ea2SRuleEClass, EA2S_RULE___CHECK_TYPES_FWD__MATCH);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_BWD__MATCH_STEP_SPECIAL_TARGETMODEL);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___PERFORM_BWD__ISAPPLICABLEMATCH);
-		createEOperation(ea2SRuleEClass, EA2S_RULE___IS_APPLICABLE_BWD__MATCH);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEP_SPECIAL_TARGETMODEL);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEP_SPECIAL_TARGETMODEL);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP);
+				_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___REGISTER_OBJECTS_FWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___CHECK_TYPES_FWD__MATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_BWD__MATCH_STEP_SPECIAL);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___PERFORM_BWD__ISAPPLICABLEMATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPLICABLE_BWD__MATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___REGISTER_OBJECTS_TO_MATCH_BWD__MATCH_STEP_SPECIAL);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_SOLVE_CSP_BWD__MATCH_STEP_SPECIAL);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_CHECK_CSP_BWD__CSP);
 		createEOperation(
-				ea2SRuleEClass,
-				EA2S_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_STEP_SPECIAL_SOURCEMODEL_TARGETMODEL_SM2TM);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP);
+				_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPLICABLE_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S_SPECIAL);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPLICABLE_CHECK_CSP_BWD__CSP);
 		createEOperation(
-				ea2SRuleEClass,
-				EA2S_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
-		createEOperation(ea2SRuleEClass, EA2S_RULE___CHECK_TYPES_BWD__MATCH);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_1__EMOFLONEDGE);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_1__EMOFLONEDGE);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_2__EMOFLONEDGE);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_SM2TM);
+				_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___REGISTER_OBJECTS_BWD__PERFORMRULERESULT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT_EOBJECT);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___CHECK_TYPES_BWD__MATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_43__EMOFLONEDGE);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_58__EMOFLONEDGE);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___CHECK_ATTRIBUTES_BWD__TRIPLEMATCH);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___GENERATE_MODEL__RULEENTRYCONTAINER_E2S);
 		createEOperation(
-				ea2SRuleEClass,
-				EA2S_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_SOURCEMODEL_TARGETMODEL_SM2TM_MODELGENERATORRULERESULT);
-		createEOperation(ea2SRuleEClass,
-				EA2S_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP);
+				_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___GENERATE_MODEL_SOLVE_CSP_BWD__ISAPPLICABLEMATCH_ELEMENT_STEP_E2S_MODELGENERATORRULERESULT);
+		createEOperation(_SpAT2SpRuleEClass,
+				_SP_AT2_SP_RULE___GENERATE_MODEL_CHECK_CSP_BWD__CSP);
 	}
 
 	/**
@@ -1144,7 +1156,9 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				theTGGRuntimePackage.getAbstractRule());
 		e2SRuleEClass.getESuperTypes().add(
 				theTGGRuntimePackage.getAbstractRule());
-		ea2SRuleEClass.getESuperTypes().add(
+		elSpAt2SpRuleEClass.getESuperTypes().add(
+				theTGGRuntimePackage.getAbstractRule());
+		_SpAT2SpRuleEClass.getESuperTypes().add(
 				theTGGRuntimePackage.getAbstractRule());
 
 		// Initialize classes, features, and operations; add parameters
@@ -1305,16 +1319,16 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getClass1__IsAppropriate_FWD_SourceModel_0__SourceModel(),
+				getClass1__IsAppropriate_FWD_SourceModel_15__SourceModel(),
 				theTGGRuntimePackage.getEObjectContainer(),
-				"isAppropriate_FWD_SourceModel_0", 0, 1, IS_UNIQUE, IS_ORDERED);
+				"isAppropriate_FWD_SourceModel_15", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theSourcePackage.getSourceModel(), "sm", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getClass1__IsAppropriate_BWD_TargetModel_0__TargetModel(),
+				getClass1__IsAppropriate_BWD_TargetModel_15__TargetModel(),
 				theTGGRuntimePackage.getEObjectContainer(),
-				"isAppropriate_BWD_TargetModel_0", 0, 1, IS_UNIQUE, IS_ORDERED);
+				"isAppropriate_BWD_TargetModel_15", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTargetPackage.getTargetModel(), "tm", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 
@@ -1545,16 +1559,16 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getE2SRule__IsAppropriate_FWD_EMoflonEdge_0__EMoflonEdge(),
+				getE2SRule__IsAppropriate_FWD_EMoflonEdge_42__EMoflonEdge(),
 				theTGGRuntimePackage.getEObjectContainer(),
-				"isAppropriate_FWD_EMoflonEdge_0", 0, 1, IS_UNIQUE, IS_ORDERED);
+				"isAppropriate_FWD_EMoflonEdge_42", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getEMoflonEdge(),
 				"_edge_elements", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getE2SRule__IsAppropriate_BWD_EMoflonEdge_0__EMoflonEdge(),
+				getE2SRule__IsAppropriate_BWD_EMoflonEdge_57__EMoflonEdge(),
 				theTGGRuntimePackage.getEObjectContainer(),
-				"isAppropriate_BWD_EMoflonEdge_0", 0, 1, IS_UNIQUE, IS_ORDERED);
+				"isAppropriate_BWD_EMoflonEdge_57", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getEMoflonEdge(), "_edge_steps",
 				0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -1600,82 +1614,85 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 
-		initEClass(ea2SRuleEClass, EA2SRule.class, "EA2SRule", !IS_ABSTRACT,
-				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(elSpAt2SpRuleEClass, ElSpAt2SpRule.class, "ElSpAt2SpRule",
+				IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(_SpAT2SpRuleEClass, _SpAT2SpRule.class, "_SpAT2SpRule",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = initEOperation(
-				getEA2SRule__IsAppropriate_FWD__Match_Element_SourceModel(),
+				get_SpAT2SpRule__IsAppropriate_FWD__Match_Element__SpecialAttrType(),
 				ecorePackage.getEBoolean(), "isAppropriate_FWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theSourcePackage.getElement(), "e", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theSourcePackage.getSourceModel(), "sm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theSourcePackage.get_SpecialAttrType(), "_spAt", 0,
+				1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__Perform_FWD__IsApplicableMatch(),
+		op = initEOperation(get_SpAT2SpRule__Perform_FWD__IsApplicableMatch(),
 				theTGGRuntimePackage.getPerformRuleResult(), "perform_FWD", 0,
 				1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getIsApplicableMatch(),
 				"isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__IsApplicable_FWD__Match(),
+		op = initEOperation(get_SpAT2SpRule__IsApplicable_FWD__Match(),
 				theTGGRuntimePackage.getIsApplicableRuleResult(),
 				"isApplicable_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__RegisterObjectsToMatch_FWD__Match_Element_SourceModel(),
+				get_SpAT2SpRule__RegisterObjectsToMatch_FWD__Match_Element__SpecialAttrType(),
 				null, "registerObjectsToMatch_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theSourcePackage.getElement(), "e", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theSourcePackage.getSourceModel(), "sm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theSourcePackage.get_SpecialAttrType(), "_spAt", 0,
+				1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__IsAppropriate_solveCsp_FWD__Match_Element_SourceModel(),
+				get_SpAT2SpRule__IsAppropriate_solveCsp_FWD__Match_Element__SpecialAttrType(),
 				theCspPackage.getCSP(), "isAppropriate_solveCsp_FWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theSourcePackage.getElement(), "e", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theSourcePackage.getSourceModel(), "sm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theSourcePackage.get_SpecialAttrType(), "_spAt", 0,
+				1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__IsAppropriate_checkCsp_FWD__CSP(),
+		op = initEOperation(get_SpAT2SpRule__IsAppropriate_checkCsp_FWD__CSP(),
 				ecorePackage.getEBoolean(), "isAppropriate_checkCsp_FWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_SourceModel_TargetModel_SM2TM(),
+				get_SpAT2SpRule__IsApplicable_solveCsp_FWD__IsApplicableMatch_Element_Step_E2S__SpecialAttrType(),
 				theCspPackage.getCSP(), "isApplicable_solveCsp_FWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getIsApplicableMatch(),
 				"isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theSourcePackage.getElement(), "e", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theSourcePackage.getSourceModel(), "sm", 0, 1,
+		addEParameter(op, theTargetPackage.getStep(), "s", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, theSourceToTargetCorrPackage.getE2S(), "e2S", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theTargetPackage.getTargetModel(), "tm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theSourceToTargetCorrPackage.getSM2TM(), "sm2Tm", 0,
+		addEParameter(op, theSourcePackage.get_SpecialAttrType(), "_spAt", 0,
 				1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__IsApplicable_checkCsp_FWD__CSP(),
+		op = initEOperation(get_SpAT2SpRule__IsApplicable_checkCsp_FWD__CSP(),
 				ecorePackage.getEBoolean(), "isApplicable_checkCsp_FWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject(),
+				get_SpAT2SpRule__RegisterObjects_FWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject(),
 				null, "registerObjects_FWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getPerformRuleResult(),
 				"ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1683,25 +1700,23 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "s", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "e2S", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "_spAt", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "sp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "e2Sp", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "sm", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "tm", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "sm2Tm", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "_spAt2Sp", 0, 1,
+				IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__CheckTypes_FWD__Match(),
+		op = initEOperation(get_SpAT2SpRule__CheckTypes_FWD__Match(),
 				ecorePackage.getEBoolean(), "checkTypes_FWD", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__IsAppropriate_BWD__Match_Step_Special_TargetModel(),
+				get_SpAT2SpRule__IsAppropriate_BWD__Match_Step_Special(),
 				ecorePackage.getEBoolean(), "isAppropriate_BWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
@@ -1710,23 +1725,21 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				IS_ORDERED);
 		addEParameter(op, theTargetPackage.getSpecial(), "sp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theTargetPackage.getTargetModel(), "tm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__Perform_BWD__IsApplicableMatch(),
+		op = initEOperation(get_SpAT2SpRule__Perform_BWD__IsApplicableMatch(),
 				theTGGRuntimePackage.getPerformRuleResult(), "perform_BWD", 0,
 				1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getIsApplicableMatch(),
 				"isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__IsApplicable_BWD__Match(),
+		op = initEOperation(get_SpAT2SpRule__IsApplicable_BWD__Match(),
 				theTGGRuntimePackage.getIsApplicableRuleResult(),
 				"isApplicable_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__RegisterObjectsToMatch_BWD__Match_Step_Special_TargetModel(),
+				get_SpAT2SpRule__RegisterObjectsToMatch_BWD__Match_Step_Special(),
 				null, "registerObjectsToMatch_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
@@ -1734,11 +1747,9 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				IS_ORDERED);
 		addEParameter(op, theTargetPackage.getSpecial(), "sp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theTargetPackage.getTargetModel(), "tm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__IsAppropriate_solveCsp_BWD__Match_Step_Special_TargetModel(),
+				get_SpAT2SpRule__IsAppropriate_solveCsp_BWD__Match_Step_Special(),
 				theCspPackage.getCSP(), "isAppropriate_solveCsp_BWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
@@ -1747,40 +1758,36 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				IS_ORDERED);
 		addEParameter(op, theTargetPackage.getSpecial(), "sp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theTargetPackage.getTargetModel(), "tm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__IsAppropriate_checkCsp_BWD__CSP(),
+		op = initEOperation(get_SpAT2SpRule__IsAppropriate_checkCsp_BWD__CSP(),
 				ecorePackage.getEBoolean(), "isAppropriate_checkCsp_BWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Step_Special_SourceModel_TargetModel_SM2TM(),
+				get_SpAT2SpRule__IsApplicable_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_Special(),
 				theCspPackage.getCSP(), "isApplicable_solveCsp_BWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getIsApplicableMatch(),
 				"isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theSourcePackage.getElement(), "e", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
 		addEParameter(op, theTargetPackage.getStep(), "s", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
+		addEParameter(op, theSourceToTargetCorrPackage.getE2S(), "e2S", 0, 1,
+				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTargetPackage.getSpecial(), "sp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, theSourcePackage.getSourceModel(), "sm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theTargetPackage.getTargetModel(), "tm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theSourceToTargetCorrPackage.getSM2TM(), "sm2Tm", 0,
-				1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__IsApplicable_checkCsp_BWD__CSP(),
+		op = initEOperation(get_SpAT2SpRule__IsApplicable_checkCsp_BWD__CSP(),
 				ecorePackage.getEBoolean(), "isApplicable_checkCsp_BWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject_EObject(),
+				get_SpAT2SpRule__RegisterObjects_BWD__PerformRuleResult_EObject_EObject_EObject_EObject_EObject_EObject(),
 				null, "registerObjects_BWD", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getPerformRuleResult(),
 				"ruleresult", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1788,81 +1795,74 @@ public class RulesPackageImpl extends EPackageImpl implements RulesPackage {
 				IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "s", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "e2S", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "_spAt", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
 		addEParameter(op, ecorePackage.getEObject(), "sp", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "e2Sp", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "sm", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "tm", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
-		addEParameter(op, ecorePackage.getEObject(), "sm2Tm", 0, 1, IS_UNIQUE,
-				IS_ORDERED);
+		addEParameter(op, ecorePackage.getEObject(), "_spAt2Sp", 0, 1,
+				IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__CheckTypes_BWD__Match(),
+		op = initEOperation(get_SpAT2SpRule__CheckTypes_BWD__Match(),
 				ecorePackage.getEBoolean(), "checkTypes_BWD", 0, 1, IS_UNIQUE,
 				IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getMatch(), "match", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__IsAppropriate_BWD_EMoflonEdge_1__EMoflonEdge(),
+				get_SpAT2SpRule__IsAppropriate_FWD_EMoflonEdge_43__EMoflonEdge(),
 				theTGGRuntimePackage.getEObjectContainer(),
-				"isAppropriate_BWD_EMoflonEdge_1", 0, 1, IS_UNIQUE, IS_ORDERED);
+				"isAppropriate_FWD_EMoflonEdge_43", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theTGGRuntimePackage.getEMoflonEdge(),
+				"_edge__special", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(
+				get_SpAT2SpRule__IsAppropriate_BWD_EMoflonEdge_58__EMoflonEdge(),
+				theTGGRuntimePackage.getEObjectContainer(),
+				"isAppropriate_BWD_EMoflonEdge_58", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getEMoflonEdge(),
 				"_edge_special", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__IsAppropriate_FWD_EMoflonEdge_1__EMoflonEdge(),
-				theTGGRuntimePackage.getEObjectContainer(),
-				"isAppropriate_FWD_EMoflonEdge_1", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theTGGRuntimePackage.getEMoflonEdge(),
-				"_edge_elements", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(
-				getEA2SRule__IsAppropriate_BWD_EMoflonEdge_2__EMoflonEdge(),
-				theTGGRuntimePackage.getEObjectContainer(),
-				"isAppropriate_BWD_EMoflonEdge_2", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theTGGRuntimePackage.getEMoflonEdge(), "_edge_steps",
-				0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = initEOperation(getEA2SRule__CheckAttributes_FWD__TripleMatch(),
+				get_SpAT2SpRule__CheckAttributes_FWD__TripleMatch(),
 				theTGGRuntimePackage.getRuleResult(), "checkAttributes_FWD", 0,
 				1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getTripleMatch(), "tripleMatch",
 				0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__CheckAttributes_BWD__TripleMatch(),
+		op = initEOperation(
+				get_SpAT2SpRule__CheckAttributes_BWD__TripleMatch(),
 				theTGGRuntimePackage.getRuleResult(), "checkAttributes_BWD", 0,
 				1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getTripleMatch(), "tripleMatch",
 				0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__GenerateModel__RuleEntryContainer_SM2TM(),
+				get_SpAT2SpRule__GenerateModel__RuleEntryContainer_E2S(),
 				theTGGRuntimePackage.getModelgeneratorRuleResult(),
 				"generateModel", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theModelgeneratorPackage.getRuleEntryContainer(),
 				"ruleEntryContainer", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theSourceToTargetCorrPackage.getSM2TM(),
-				"sm2TmParameter", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theSourceToTargetCorrPackage.getE2S(),
+				"e2SParameter", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(
-				getEA2SRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_SourceModel_TargetModel_SM2TM_ModelgeneratorRuleResult(),
+				get_SpAT2SpRule__GenerateModel_solveCsp_BWD__IsApplicableMatch_Element_Step_E2S_ModelgeneratorRuleResult(),
 				theCspPackage.getCSP(), "generateModel_solveCsp_BWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getIsApplicableMatch(),
 				"isApplicableMatch", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theSourcePackage.getSourceModel(), "sm", 0, 1,
+		addEParameter(op, theSourcePackage.getElement(), "e", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, theTargetPackage.getStep(), "s", 0, 1, IS_UNIQUE,
+				IS_ORDERED);
+		addEParameter(op, theSourceToTargetCorrPackage.getE2S(), "e2S", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theTargetPackage.getTargetModel(), "tm", 0, 1,
-				IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, theSourceToTargetCorrPackage.getSM2TM(), "sm2Tm", 0,
-				1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theTGGRuntimePackage.getModelgeneratorRuleResult(),
 				"ruleResult", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getEA2SRule__GenerateModel_checkCsp_BWD__CSP(),
+		op = initEOperation(get_SpAT2SpRule__GenerateModel_checkCsp_BWD__CSP(),
 				ecorePackage.getEBoolean(), "generateModel_checkCsp_BWD", 0, 1,
 				IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theCspPackage.getCSP(), "csp", 0, 1, IS_UNIQUE,

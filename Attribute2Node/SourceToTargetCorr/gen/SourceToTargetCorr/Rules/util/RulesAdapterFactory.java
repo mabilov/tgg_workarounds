@@ -79,8 +79,13 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseEA2SRule(EA2SRule object) {
-			return createEA2SRuleAdapter();
+		public Adapter caseElSpAt2SpRule(ElSpAt2SpRule object) {
+			return createElSpAt2SpRuleAdapter();
+		}
+
+		@Override
+		public Adapter case_SpAT2SpRule(_SpAT2SpRule object) {
+			return create_SpAT2SpRuleAdapter();
 		}
 
 		@Override
@@ -136,16 +141,30 @@ public class RulesAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link SourceToTargetCorr.Rules.EA2SRule <em>EA2S Rule</em>}'.
+	 * Creates a new adapter for an object of class '{@link SourceToTargetCorr.Rules.ElSpAt2SpRule <em>El Sp At2 Sp Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see SourceToTargetCorr.Rules.EA2SRule
+	 * @see SourceToTargetCorr.Rules.ElSpAt2SpRule
 	 * @generated
 	 */
-	public Adapter createEA2SRuleAdapter() {
+	public Adapter createElSpAt2SpRuleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SourceToTargetCorr.Rules._SpAT2SpRule <em>Sp AT2 Sp Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SourceToTargetCorr.Rules._SpAT2SpRule
+	 * @generated
+	 */
+	public Adapter create_SpAT2SpRuleAdapter() {
 		return null;
 	}
 

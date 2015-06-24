@@ -86,11 +86,20 @@ public class RulesSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case RulesPackage.EA2S_RULE: {
-			EA2SRule ea2SRule = (EA2SRule) theEObject;
-			T result = caseEA2SRule(ea2SRule);
+		case RulesPackage.EL_SP_AT2_SP_RULE: {
+			ElSpAt2SpRule elSpAt2SpRule = (ElSpAt2SpRule) theEObject;
+			T result = caseElSpAt2SpRule(elSpAt2SpRule);
 			if (result == null)
-				result = caseAbstractRule(ea2SRule);
+				result = caseAbstractRule(elSpAt2SpRule);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case RulesPackage._SP_AT2_SP_RULE: {
+			_SpAT2SpRule _SpAT2SpRule = (_SpAT2SpRule) theEObject;
+			T result = case_SpAT2SpRule(_SpAT2SpRule);
+			if (result == null)
+				result = caseAbstractRule(_SpAT2SpRule);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -131,17 +140,32 @@ public class RulesSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>EA2S Rule</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>El Sp At2 Sp Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EA2S Rule</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>El Sp At2 Sp Rule</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEA2SRule(EA2SRule object) {
+	public T caseElSpAt2SpRule(ElSpAt2SpRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sp AT2 Sp Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sp AT2 Sp Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T case_SpAT2SpRule(_SpAT2SpRule object) {
 		return null;
 	}
 

@@ -41,13 +41,13 @@ public interface RulesFactory extends EFactory {
 	E2SRule createE2SRule();
 
 	/**
-	 * Returns a new object of class '<em>EA2S Rule</em>'.
+	 * Returns a new object of class '<em>Sp AT2 Sp Rule</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EA2S Rule</em>'.
+	 * @return a new object of class '<em>Sp AT2 Sp Rule</em>'.
 	 * @generated
 	 */
-	EA2SRule createEA2SRule();
+	_SpAT2SpRule create_SpAT2SpRule();
 
 	/**
 	 * Returns the package supported by this factory.

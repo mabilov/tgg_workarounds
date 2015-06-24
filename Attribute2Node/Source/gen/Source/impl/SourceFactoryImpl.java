@@ -60,6 +60,8 @@ public class SourceFactoryImpl extends EFactoryImpl implements SourceFactory {
 			return createSourceModel();
 		case SourcePackage.ELEMENT:
 			return createElement();
+		case SourcePackage._SPECIAL_ATTR_TYPE:
+			return create_SpecialAttrType();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName()
 					+ "' is not a valid classifier");
@@ -84,6 +86,16 @@ public class SourceFactoryImpl extends EFactoryImpl implements SourceFactory {
 	public Element createElement() {
 		ElementImpl element = new ElementImpl();
 		return element;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public _SpecialAttrType create_SpecialAttrType() {
+		_SpecialAttrTypeImpl _SpecialAttrType = new _SpecialAttrTypeImpl();
+		return _SpecialAttrType;
 	}
 
 	/**

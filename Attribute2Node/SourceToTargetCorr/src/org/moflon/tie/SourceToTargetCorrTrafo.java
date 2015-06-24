@@ -1,12 +1,14 @@
 package org.moflon.tie;
 
 import java.io.IOException;
+
 import org.apache.log4j.BasicConfigurator;
 import org.moflon.ide.debug.DebugSynchronizationHelper;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.EObject;
 
+import Source.SourceModel;
+import Source.util.SourcePreprocessor;
 import SourceToTargetCorr.SourceToTargetCorrPackage;
 
 
@@ -31,6 +33,7 @@ public class SourceToTargetCorrTrafo extends DebugSynchronizationHelper{
 	}
 
 	public void performForward() {
+		SourcePreprocessor.preprocess((SourceModel) this.src);
 		integrateForward();
 
 		saveTrg("instances/fwd.trg.xmi");

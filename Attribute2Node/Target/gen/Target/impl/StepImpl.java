@@ -7,6 +7,7 @@ import Target.Step;
 import Target.TargetPackage;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -32,7 +33,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  */
 public class StepImpl extends EObjectImpl implements Step {
 	/**
-	 * The cached value of the '{@link #getSpecial() <em>Special</em>}' reference.
+	 * The cached value of the '{@link #getSpecial() <em>Special</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getSpecial()
@@ -86,15 +87,6 @@ public class StepImpl extends EObjectImpl implements Step {
 	 * @generated
 	 */
 	public Special getSpecial() {
-		if (special != null && special.eIsProxy()) {
-			InternalEObject oldSpecial = (InternalEObject) special;
-			special = (Special) eResolveProxy(oldSpecial);
-			if (special != oldSpecial) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-							TargetPackage.STEP__SPECIAL, oldSpecial, special));
-			}
-		}
 		return special;
 	}
 
@@ -103,8 +95,20 @@ public class StepImpl extends EObjectImpl implements Step {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Special basicGetSpecial() {
-		return special;
+	public NotificationChain basicSetSpecial(Special newSpecial,
+			NotificationChain msgs) {
+		Special oldSpecial = special;
+		special = newSpecial;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, TargetPackage.STEP__SPECIAL, oldSpecial,
+					newSpecial);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
 	}
 
 	/**
@@ -113,11 +117,22 @@ public class StepImpl extends EObjectImpl implements Step {
 	 * @generated
 	 */
 	public void setSpecial(Special newSpecial) {
-		Special oldSpecial = special;
-		special = newSpecial;
-		if (eNotificationRequired())
+		if (newSpecial != special) {
+			NotificationChain msgs = null;
+			if (special != null)
+				msgs = ((InternalEObject) special).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TargetPackage.STEP__SPECIAL,
+						null, msgs);
+			if (newSpecial != null)
+				msgs = ((InternalEObject) newSpecial).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - TargetPackage.STEP__SPECIAL,
+						null, msgs);
+			msgs = basicSetSpecial(newSpecial, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					TargetPackage.STEP__SPECIAL, oldSpecial, special));
+					TargetPackage.STEP__SPECIAL, newSpecial, newSpecial));
 	}
 
 	/**
@@ -148,12 +163,25 @@ public class StepImpl extends EObjectImpl implements Step {
 	 * @generated
 	 */
 	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case TargetPackage.STEP__SPECIAL:
+			return basicSetSpecial(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case TargetPackage.STEP__SPECIAL:
-			if (resolve)
-				return getSpecial();
-			return basicGetSpecial();
+			return getSpecial();
 		case TargetPackage.STEP__ID:
 			return getId();
 		}

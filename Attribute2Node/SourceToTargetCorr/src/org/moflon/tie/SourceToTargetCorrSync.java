@@ -1,14 +1,17 @@
 package org.moflon.tie;
 
 import java.io.IOException;
+
 import org.apache.log4j.BasicConfigurator;
 import org.moflon.ide.debug.DebugSynchronizationHelper;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.common.util.URI;
+
 import TGGRuntime.CorrespondenceModel;
 import Source.SourceModel;
 
+import Source.util.SourcePreprocessor;
 import SourceToTargetCorr.SourceToTargetCorrPackage;
 
 public class SourceToTargetCorrSync extends DebugSynchronizationHelper {
@@ -33,6 +36,7 @@ public class SourceToTargetCorrSync extends DebugSynchronizationHelper {
 	public void syncForward(String corr) {
 		setChangeSrc(root -> {
 			((SourceModel) root).getElements().get(0).setSpecialAttr("spesial");
+			SourcePreprocessor.preprocess((SourceModel) root);
 		});
 		loadTriple(corr);
 		loadSynchronizationProtocol("instances/fwd.protocol.xmi");

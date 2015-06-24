@@ -60,8 +60,8 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 			return createClass1();
 		case RulesPackage.E2S_RULE:
 			return createE2SRule();
-		case RulesPackage.EA2S_RULE:
-			return createEA2SRule();
+		case RulesPackage._SP_AT2_SP_RULE:
+			return create_SpAT2SpRule();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName()
 					+ "' is not a valid classifier");
@@ -93,9 +93,9 @@ public class RulesFactoryImpl extends EFactoryImpl implements RulesFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EA2SRule createEA2SRule() {
-		EA2SRuleImpl ea2SRule = new EA2SRuleImpl();
-		return ea2SRule;
+	public _SpAT2SpRule create_SpAT2SpRule() {
+		_SpAT2SpRuleImpl _SpAT2SpRule = new _SpAT2SpRuleImpl();
+		return _SpAT2SpRule;
 	}
 
 	/**

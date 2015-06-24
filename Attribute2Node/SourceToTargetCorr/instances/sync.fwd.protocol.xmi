@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TGGRuntime="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore">
+  <tripleMatches children="//@tripleMatches.1" ruleName="Class1">
+    <sourceElements href="sync.fwd.src.xmi#/"/>
+    <nodeMappings nodeName="sm2Tm">
+      <node href="sync.fwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="tm">
+      <node href="sync.fwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sm">
+      <node href="sync.fwd.src.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="sync.fwd.corr.xmi#//@correspondences.0"/>
+      <trg href="sync.fwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="sync.fwd.corr.xmi#//@correspondences.0"/>
+      <trg href="sync.fwd.src.xmi#/"/>
+    </containedEdges>
+    <targetElements href="sync.fwd.trg.xmi#/"/>
+    <correspondenceElements href="sync.fwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="sync.fwd.corr.xmi#//@correspondences.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="sync.fwd.src.xmi#/"/>
+    <createdElements href="sync.fwd.trg.xmi#/"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+  </tripleMatches>
+  <tripleMatches children="//@tripleMatches.2" ruleName="E2SRule" number="1">
+    <sourceElements href="sync.fwd.src.xmi#//@elements.0"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <sourceElements href="sync.fwd.src.xmi#/"/>
+    <contextElements href="sync.fwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="sync.fwd.src.xmi#/"/>
+    <contextElements href="sync.fwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <nodeMappings nodeName="s">
+      <node href="sync.fwd.trg.xmi#//@steps.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="e">
+      <node href="sync.fwd.src.xmi#//@elements.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sm2Tm">
+      <node href="sync.fwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="e2S">
+      <node href="sync.fwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="tm">
+      <node href="sync.fwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sm">
+      <node href="sync.fwd.src.xmi#/"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="sync.fwd.corr.xmi#//@correspondences.0"/>
+      <trg href="sync.fwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="sync.fwd.corr.xmi#//@correspondences.0"/>
+      <trg href="sync.fwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="sync.fwd.corr.xmi#//@correspondences.1"/>
+      <trg href="sync.fwd.trg.xmi#//@steps.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="sync.fwd.trg.xmi#/"/>
+      <trg href="sync.fwd.trg.xmi#//@steps.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="elements">
+      <src href="sync.fwd.src.xmi#/"/>
+      <trg href="sync.fwd.src.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="sync.fwd.corr.xmi#//@correspondences.1"/>
+      <trg href="sync.fwd.src.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="elements">
+      <src href="sync.fwd.src.xmi#/"/>
+      <trg href="sync.fwd.src.xmi#//@elements.0"/>
+    </containedEdges>
+    <targetElements href="sync.fwd.trg.xmi#//@steps.0"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <targetElements href="sync.fwd.trg.xmi#/"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <correspondenceElements href="sync.fwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="sync.fwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="sync.fwd.trg.xmi#//@steps.0"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <createdElements href="sync.fwd.src.xmi#//@elements.0"/>
+    <createdElements href="sync.fwd.corr.xmi#//@correspondences.1"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+  </tripleMatches>
+  <tripleMatches ruleName="_SpAT2SpRule" number="2">
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <sourceElements href="sync.fwd.src.xmi#//@elements.0"/>
+    <sourceElements href="sync.fwd.src.xmi#//@elements.0/@_special"/>
+    <contextElements href="sync.fwd.trg.xmi#//@steps.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="sync.fwd.src.xmi#//@elements.0"/>
+    <contextElements href="sync.fwd.corr.xmi#//@correspondences.1"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <nodeMappings nodeName="s">
+      <node href="sync.fwd.trg.xmi#//@steps.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="_spAt2Sp">
+      <node href="sync.fwd.corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="e">
+      <node href="sync.fwd.src.xmi#//@elements.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="e2S">
+      <node href="sync.fwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="sp">
+      <node href="sync.fwd.trg.xmi#//@steps.0/@special"/>
+    </nodeMappings>
+    <nodeMappings nodeName="_spAt">
+      <node href="sync.fwd.src.xmi#//@elements.0/@_special"/>
+    </nodeMappings>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="sync.fwd.corr.xmi#//@correspondences.1"/>
+      <trg href="sync.fwd.trg.xmi#//@steps.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="sync.fwd.corr.xmi#//@correspondences.1"/>
+      <trg href="sync.fwd.src.xmi#//@elements.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="special">
+      <src href="sync.fwd.trg.xmi#//@steps.0"/>
+      <trg href="sync.fwd.trg.xmi#//@steps.0/@special"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="sync.fwd.corr.xmi#//@correspondences.2"/>
+      <trg href="sync.fwd.trg.xmi#//@steps.0/@special"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="_special">
+      <src href="sync.fwd.src.xmi#//@elements.0"/>
+      <trg href="sync.fwd.src.xmi#//@elements.0/@_special"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
+      <src href="sync.fwd.corr.xmi#//@correspondences.2"/>
+      <trg href="sync.fwd.src.xmi#//@elements.0/@_special"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="_special">
+      <src href="sync.fwd.src.xmi#//@elements.0"/>
+      <trg href="sync.fwd.src.xmi#//@elements.0/@_special"/>
+    </containedEdges>
+    <targetElements href="sync.fwd.trg.xmi#//@steps.0/@special"/>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <targetElements href="sync.fwd.trg.xmi#//@steps.0"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="sync.fwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <correspondenceElements href="sync.fwd.corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <createdElements href="sync.fwd.trg.xmi#//@steps.0/@special"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="sync.fwd.src.xmi#//@elements.0/@_special"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <createdElements href="sync.fwd.corr.xmi#//@correspondences.2"/>
+  </tripleMatches>
+</TGGRuntime:PrecedenceStructure>

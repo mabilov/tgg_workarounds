@@ -27,6 +27,15 @@
       <eType xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Special"/>
     </eStructuralFeatures>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="_SpAt2Sp">
+    <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractCorrespondence"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="platform:/plugin/Source/model/Source.ecore#//_SpecialAttrType"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="platform:/plugin/Target/model/Target.ecore#//Special"/>
+    </eStructuralFeatures>
+  </eClassifiers>
   <eSubpackages name="Rules" nsURI="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules" nsPrefix="Rules">
     <eClassifiers xsi:type="ecore:EClass" name="Class1">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
@@ -34,7 +43,10 @@
     <eClassifiers xsi:type="ecore:EClass" name="E2SRule">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="EA2SRule">
+    <eClassifiers xsi:type="ecore:EClass" name="ElSpAt2SpRule" abstract="true">
+      <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="_SpAT2SpRule">
       <eSuperTypes href="platform:/plugin/TGGRuntime/model/TGGRuntime.ecore#//AbstractRule"/>
     </eClassifiers>
   </eSubpackages>

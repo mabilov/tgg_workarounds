@@ -11,23 +11,23 @@
     <nodeMappings nodeName="sm">
       <node href="fwd.src.xmi#/"/>
     </nodeMappings>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="fwd.corr.xmi#//@correspondences.0"/>
-      <trg href="fwd.trg.xmi#/"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="fwd.corr.xmi#//@correspondences.0"/>
       <trg href="fwd.src.xmi#/"/>
     </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="fwd.corr.xmi#//@correspondences.0"/>
+      <trg href="fwd.trg.xmi#/"/>
+    </containedEdges>
     <targetElements href="fwd.trg.xmi#/"/>
-    <correspondenceElements href="fwd.corr.xmi#//@correspondences.0"/>
     <correspondenceElements href="#//@tripleMatches.0/@containedEdges.0"/>
     <correspondenceElements href="#//@tripleMatches.0/@containedEdges.1"/>
-    <createdElements href="fwd.trg.xmi#/"/>
+    <correspondenceElements href="fwd.corr.xmi#//@correspondences.0"/>
     <createdElements href="fwd.src.xmi#/"/>
-    <createdElements href="fwd.corr.xmi#//@correspondences.0"/>
+    <createdElements href="fwd.trg.xmi#/"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
     <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.0"/>
   </tripleMatches>
   <tripleMatches ruleName="E2SRule" number="1">
     <sourceElements href="fwd.src.xmi#/"/>
@@ -35,9 +35,9 @@
     <sourceElements href="#//@tripleMatches.1/@containedEdges.6"/>
     <contextElements href="fwd.src.xmi#/"/>
     <contextElements href="fwd.trg.xmi#/"/>
-    <contextElements href="fwd.corr.xmi#//@correspondences.0"/>
     <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
     <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="fwd.corr.xmi#//@correspondences.0"/>
     <nodeMappings nodeName="s">
       <node href="fwd.trg.xmi#//@steps.0"/>
     </nodeMappings>
@@ -56,25 +56,25 @@
     <nodeMappings nodeName="sm">
       <node href="fwd.src.xmi#/"/>
     </nodeMappings>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
-      <src href="fwd.corr.xmi#//@correspondences.0"/>
-      <trg href="fwd.trg.xmi#/"/>
-    </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="fwd.corr.xmi#//@correspondences.0"/>
       <trg href="fwd.src.xmi#/"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
+      <src href="fwd.corr.xmi#//@correspondences.0"/>
+      <trg href="fwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="target">
       <src href="fwd.corr.xmi#//@correspondences.1"/>
+      <trg href="fwd.trg.xmi#//@steps.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
+      <src href="fwd.trg.xmi#/"/>
       <trg href="fwd.trg.xmi#//@steps.0"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="source">
       <src href="fwd.corr.xmi#//@correspondences.1"/>
       <trg href="fwd.src.xmi#//@elements.0"/>
-    </containedEdges>
-    <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="steps">
-      <src href="fwd.trg.xmi#/"/>
-      <trg href="fwd.trg.xmi#//@steps.0"/>
     </containedEdges>
     <containedEdges xsi:type="TGGRuntime:EMoflonEdge" name="elements">
       <src href="fwd.src.xmi#/"/>
@@ -85,20 +85,20 @@
       <trg href="fwd.src.xmi#//@elements.0"/>
     </containedEdges>
     <targetElements href="fwd.trg.xmi#/"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.3"/>
     <targetElements href="fwd.trg.xmi#//@steps.0"/>
-    <targetElements href="#//@tripleMatches.1/@containedEdges.4"/>
-    <correspondenceElements href="fwd.corr.xmi#//@correspondences.0"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
     <correspondenceElements href="#//@tripleMatches.1/@containedEdges.2"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
-    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.3"/>
     <correspondenceElements href="fwd.corr.xmi#//@correspondences.1"/>
-    <createdElements href="fwd.trg.xmi#//@steps.0"/>
-    <createdElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="fwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.4"/>
     <createdElements href="fwd.src.xmi#//@elements.0"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <createdElements href="fwd.corr.xmi#//@correspondences.1"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.3"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
-    <createdElements href="fwd.corr.xmi#//@correspondences.1"/>
     <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <createdElements href="fwd.trg.xmi#//@steps.0"/>
   </tripleMatches>
 </TGGRuntime:PrecedenceStructure>

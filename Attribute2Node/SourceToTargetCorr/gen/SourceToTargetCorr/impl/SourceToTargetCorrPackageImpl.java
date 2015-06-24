@@ -12,6 +12,7 @@ import SourceToTargetCorr.Rules.impl.RulesPackageImpl;
 
 import SourceToTargetCorr.SourceToTargetCorrFactory;
 import SourceToTargetCorr.SourceToTargetCorrPackage;
+import SourceToTargetCorr._SpAt2Sp;
 
 import TGGLanguage.TGGLanguagePackage;
 
@@ -53,6 +54,13 @@ public class SourceToTargetCorrPackageImpl extends EPackageImpl implements
 	 * @generated
 	 */
 	private EClass e2SpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass _SpAt2SpEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -217,6 +225,33 @@ public class SourceToTargetCorrPackageImpl extends EPackageImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass get_SpAt2Sp() {
+		return _SpAt2SpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference get_SpAt2Sp_Source() {
+		return (EReference) _SpAt2SpEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference get_SpAt2Sp_Target() {
+		return (EReference) _SpAt2SpEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SourceToTargetCorrFactory getSourceToTargetCorrFactory() {
 		return (SourceToTargetCorrFactory) getEFactoryInstance();
 	}
@@ -252,6 +287,10 @@ public class SourceToTargetCorrPackageImpl extends EPackageImpl implements
 		e2SpEClass = createEClass(E2_SP);
 		createEReference(e2SpEClass, E2_SP__SOURCE);
 		createEReference(e2SpEClass, E2_SP__TARGET);
+
+		_SpAt2SpEClass = createEClass(_SP_AT2_SP);
+		createEReference(_SpAt2SpEClass, _SP_AT2_SP__SOURCE);
+		createEReference(_SpAt2SpEClass, _SP_AT2_SP__TARGET);
 	}
 
 	/**
@@ -302,6 +341,8 @@ public class SourceToTargetCorrPackageImpl extends EPackageImpl implements
 				theTGGRuntimePackage.getAbstractCorrespondence());
 		e2SpEClass.getESuperTypes().add(
 				theTGGRuntimePackage.getAbstractCorrespondence());
+		_SpAt2SpEClass.getESuperTypes().add(
+				theTGGRuntimePackage.getAbstractCorrespondence());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(sm2TMEClass, SourceToTargetCorr.SM2TM.class, "SM2TM",
@@ -339,6 +380,18 @@ public class SourceToTargetCorrPackageImpl extends EPackageImpl implements
 		initEReference(getE2Sp_Target(), theTargetPackage.getSpecial(), null,
 				"target", null, 1, 1, E2Sp.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(_SpAt2SpEClass, _SpAt2Sp.class, "_SpAt2Sp", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(get_SpAt2Sp_Source(),
+				theSourcePackage.get_SpecialAttrType(), null, "source", null,
+				1, 1, _SpAt2Sp.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(get_SpAt2Sp_Target(), theTargetPackage.getSpecial(),
+				null, "target", null, 1, 1, _SpAt2Sp.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource

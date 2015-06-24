@@ -104,13 +104,22 @@ public interface SourcePackage extends EPackage {
 	int ELEMENT = 1;
 
 	/**
+	 * The feature id for the '<em><b>special</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT__SPECIAL = 0;
+
+	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT__ID = 0;
+	int ELEMENT__ID = 1;
 
 	/**
 	 * The feature id for the '<em><b>Special Attr</b></em>' attribute.
@@ -119,7 +128,7 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT__SPECIAL_ATTR = 1;
+	int ELEMENT__SPECIAL_ATTR = 2;
 
 	/**
 	 * The number of structural features of the '<em>Element</em>' class.
@@ -128,7 +137,7 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_FEATURE_COUNT = 2;
+	int ELEMENT_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Element</em>' class.
@@ -138,6 +147,43 @@ public interface SourcePackage extends EPackage {
 	 * @ordered
 	 */
 	int ELEMENT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link Source.impl._SpecialAttrTypeImpl <em>Special Attr Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see Source.impl._SpecialAttrTypeImpl
+	 * @see Source.impl.SourcePackageImpl#get_SpecialAttrType()
+	 * @generated
+	 */
+	int _SPECIAL_ATTR_TYPE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SPECIAL_ATTR_TYPE__VALUE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Special Attr Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SPECIAL_ATTR_TYPE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Special Attr Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SPECIAL_ATTR_TYPE_OPERATION_COUNT = 0;
 
 	/**
 	 * Returns the meta object for class '{@link Source.SourceModel <em>Model</em>}'.
@@ -171,6 +217,17 @@ public interface SourcePackage extends EPackage {
 	EClass getElement();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link Source.Element#get_special <em>special</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>special</em>'.
+	 * @see Source.Element#get_special()
+	 * @see #getElement()
+	 * @generated
+	 */
+	EReference getElement__special();
+
+	/**
 	 * Returns the meta object for the attribute '{@link Source.Element#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -191,6 +248,27 @@ public interface SourcePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getElement_SpecialAttr();
+
+	/**
+	 * Returns the meta object for class '{@link Source._SpecialAttrType <em>Special Attr Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Special Attr Type</em>'.
+	 * @see Source._SpecialAttrType
+	 * @generated
+	 */
+	EClass get_SpecialAttrType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Source._SpecialAttrType#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see Source._SpecialAttrType#getValue()
+	 * @see #get_SpecialAttrType()
+	 * @generated
+	 */
+	EAttribute get_SpecialAttrType_Value();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -244,6 +322,14 @@ public interface SourcePackage extends EPackage {
 		EClass ELEMENT = eINSTANCE.getElement();
 
 		/**
+		 * The meta object literal for the '<em><b>special</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ELEMENT__SPECIAL = eINSTANCE.getElement__special();
+
+		/**
 		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -258,6 +344,25 @@ public interface SourcePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ELEMENT__SPECIAL_ATTR = eINSTANCE.getElement_SpecialAttr();
+
+		/**
+		 * The meta object literal for the '{@link Source.impl._SpecialAttrTypeImpl <em>Special Attr Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see Source.impl._SpecialAttrTypeImpl
+		 * @see Source.impl.SourcePackageImpl#get_SpecialAttrType()
+		 * @generated
+		 */
+		EClass _SPECIAL_ATTR_TYPE = eINSTANCE.get_SpecialAttrType();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute _SPECIAL_ATTR_TYPE__VALUE = eINSTANCE
+				.get_SpecialAttrType_Value();
 
 	}
 

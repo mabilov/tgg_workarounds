@@ -252,7 +252,7 @@ public class TargetPackageImpl extends EPackageImpl implements TargetPackage {
 				IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getStep_Special(), this.getSpecial(), null, "special",
 				null, 0, 1, Step.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStep_Id(), ecorePackage.getEString(), "id", null, 1,
 				1, Step.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,

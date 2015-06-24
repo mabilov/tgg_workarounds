@@ -50,6 +50,15 @@ public interface SourceToTargetCorrFactory extends EFactory {
 	E2Sp createE2Sp();
 
 	/**
+	 * Returns a new object of class '<em>Sp At2 Sp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sp At2 Sp</em>'.
+	 * @generated
+	 */
+	_SpAt2Sp create_SpAt2Sp();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -5,20 +5,14 @@ package SourceToTargetCorr.Rules.impl;
 import Source.Element;
 import Source.SourceFactory;
 import Source.SourceModel;
-
 import SourceToTargetCorr.E2S;
-
 import SourceToTargetCorr.Rules.E2SRule;
 import SourceToTargetCorr.Rules.RulesPackage;
-
 import SourceToTargetCorr.SM2TM;
 import SourceToTargetCorr.SourceToTargetCorrFactory;
-
 import TGGLanguage.csp.CSP;
-
 import TGGLanguage.modelgenerator.RuleEntryContainer;
 import TGGLanguage.modelgenerator.RuleEntryList;
-
 import TGGRuntime.EMoflonEdge;
 import TGGRuntime.EObjectContainer;
 import TGGRuntime.IsApplicableMatch;
@@ -29,27 +23,23 @@ import TGGRuntime.PerformRuleResult;
 import TGGRuntime.RuleResult;
 import TGGRuntime.TGGRuntimeFactory;
 import TGGRuntime.TripleMatch;
-
 import TGGRuntime.impl.AbstractRuleImpl;
-
-import Target.Special;
+import TGGRuntime.impl.RuleResultImpl;
 import Target.Step;
 import Target.TargetFactory;
 import Target.TargetModel;
 
 import java.lang.Iterable;
-
 import java.lang.reflect.InvocationTargetException;
-
 import java.util.LinkedList;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EOperation;
 // <-- [user defined imports]
 import org.moflon.csp.*;
+
 import csp.constraints.*;
 import TGGLanguage.csp.*;
 
@@ -748,7 +738,7 @@ public class E2SRuleImpl extends AbstractRuleImpl implements E2SRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_FWD_EMoflonEdge_0(
+	public EObjectContainer isAppropriate_FWD_EMoflonEdge_42(
 			EMoflonEdge _edge_elements) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = E2SRuleImpl
@@ -808,7 +798,7 @@ public class E2SRuleImpl extends AbstractRuleImpl implements E2SRule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObjectContainer isAppropriate_BWD_EMoflonEdge_0(
+	public EObjectContainer isAppropriate_BWD_EMoflonEdge_57(
 			EMoflonEdge _edge_steps) {
 		// prepare return value
 		Object[] result1_bindingAndBlack = E2SRuleImpl
@@ -869,8 +859,9 @@ public class E2SRuleImpl extends AbstractRuleImpl implements E2SRule {
 	 * @generated
 	 */
 	public RuleResult checkAttributes_FWD(TripleMatch tripleMatch) {
-		throw new UnsupportedOperationException(
-				"developments on attribute synchronization with eMoflon not yet completed");
+		RuleResult res = TGGRuntime.TGGRuntimeFactory.eINSTANCE.createRuleResult();
+		res.setSuccess(true);
+		return res;
 	}
 
 	/**
@@ -1080,11 +1071,11 @@ public class E2SRuleImpl extends AbstractRuleImpl implements E2SRule {
 			return null;
 		case RulesPackage.E2S_RULE___CHECK_TYPES_BWD__MATCH:
 			return checkTypes_BWD((Match) arguments.get(0));
-		case RulesPackage.E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_0__EMOFLONEDGE:
-			return isAppropriate_FWD_EMoflonEdge_0((EMoflonEdge) arguments
+		case RulesPackage.E2S_RULE___IS_APPROPRIATE_FWD_EMOFLON_EDGE_42__EMOFLONEDGE:
+			return isAppropriate_FWD_EMoflonEdge_42((EMoflonEdge) arguments
 					.get(0));
-		case RulesPackage.E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_0__EMOFLONEDGE:
-			return isAppropriate_BWD_EMoflonEdge_0((EMoflonEdge) arguments
+		case RulesPackage.E2S_RULE___IS_APPROPRIATE_BWD_EMOFLON_EDGE_57__EMOFLONEDGE:
+			return isAppropriate_BWD_EMoflonEdge_57((EMoflonEdge) arguments
 					.get(0));
 		case RulesPackage.E2S_RULE___CHECK_ATTRIBUTES_FWD__TRIPLEMATCH:
 			return checkAttributes_FWD((TripleMatch) arguments.get(0));
@@ -2071,9 +2062,9 @@ public class E2SRuleImpl extends AbstractRuleImpl implements E2SRule {
 
 	public static final Object[] pattern_E2SRule_20_2_black_nac_0BB(Element e,
 			SourceModel sm) {
-		for (SourceModel __DEC_e_elements_695499 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (SourceModel __DEC_e_elements_279376 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(e, SourceModel.class, "elements")) {
-			if (!sm.equals(__DEC_e_elements_695499)) {
+			if (!sm.equals(__DEC_e_elements_279376)) {
 				return new Object[] { e, sm };
 			}
 		}
@@ -2186,20 +2177,11 @@ public class E2SRuleImpl extends AbstractRuleImpl implements E2SRule {
 		return new Object[] { __result };
 	}
 
-	public static final Object[] pattern_E2SRule_21_2_black_nac_0B(Step s) {
-		Special __DEC_s_special_135076 = s.getSpecial();
-		if (__DEC_s_special_135076 != null) {
-			return new Object[] { s };
-		}
-
-		return null;
-	}
-
-	public static final Object[] pattern_E2SRule_21_2_black_nac_1BB(Step s,
+	public static final Object[] pattern_E2SRule_21_2_black_nac_0BB(Step s,
 			TargetModel tm) {
-		for (TargetModel __DEC_s_steps_261089 : org.moflon.core.utilities.eMoflonEMFUtil
+		for (TargetModel __DEC_s_steps_398142 : org.moflon.core.utilities.eMoflonEMFUtil
 				.getOppositeReferenceTyped(s, TargetModel.class, "steps")) {
-			if (!tm.equals(__DEC_s_steps_261089)) {
+			if (!tm.equals(__DEC_s_steps_398142)) {
 				return new Object[] { s, tm };
 			}
 		}
@@ -2216,10 +2198,8 @@ public class E2SRuleImpl extends AbstractRuleImpl implements E2SRule {
 			if (tmpS instanceof Step) {
 				Step s = (Step) tmpS;
 				if (tm.getSteps().contains(s)) {
-					if (pattern_E2SRule_21_2_black_nac_0B(s) == null) {
-						if (pattern_E2SRule_21_2_black_nac_1BB(s, tm) == null) {
-							_result.add(new Object[] { tm, s, _edge_steps });
-						}
+					if (pattern_E2SRule_21_2_black_nac_0BB(s, tm) == null) {
+						_result.add(new Object[] { tm, s, _edge_steps });
 					}
 				}
 			}

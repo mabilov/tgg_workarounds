@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
+ *   <li>{@link Source.Element#get_special <em>special</em>}</li>
  *   <li>{@link Source.Element#getId <em>Id</em>}</li>
  *   <li>{@link Source.Element#getSpecialAttr <em>Special Attr</em>}</li>
  * </ul>
@@ -24,6 +25,32 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Element extends EObject {
+	/**
+	 * Returns the value of the '<em><b>special</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>special</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>special</em>' containment reference.
+	 * @see #set_special(_SpecialAttrType)
+	 * @see Source.SourcePackage#getElement__special()
+	 * @model containment="true"
+	 * @generated
+	 */
+	_SpecialAttrType get_special();
+
+	/**
+	 * Sets the value of the '{@link Source.Element#get_special <em>special</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>special</em>' containment reference.
+	 * @see #get_special()
+	 * @generated
+	 */
+	void set_special(_SpecialAttrType value);
+
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

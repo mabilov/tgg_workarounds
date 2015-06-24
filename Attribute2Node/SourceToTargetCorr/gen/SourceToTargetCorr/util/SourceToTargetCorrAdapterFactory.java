@@ -84,6 +84,11 @@ public class SourceToTargetCorrAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter case_SpAt2Sp(_SpAt2Sp object) {
+			return create_SpAt2SpAdapter();
+		}
+
+		@Override
 		public Adapter caseAbstractCorrespondence(AbstractCorrespondence object) {
 			return createAbstractCorrespondenceAdapter();
 		}
@@ -146,6 +151,20 @@ public class SourceToTargetCorrAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createE2SpAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link SourceToTargetCorr._SpAt2Sp <em>Sp At2 Sp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see SourceToTargetCorr._SpAt2Sp
+	 * @generated
+	 */
+	public Adapter create_SpAt2SpAdapter() {
 		return null;
 	}
 

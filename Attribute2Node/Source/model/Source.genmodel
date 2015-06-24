@@ -9,8 +9,12 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/Source/model/Source.ecore#//SourceModel/elements"/>
     </genClasses>
     <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//Element">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/Source/model/Source.ecore#//Element/_special"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/Source/model/Source.ecore#//Element/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/Source/model/Source.ecore#//Element/specialAttr"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/Source/model/Source.ecore#//_SpecialAttrType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/Source/model/Source.ecore#//_SpecialAttrType/value"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

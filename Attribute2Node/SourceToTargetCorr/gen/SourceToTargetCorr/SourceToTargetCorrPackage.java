@@ -197,6 +197,52 @@ public interface SourceToTargetCorrPackage extends EPackage {
 	int E2_SP_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link SourceToTargetCorr.impl._SpAt2SpImpl <em>Sp At2 Sp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see SourceToTargetCorr.impl._SpAt2SpImpl
+	 * @see SourceToTargetCorr.impl.SourceToTargetCorrPackageImpl#get_SpAt2Sp()
+	 * @generated
+	 */
+	int _SP_AT2_SP = 3;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SP_AT2_SP__SOURCE = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Target</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SP_AT2_SP__TARGET = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Sp At2 Sp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SP_AT2_SP_FEATURE_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Sp At2 Sp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int _SP_AT2_SP_OPERATION_COUNT = TGGRuntimePackage.ABSTRACT_CORRESPONDENCE_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link SourceToTargetCorr.SM2TM <em>SM2TM</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -291,6 +337,38 @@ public interface SourceToTargetCorrPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getE2Sp_Target();
+
+	/**
+	 * Returns the meta object for class '{@link SourceToTargetCorr._SpAt2Sp <em>Sp At2 Sp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sp At2 Sp</em>'.
+	 * @see SourceToTargetCorr._SpAt2Sp
+	 * @generated
+	 */
+	EClass get_SpAt2Sp();
+
+	/**
+	 * Returns the meta object for the reference '{@link SourceToTargetCorr._SpAt2Sp#getSource <em>Source</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Source</em>'.
+	 * @see SourceToTargetCorr._SpAt2Sp#getSource()
+	 * @see #get_SpAt2Sp()
+	 * @generated
+	 */
+	EReference get_SpAt2Sp_Source();
+
+	/**
+	 * Returns the meta object for the reference '{@link SourceToTargetCorr._SpAt2Sp#getTarget <em>Target</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Target</em>'.
+	 * @see SourceToTargetCorr._SpAt2Sp#getTarget()
+	 * @see #get_SpAt2Sp()
+	 * @generated
+	 */
+	EReference get_SpAt2Sp_Target();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -392,6 +470,32 @@ public interface SourceToTargetCorrPackage extends EPackage {
 		 * @generated
 		 */
 		EReference E2_SP__TARGET = eINSTANCE.getE2Sp_Target();
+
+		/**
+		 * The meta object literal for the '{@link SourceToTargetCorr.impl._SpAt2SpImpl <em>Sp At2 Sp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see SourceToTargetCorr.impl._SpAt2SpImpl
+		 * @see SourceToTargetCorr.impl.SourceToTargetCorrPackageImpl#get_SpAt2Sp()
+		 * @generated
+		 */
+		EClass _SP_AT2_SP = eINSTANCE.get_SpAt2Sp();
+
+		/**
+		 * The meta object literal for the '<em><b>Source</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference _SP_AT2_SP__SOURCE = eINSTANCE.get_SpAt2Sp_Source();
+
+		/**
+		 * The meta object literal for the '<em><b>Target</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference _SP_AT2_SP__TARGET = eINSTANCE.get_SpAt2Sp_Target();
 
 	}
 

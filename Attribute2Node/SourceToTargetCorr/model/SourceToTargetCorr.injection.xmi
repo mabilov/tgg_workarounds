@@ -85,46 +85,46 @@
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/E2SRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isAppropriate_solveCsp_FWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isAppropriate_solveCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;e&quot;, e);&#xA;match.registerObject(&quot;sm&quot;, sm);&#xA;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/registerObjectsToMatch_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isAppropriate_checkCsp_FWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_e_specialAttr = CSPFactoryHelper.eINSTANCE.createVariable(&quot;e.specialAttr&quot;, true, csp);&#xD;&#xA;var_e_specialAttr.setValue(e.getSpecialAttr());&#xD;&#xA;var_e_specialAttr.setType(&quot;String&quot;);&#xD;&#xA;Variable var_e_id = CSPFactoryHelper.eINSTANCE.createVariable(&quot;e.id&quot;, true, csp);&#xD;&#xA;var_e_id.setValue(e.getId());&#xD;&#xA;var_e_id.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_sp_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;sp.value&quot;, csp);&#xD;&#xA;var_sp_value.setType(&quot;String&quot;);&#xD;&#xA;Variable var_s_id = CSPFactoryHelper.eINSTANCE.createVariable(&quot;s.id&quot;, csp);&#xD;&#xA;var_s_id.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_e_specialAttr,var_sp_value);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_e_id,var_s_id);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;e&quot;,e);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sm&quot;,sm);&#xD;&#xA;isApplicableMatch.registerObject(&quot;tm&quot;,tm);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sm2Tm&quot;,sm2Tm);&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isApplicable_solveCsp_FWD"/>
+  <compilerInjectionEntries content="match.registerObject(&quot;e&quot;, e);&#xA;match.registerObject(&quot;_spAt&quot;, _spAt);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/registerObjectsToMatch_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isApplicable_checkCsp_FWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isAppropriate_checkCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;e&quot;, e);&#xA;ruleresult.registerObject(&quot;s&quot;, s);&#xA;ruleresult.registerObject(&quot;sp&quot;, sp);&#xA;ruleresult.registerObject(&quot;e2Sp&quot;, e2Sp);&#xA;ruleresult.registerObject(&quot;sm&quot;, sm);&#xA;ruleresult.registerObject(&quot;tm&quot;, tm);&#xA;ruleresult.registerObject(&quot;sm2Tm&quot;, sm2Tm);&#xA;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/registerObjects_FWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var__spAt_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;_spAt.value&quot;, true, csp);&#xD;&#xA;var__spAt_value.setValue(_spAt.getValue());&#xD;&#xA;var__spAt_value.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_sp_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;sp.value&quot;, csp);&#xD;&#xA;var_sp_value.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var__spAt_value,var_sp_value);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;e&quot;,e);&#xD;&#xA;isApplicableMatch.registerObject(&quot;s&quot;,s);&#xD;&#xA;isApplicableMatch.registerObject(&quot;e2S&quot;,e2S);&#xD;&#xA;isApplicableMatch.registerObject(&quot;_spAt&quot;,_spAt);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isApplicable_solveCsp_FWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; match.getObject(&quot;e&quot;).eClass().equals(Source.SourcePackage.eINSTANCE.getElement());">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/checkTypes_FWD"/>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isApplicable_checkCsp_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;e&quot;, e);&#xA;ruleresult.registerObject(&quot;s&quot;, s);&#xA;ruleresult.registerObject(&quot;e2S&quot;, e2S);&#xA;ruleresult.registerObject(&quot;_spAt&quot;, _spAt);&#xA;ruleresult.registerObject(&quot;sp&quot;, sp);&#xA;ruleresult.registerObject(&quot;_spAt2Sp&quot;, _spAt2Sp);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/registerObjects_FWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; match.getObject(&quot;_spAt&quot;).eClass().equals(Source.SourcePackage.eINSTANCE.get_SpecialAttrType());">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/checkTypes_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isAppropriate_solveCsp_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isAppropriate_solveCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="match.registerObject(&quot;s&quot;, s);&#xA;match.registerObject(&quot;sp&quot;, sp);&#xA;match.registerObject(&quot;tm&quot;, tm);&#xA;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/registerObjectsToMatch_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isAppropriate_checkCsp_BWD"/>
-  </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_sp_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;sp.value&quot;, true, csp);&#xD;&#xA;var_sp_value.setValue(sp.getValue());&#xD;&#xA;var_sp_value.setType(&quot;String&quot;);&#xD;&#xA;Variable var_s_id = CSPFactoryHelper.eINSTANCE.createVariable(&quot;s.id&quot;, true, csp);&#xD;&#xA;var_s_id.setValue(s.getId());&#xD;&#xA;var_s_id.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_e_specialAttr = CSPFactoryHelper.eINSTANCE.createVariable(&quot;e.specialAttr&quot;, csp);&#xD;&#xA;var_e_specialAttr.setType(&quot;String&quot;);&#xD;&#xA;Variable var_e_id = CSPFactoryHelper.eINSTANCE.createVariable(&quot;e.id&quot;, csp);&#xD;&#xA;var_e_id.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_e_specialAttr,var_sp_value);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_e_id,var_s_id);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;s&quot;,s);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sp&quot;,sp);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sm&quot;,sm);&#xD;&#xA;isApplicableMatch.registerObject(&quot;tm&quot;,tm);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sm2Tm&quot;,sm2Tm);&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isApplicable_solveCsp_BWD"/>
+  <compilerInjectionEntries content="match.registerObject(&quot;s&quot;, s);&#xA;match.registerObject(&quot;sp&quot;, sp);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/registerObjectsToMatch_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/isApplicable_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isAppropriate_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="ruleresult.registerObject(&quot;e&quot;, e);&#xA;ruleresult.registerObject(&quot;s&quot;, s);&#xA;ruleresult.registerObject(&quot;sp&quot;, sp);&#xA;ruleresult.registerObject(&quot;e2Sp&quot;, e2Sp);&#xA;ruleresult.registerObject(&quot;sm&quot;, sm);&#xA;ruleresult.registerObject(&quot;tm&quot;, tm);&#xA;ruleresult.registerObject(&quot;sm2Tm&quot;, sm2Tm);&#xA;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/registerObjects_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;Variable var_sp_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;sp.value&quot;, true, csp);&#xD;&#xA;var_sp_value.setValue(sp.getValue());&#xD;&#xA;var_sp_value.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var__spAt_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;_spAt.value&quot;, csp);&#xD;&#xA;var__spAt_value.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var__spAt_value,var_sp_value);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;e&quot;,e);&#xD;&#xA;isApplicableMatch.registerObject(&quot;s&quot;,s);&#xD;&#xA;isApplicableMatch.registerObject(&quot;e2S&quot;,e2S);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sp&quot;,sp);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isApplicable_solveCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="return true &amp;&amp; match.getObject(&quot;s&quot;).eClass().equals(Target.TargetPackage.eINSTANCE.getStep()) &amp;&amp; match.getObject(&quot;sp&quot;).eClass().equals(Target.TargetPackage.eINSTANCE.getSpecial());">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/checkTypes_BWD"/>
+  <compilerInjectionEntries content="return csp.check();">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/isApplicable_checkCsp_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="ruleresult.registerObject(&quot;e&quot;, e);&#xA;ruleresult.registerObject(&quot;s&quot;, s);&#xA;ruleresult.registerObject(&quot;e2S&quot;, e2S);&#xA;ruleresult.registerObject(&quot;_spAt&quot;, _spAt);&#xA;ruleresult.registerObject(&quot;sp&quot;, sp);&#xA;ruleresult.registerObject(&quot;_spAt2Sp&quot;, _spAt2Sp);&#xA;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/registerObjects_BWD"/>
+  </compilerInjectionEntries>
+  <compilerInjectionEntries content="return true &amp;&amp; match.getObject(&quot;sp&quot;).eClass().equals(Target.TargetPackage.eINSTANCE.getSpecial());">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/checkTypes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="throw new UnsupportedOperationException(&quot;developments on attribute synchronization with eMoflon not yet completed&quot;);">
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/checkAttributes_FWD"/>
@@ -139,10 +139,10 @@
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/E2SRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="throw new UnsupportedOperationException(&quot;developments on attribute synchronization with eMoflon not yet completed&quot;);">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/checkAttributes_FWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/checkAttributes_FWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="throw new UnsupportedOperationException(&quot;developments on attribute synchronization with eMoflon not yet completed&quot;);">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/checkAttributes_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/checkAttributes_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;return csp;">
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1/generateModel_solveCsp_BWD"/>
@@ -156,11 +156,11 @@
   <compilerInjectionEntries content="return csp.check();">
     <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/E2SRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
-  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var_e_specialAttr = CSPFactoryHelper.eINSTANCE.createVariable(&quot;e.specialAttr&quot;, csp);&#xD;&#xA;var_e_specialAttr.setType(&quot;String&quot;);&#xD;&#xA;Variable var_sp_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;sp.value&quot;, csp);&#xD;&#xA;var_sp_value.setType(&quot;String&quot;);&#xD;&#xA;Variable var_e_id = CSPFactoryHelper.eINSTANCE.createVariable(&quot;e.id&quot;, csp);&#xD;&#xA;var_e_id.setType(&quot;String&quot;);&#xD;&#xA;Variable var_s_id = CSPFactoryHelper.eINSTANCE.createVariable(&quot;s.id&quot;, csp);&#xD;&#xA;var_s_id.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();Eq eq_0 = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;csp.getConstraints().add(eq_0);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var_e_specialAttr,var_sp_value);&#xD;&#xA;eq_0.setRuleName(&quot;&quot;);&#xD;&#xA;eq_0.solve(var_e_id,var_s_id);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;sm&quot;,sm);&#xD;&#xA;isApplicableMatch.registerObject(&quot;tm&quot;,tm);&#xD;&#xA;isApplicableMatch.registerObject(&quot;sm2Tm&quot;,sm2Tm);&#xD;&#xA;return csp;">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/generateModel_solveCsp_BWD"/>
+  <compilerInjectionEntries content="// Create CSP&#xD;&#xA;CSP csp = CspFactory.eINSTANCE.createCSP();&#xD;&#xA;isApplicableMatch.getAttributeInfo().add(csp);&#xD;&#xA;&#xD;&#xA;// Create literals&#xD;&#xA;&#xD;&#xA;// Create attribute variables&#xD;&#xA;&#xD;&#xA;// Create unbound variables&#xD;&#xA;Variable var__spAt_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;_spAt.value&quot;, csp);&#xD;&#xA;var__spAt_value.setType(&quot;String&quot;);&#xD;&#xA;Variable var_sp_value = CSPFactoryHelper.eINSTANCE.createVariable(&quot;sp.value&quot;, csp);&#xD;&#xA;var_sp_value.setType(&quot;String&quot;);&#xD;&#xA;&#xD;&#xA;// Create constraints&#xD;&#xA;Eq eq = new Eq();&#xD;&#xA;&#xD;&#xA;csp.getConstraints().add(eq);&#xD;&#xA;&#xD;&#xA;// Solve CSP&#xD;&#xA;eq.setRuleName(&quot;&quot;);&#xD;&#xA;eq.solve(var__spAt_value,var_sp_value);&#xD;&#xA;&#xD;&#xA;// Snapshot pattern match on which CSP is solved&#xD;&#xA;isApplicableMatch.registerObject(&quot;e&quot;,e);&#xD;&#xA;isApplicableMatch.registerObject(&quot;s&quot;,s);&#xD;&#xA;isApplicableMatch.registerObject(&quot;e2S&quot;,e2S);&#xD;&#xA;return csp;">
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/generateModel_solveCsp_BWD"/>
   </compilerInjectionEntries>
   <compilerInjectionEntries content="return csp.check();">
-    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule/generateModel_checkCsp_BWD"/>
+    <eOperation href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule/generateModel_checkCsp_BWD"/>
   </compilerInjectionEntries>
   <importInjectionEntries content="org.moflon.csp.*">
     <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/Class1"/>
@@ -181,12 +181,12 @@
     <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/E2SRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="org.moflon.csp.*">
-    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule"/>
+    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="csp.constraints.*">
-    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule"/>
+    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule"/>
   </importInjectionEntries>
   <importInjectionEntries content="TGGLanguage.csp.*">
-    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/EA2SRule"/>
+    <eClass href="platform:/plugin/SourceToTargetCorr/model/SourceToTargetCorr.ecore#//Rules/_SpAT2SpRule"/>
   </importInjectionEntries>
 </sdmUtil:CompilerInjection>

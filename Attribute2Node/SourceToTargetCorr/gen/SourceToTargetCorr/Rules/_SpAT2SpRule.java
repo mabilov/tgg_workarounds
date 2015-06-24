@@ -3,9 +3,9 @@
 package SourceToTargetCorr.Rules;
 
 import Source.Element;
-import Source.SourceModel;
+import Source._SpecialAttrType;
 
-import SourceToTargetCorr.SM2TM;
+import SourceToTargetCorr.E2S;
 
 import TGGLanguage.csp.CSP;
 
@@ -24,7 +24,6 @@ import TGGRuntime.TripleMatch;
 
 import Target.Special;
 import Target.Step;
-import Target.TargetModel;
 
 import org.eclipse.emf.ecore.EObject;
 // <-- [user defined imports]
@@ -32,22 +31,22 @@ import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>EA2S Rule</b></em>'.
+ * A representation of the model object '<em><b>Sp AT2 Sp Rule</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see SourceToTargetCorr.Rules.RulesPackage#getEA2SRule()
+ * @see SourceToTargetCorr.Rules.RulesPackage#get_SpAT2SpRule()
  * @model
  * @generated
  */
-public interface EA2SRule extends EObject, AbstractRule {
+public interface _SpAT2SpRule extends EObject, AbstractRule {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_FWD(Match match, Element e, SourceModel sm);
+	boolean isAppropriate_FWD(Match match, Element e, _SpecialAttrType _spAt);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,7 +70,8 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_FWD(Match match, Element e, SourceModel sm);
+	void registerObjectsToMatch_FWD(Match match, Element e,
+			_SpecialAttrType _spAt);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,7 +79,8 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_FWD(Match match, Element e, SourceModel sm);
+	CSP isAppropriate_solveCsp_FWD(Match match, Element e,
+			_SpecialAttrType _spAt);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,7 +97,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP isApplicable_solveCsp_FWD(IsApplicableMatch isApplicableMatch,
-			Element e, SourceModel sm, TargetModel tm, SM2TM sm2Tm);
+			Element e, Step s, E2S e2S, _SpecialAttrType _spAt);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -113,8 +114,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_FWD(PerformRuleResult ruleresult, EObject e,
-			EObject s, EObject sp, EObject e2Sp, EObject sm, EObject tm,
-			EObject sm2Tm);
+			EObject s, EObject e2S, EObject _spAt, EObject sp, EObject _spAt2Sp);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -130,7 +130,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	boolean isAppropriate_BWD(Match match, Step s, Special sp, TargetModel tm);
+	boolean isAppropriate_BWD(Match match, Step s, Special sp);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,8 +154,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	void registerObjectsToMatch_BWD(Match match, Step s, Special sp,
-			TargetModel tm);
+	void registerObjectsToMatch_BWD(Match match, Step s, Special sp);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,8 +162,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isAppropriate_solveCsp_BWD(Match match, Step s, Special sp,
-			TargetModel tm);
+	CSP isAppropriate_solveCsp_BWD(Match match, Step s, Special sp);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -180,8 +178,8 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch, Step s,
-			Special sp, SourceModel sm, TargetModel tm, SM2TM sm2Tm);
+	CSP isApplicable_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
+			Element e, Step s, E2S e2S, Special sp);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,8 +196,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	void registerObjects_BWD(PerformRuleResult ruleresult, EObject e,
-			EObject s, EObject sp, EObject e2Sp, EObject sm, EObject tm,
-			EObject sm2Tm);
+			EObject s, EObject e2S, EObject _spAt, EObject sp, EObject _spAt2Sp);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,7 +212,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_1(EMoflonEdge _edge_special);
+	EObjectContainer isAppropriate_FWD_EMoflonEdge_43(EMoflonEdge _edge__special);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,15 +220,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_EMoflonEdge_1(EMoflonEdge _edge_elements);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	EObjectContainer isAppropriate_BWD_EMoflonEdge_2(EMoflonEdge _edge_steps);
+	EObjectContainer isAppropriate_BWD_EMoflonEdge_58(EMoflonEdge _edge_special);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -256,7 +245,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	ModelgeneratorRuleResult generateModel(
-			RuleEntryContainer ruleEntryContainer, SM2TM sm2TmParameter);
+			RuleEntryContainer ruleEntryContainer, E2S e2SParameter);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,8 +254,7 @@ public interface EA2SRule extends EObject, AbstractRule {
 	 * @generated
 	 */
 	CSP generateModel_solveCsp_BWD(IsApplicableMatch isApplicableMatch,
-			SourceModel sm, TargetModel tm, SM2TM sm2Tm,
-			ModelgeneratorRuleResult ruleResult);
+			Element e, Step s, E2S e2S, ModelgeneratorRuleResult ruleResult);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,4 +266,4 @@ public interface EA2SRule extends EObject, AbstractRule {
 	// <-- [user code injected with eMoflon]
 
 	// [user code injected with eMoflon] -->
-} // EA2SRule
+} // _SpAT2SpRule

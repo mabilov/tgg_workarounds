@@ -205,7 +205,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_FWD_SourceModel_0(SourceModel sm);
+	EObjectContainer isAppropriate_FWD_SourceModel_15(SourceModel sm);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,7 +213,7 @@ public interface Class1 extends EObject, AbstractRule {
 	 * @model
 	 * @generated
 	 */
-	EObjectContainer isAppropriate_BWD_TargetModel_0(TargetModel tm);
+	EObjectContainer isAppropriate_BWD_TargetModel_15(TargetModel tm);
 
 	/**
 	 * <!-- begin-user-doc -->
